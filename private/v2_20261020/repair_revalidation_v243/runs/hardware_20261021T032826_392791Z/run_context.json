@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-21T03:28:26.341594+00:00",
+  "motion_or_network_performed": false,
+  "operator_arm_authorization": true,
+  "operator_arm_authorization_basis": "explicit_user_request",
+  "plan_file_sha256": "79b16e243d16a7e7c6ecb7a418552f42254d4e2d899346306075a4c1a5ea3010",
+  "preflight_file_sha256": "56863f3d47c59eecef080ed8daa34745655ef662ce2d88602fda8c392ea79b06",
+  "preflight_report_sha256": "58cfb926d231134c88d42f5765d570db685dc5007a8f0b24a10fb9f437f43a17",
+  "preflight_summary": {
+    "ready_to_move": true,
+    "phase": "experiment",
+    "static_pass": true,
+    "live_pass": true,
+    "config_sha256": "332a4d1dba4c74cf56f830eefe4e4d1ed8cc190a489bf31ce4a0c1c21d17c17d",
+    "hardware_config_sha256": "9b1de09ac6ab9f752a6ae553a40a765f3d58dbe0b35a1bbec961572fd447b603",
+    "execution_model_sha256": "c468ba08a9d7d7a14b010fb7130f4588f0dc335731dac88bd1774037290b9974",
+    "coverage_task_observed": {
+      "evaluation_cell_count": 384,
+      "reachable_count": 384,
+      "reachable_ratio": 1.0,
+      "evaluation_grid": [
+        8,
+        12,
+        4
+      ],
+      "candidate_count": 820
+    },
+    "policy_source_sha256": "da8037d9d19d4121cc60cfe37db91c93db9bce472f6e0811ca9ee087f81cb5d5",
+    "policy_algorithm_version": "2.4.3"
+  },
+  "plan_row": {
+    "schema_version": 2,
+    "protocol_version": "ral-hil-2",
+    "design_id": "confirmatory-v2-paired-repair-ablation",
+    "plan_id": "ralhil-v243-repair-revalidation-20-20261021",
+    "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R014",
+    "run_index": 14,
+    "block": 7,
+    "pair_id": "B07-pause_repair_off",
+    "within_pair_order": 1,
+    "method": "uac_robust_repair_v2",
+    "condition": "pause_repair_off",
+    "instance_seed": 0,
+    "injection_seed": 3854929541,
+    "solver_seed": 0,
+    "horizon_s": 60.0,
+    "runtime_duration_s": 85.0,
+    "condition_parameters_json": "{\"device_selection\":\"max_unique_reserved_coverage\",\"duration_s\":25.0,\"enabled\":true,\"implementation\":\"policy_availability_mask\",\"kind\":\"logical_availability_pause\",\"last_command_expires_by_ttl\":true,\"no_sdk_fault_injection\":true,\"seed\":3854929541,\"trigger\":\"coverage_fraction\",\"trigger_coverage_fraction\":0.5}",
+    "expected_config_sha256": "332a4d1dba4c74cf56f830eefe4e4d1ed8cc190a489bf31ce4a0c1c21d17c17d",
+    "expected_hardware_config_sha256": "9b1de09ac6ab9f752a6ae553a40a765f3d58dbe0b35a1bbec961572fd447b603",
+    "expected_pair_frozen_sha256": "3172c630d0282fd484f115d66de20d28ae67ef39e05a8b6bd36a214459e8b5ae",
+    "expected_evaluation_cell_count": 384,
+    "expected_policy_sha256": "da8037d9d19d4121cc60cfe37db91c93db9bce472f6e0811ca9ee087f81cb5d5",
+    "expected_policy_version": "2.4.3",
+    "expected_execution_model_sha256": "c468ba08a9d7d7a14b010fb7130f4588f0dc335731dac88bd1774037290b9974",
+    "overlay_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\overlays\\014_pause_repair_off.yaml",
+    "cooldown_s": 10.0,
+    "status": "planned"
+  },
+  "context_sha256": "1aaa8c055cb140a5b3f037402752dcc9a761df36c0025ba9d4c16c0c241eff7d"
+}

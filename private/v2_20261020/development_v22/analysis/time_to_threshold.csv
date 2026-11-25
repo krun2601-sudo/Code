@@ -1,0 +1,13 @@
+﻿run_id,plan_run_id,pair_id,method,condition,threshold,time_s,event_observed,right_censored,horizon_s
+hardware_20261020T111204_249117Z,ralhil-v2-dev6-20261022-R001,B01-nominal,mag,nominal,T95,12.894971000001533,True,False,60.0
+hardware_20261020T111204_249117Z,ralhil-v2-dev6-20261022-R001,B01-nominal,mag,nominal,T100,13.700025600002846,True,False,60.0
+hardware_20261020T111351_085277Z,ralhil-v2-dev6-20261022-R002,B01-nominal,measured_static,nominal,T95,13.903165399999125,True,False,60.0
+hardware_20261020T111351_085277Z,ralhil-v2-dev6-20261022-R002,B01-nominal,measured_static,nominal,T100,15.497460199985653,True,False,60.0
+hardware_20261020T111538_920374Z,ralhil-v2-dev6-20261022-R003,B01-nominal,uac_robust_repair_v2,nominal,T95,10.513864199980162,True,False,60.0
+hardware_20261020T111538_920374Z,ralhil-v2-dev6-20261022-R003,B01-nominal,uac_robust_repair_v2,nominal,T100,14.913267500000075,True,False,60.0
+hardware_20261020T111726_403853Z,ralhil-v2-dev6-20261022-R004,B01-pause,uac_robust_repair_v2,pause,T95,20.511061800003517,True,False,60.0
+hardware_20261020T111726_403853Z,ralhil-v2-dev6-20261022-R004,B01-pause,uac_robust_repair_v2,pause,T100,42.50909999999567,True,False,60.0
+hardware_20261020T111912_353359Z,ralhil-v2-dev6-20261022-R005,B01-pause,measured_static,pause,T95,33.998439200018765,True,False,60.0
+hardware_20261020T111912_353359Z,ralhil-v2-dev6-20261022-R005,B01-pause,measured_static,pause,T100,44.795880500023486,True,False,60.0
+hardware_20261020T112058_431105Z,ralhil-v2-dev6-20261022-R006,B01-repeatability,uac_robust_repair_v2,repeatability,T95,13.920474400016246,True,False,60.0
+hardware_20261020T112058_431105Z,ralhil-v2-dev6-20261022-R006,B01-repeatability,uac_robust_repair_v2,repeatability,T100,23.11402320000343,True,False,60.0

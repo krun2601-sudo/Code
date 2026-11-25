@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "source": "synchronized_live_hardware_capture",
+  "captured_monotonic_s": 249153.6152871,
+  "created_utc_s": 1792547210.5360885,
+  "hardware_config_sha256": "9b1de09ac6ab9f752a6ae553a40a765f3d58dbe0b35a1bbec961572fd447b603",
+  "platform_version": "4.0.0",
+  "platform_patch_version": "ral-hil-context-1.0.0",
+  "policy_source_sha256": "7af5df1766dda38654e696703ff6e92226315fe5de28307b8e50a3ee279e92cb",
+  "policy_algorithm_version": "2.4.2",
+  "coverage_task": {
+    "evaluation_cell_count": 384,
+    "reachable_count": 384,
+    "reachable_ratio": 1.0,
+    "evaluation_grid": [
+      8,
+      12,
+      4
+    ],
+    "candidate_count": 820
+  },
+  "motion_commands_sent": false,
+  "zero_velocity_stop_sent": true,
+  "devices": {
+    "zr10_25": {
+      "telemetry": {
+        "connected": true,
+        "sample_t": 249153.5528298,
+        "age_s": 0.06245729999500327,
+        "zoom": 10.0,
+        "raw": {
+          "yaw_deg": -88.1,
+          "pitch_deg": -179.4,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.1,
+          "roll_rate_dps": 0.1,
+          "timestamp_kind": "host_receive_estimate",
+          "received_utc_s": 1792547209.1275337,
+          "zoom_known": true,
+          "zoom_t": 249152.905004,
+          "zoom_stable": true,
+          "sink_error": ""
+        },
+        "state": {
+          "device_id": "zr10_25",
+          "t": 249153.5528298,
+          "yaw_deg": 0.30000000000001137,
+          "pitch_deg": 0.5,
+          "roll_deg": 0.0,
+          "zoom": 10.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.1,
+          "connected": true,
+          "sequence": 30,
+          "source": "stream",
+          "raw": {
+            "yaw_deg": -88.1,
+            "pitch_deg": -179.4,
+            "roll_deg": 0.0,
+            "yaw_rate_dps": 0.0,
+            "pitch_rate_dps": -0.1,
+            "roll_rate_dps": 0.1,
+            "timestamp_kind": "host_receive_estimate",
+            "received_utc_s": 1792547209.1275337,
+            "zoom_known": true,
+            "zoom_t": 249152.905004,
+            "zoom_stable": true,
+            "sink_error": ""
+          }
+        }
+      },
+      "frame": {
+        "frame_id": 5,
+        "capture_t": 249153.510006,
+        "age_s": 0.10528109999722801,
+        "received_t": 249153.510006,
+        "width": 1920,
+        "height": 1080,
+        "usable": true,
+        "resolution_ok": true,
+        "mean_luma": 103.21994018554688,
+        "contrast": 28.83845329284668,
+        "sharpness": 1.9573824405670166,
+        "skipped_frames": 4,
+        "reason": ""
+      },
+      "command_result": {
+        "status": "acknowledged",
+        "sent": true,
+        "ack": true,
+        "error": "",
+        "age_s": 0.06303560000378639,
+        "reason": "preflight_zero_velocity_ack"
+      }
+    },
+    "zr10_26": {
+      "telemetry": {
+        "connected": true,
+        "sample_t": 249153.5850642,
+        "age_s": 0.030222900008084252,
+        "zoom": 10.0,
+        "raw": {
+          "yaw_deg": -38.3,
+          "pitch_deg": -179.5,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": -0.1,
+          "timestamp_kind": "host_receive_estimate",
+          "received_utc_s": 1792547209.1597695,
+          "zoom_known": true,
+          "zoom_t": 249152.9259151,
+          "zoom_stable": true,
+          "sink_error": ""
+        },
+        "state": {
+          "device_id": "zr10_26",
+          "t": 249153.5850642,
+          "yaw_deg": -0.5,
+          "pitch_deg": 0.5999999999999943,
+          "roll_deg": 0.0,
+          "zoom": 10.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0,
+          "connected": true,
+          "sequence": 31,
+          "source": "stream",
+          "raw": {
+            "yaw_deg": -38.3,
+            "pitch_deg": -179.5,
+            "roll_deg": 0.0,
+            "yaw_rate_dps": 0.0,
+            "pitch_rate_dps": 0.0,
+            "roll_rate_dps": -0.1,
+            "timestamp_kind": "host_receive_estimate",
+            "received_utc_s": 1792547209.1597695,
+            "zoom_known": true,
+            "zoom_t": 249152.9259151,
+            "zoom_stable": true,
+            "sink_error": ""
+          }
+        }
+      },
+      "frame": {
+        "frame_id": 38,
+        "capture_t": 249153.4925155,
+        "age_s": 0.12277159999939613,
+        "received_t": 249153.4925155,
+        "width": 1920,
+        "height": 1080,
+        "usable": true,
+        "resolution_ok": true,
+        "mean_luma": 113.72505187988281,
+        "contrast": 38.90243911743164,
+        "sharpness": 3.7921109199523926,
+        "skipped_frames": 17,
+        "reason": ""
+      },
+      "command_result": {
+        "status": "acknowledged",
+        "sent": true,
+        "ack": true,
+        "error": "",
+        "age_s": 0.05985249998047948,
+        "reason": "preflight_zero_velocity_ack"
+      }
+    },
+    "zr10_27": {
+      "telemetry": {
+        "connected": true,
+        "sample_t": 249153.5670915,
+        "age_s": 0.048195599985774606,
+        "zoom": 10.0,
+        "raw": {
+          "yaw_deg": 10.6,
+          "pitch_deg": 179.4,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.1,
+          "roll_rate_dps": 0.3,
+          "timestamp_kind": "host_receive_estimate",
+          "received_utc_s": 1792547209.141796,
+          "zoom_known": true,
+          "zoom_t": 249152.9159452,
+          "zoom_stable": true,
+          "sink_error": ""
+        },
+        "state": {
+          "device_id": "zr10_27",
+          "t": 249153.5670915,
+          "yaw_deg": -0.5,
+          "pitch_deg": -0.5,
+          "roll_deg": 0.0,
+          "zoom": 10.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.1,
+          "connected": true,
+          "sequence": 30,
+          "source": "stream",
+          "raw": {
+            "yaw_deg": 10.6,
+            "pitch_deg": 179.4,
+            "roll_deg": 0.0,
+            "yaw_rate_dps": 0.0,
+            "pitch_rate_dps": 0.1,
+            "roll_rate_dps": 0.3,
+            "timestamp_kind": "host_receive_estimate",
+            "received_utc_s": 1792547209.141796,
+            "zoom_known": true,
+            "zoom_t": 249152.9159452,
+            "zoom_stable": true,
+            "sink_error": ""
+          }
+        }
+      },
+      "frame": {
+        "frame_id": 48,
+        "capture_t": 249153.5116876,
+        "age_s": 0.10359949999838136,
+        "received_t": 249153.5116876,
+        "width": 1920,
+        "height": 1080,
+        "usable": true,
+        "resolution_ok": true,
+        "mean_luma": 110.99797058105469,
+        "contrast": 40.832332611083984,
+        "sharpness": 2.6132280826568604,
+        "skipped_frames": 13,
+        "reason": ""
+      },
+      "command_result": {
+        "status": "acknowledged",
+        "sent": true,
+        "ack": true,
+        "error": "",
+        "age_s": 0.06294629999320023,
+        "reason": "preflight_zero_velocity_ack"
+      }
+    },
+    "zr10_28": {
+      "telemetry": {
+        "connected": true,
+        "sample_t": 249153.5926557,
+        "age_s": 0.02263140000286512,
+        "zoom": 10.0,
+        "raw": {
+          "yaw_deg": -69.1,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": 0.2,
+          "roll_rate_dps": 0.2,
+          "timestamp_kind": "host_receive_estimate",
+          "received_utc_s": 1792547209.167361,
+          "zoom_known": true,
+          "zoom_t": 249152.9206624,
+          "zoom_stable": true,
+          "sink_error": ""
+        },
+        "state": {
+          "device_id": "zr10_28",
+          "t": 249153.5926557,
+          "yaw_deg": 0.5,
+          "pitch_deg": 0.0,
+          "roll_deg": 0.0,
+          "zoom": 10.0,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": 0.2,
+          "connected": true,
+          "sequence": 30,
+          "source": "stream",
+          "raw": {
+            "yaw_deg": -69.1,
+            "pitch_deg": 179.9,
+            "roll_deg": 0.0,
+            "yaw_rate_dps": 0.1,
+            "pitch_rate_dps": 0.2,
+            "roll_rate_dps": 0.2,
+            "timestamp_kind": "host_receive_estimate",
+            "received_utc_s": 1792547209.167361,
+            "zoom_known": true,
+            "zoom_t": 249152.9206624,
+            "zoom_stable": true,
+            "sink_error": ""
+          }
+        }
+      },
+      "frame": {
+        "frame_id": 43,
+        "capture_t": 249153.4770208,
+        "age_s": 0.13826629999675788,
+        "received_t": 249153.4770208,
+        "width": 1920,
+        "height": 1080,
+        "usable": true,
+        "resolution_ok": true,
+        "mean_luma": 112.44194793701172,
+        "contrast": 42.120628356933594,
+        "sharpness": 4.564214706420898,
+        "skipped_frames": 13,
+        "reason": ""
+      },
+      "command_result": {
+        "status": "acknowledged",
+        "sent": true,
+        "ack": true,
+        "error": "",
+        "age_s": 0.06298930000048131,
+        "reason": "preflight_zero_velocity_ack"
+      }
+    }
+  }
+}

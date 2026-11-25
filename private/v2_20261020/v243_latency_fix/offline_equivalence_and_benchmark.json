@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "verification": "v243_static_edge_prewarm",
+  "inputs": {
+    "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_ablation_v242\\overlays\\001_pause_repair_on.yaml",
+    "config_sha256": "90140c9921d0ce6e7ecd4fae264b68da95413944905e9c71c4ce80ae343e234d",
+    "preserved_v242_policy": "D:\\1Xingrunqiang\\pycharmpro\\M_zr10_V1\\ZR10_EXP_Plant\\zr10_cooperative_lab\\algorithms\\user_policy.py",
+    "preserved_v242_policy_sha256": "7af5df1766dda38654e696703ff6e92226315fe5de28307b8e50a3ee279e92cb",
+    "candidate_v243_policy": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\algorithms\\user_policy.py",
+    "candidate_v243_policy_sha256": "da8037d9d19d4121cc60cfe37db91c93db9bce472f6e0811ca9ee087f81cb5d5",
+    "repetitions": 50
+  },
+  "versions": {
+    "reference": "2.4.2",
+    "candidate": "2.4.3"
+  },
+  "equivalence": {
+    "checks": {
+      "candidate_geometry_identical": true,
+      "reachable_cells_identical": true,
+      "routes_identical": true,
+      "route_signature_identical": true,
+      "planning_audit_identical_excluding_runtime_fields": true
+    },
+    "reference_route_signature": "092bcfb2ddc408a5f98e7a19f2339d60f405635e6671bc489a7e060d85ed5fb0",
+    "candidate_route_signature": "092bcfb2ddc408a5f98e7a19f2339d60f405635e6671bc489a7e060d85ed5fb0",
+    "reference_final_objective": {
+      "uncovered_count": 0,
+      "uac_h_s": 9.9697265813757,
+      "t95_s": 23.024497017604546,
+      "t100_s": 40.3475666481386,
+      "total_motion_deg": 18.450844619618657,
+      "load_cv": 0.9213928039751976
+    },
+    "candidate_final_objective": {
+      "uncovered_count": 0,
+      "uac_h_s": 9.9697265813757,
+      "t95_s": 23.024497017604546,
+      "t100_s": 40.3475666481386,
+      "total_motion_deg": 18.450844619618657,
+      "load_cv": 0.9213928039751976
+    },
+    "reference_audit": {
+      "guarantee_reference": "mag",
+      "baseline_objective": {
+        "uncovered_count": 0,
+        "uac_h_s": 23.025358017278524,
+        "t95_s": 51.43078648487618,
+        "t100_s": 65.68264216564981,
+        "total_motion_deg": 22.513328701633192,
+        "load_cv": 0.7947135301255326
+      },
+      "final_objective": {
+        "uncovered_count": 0,
+        "uac_h_s": 9.9697265813757,
+        "t95_s": 23.024497017604546,
+        "t100_s": 40.3475666481386,
+        "total_motion_deg": 18.450844619618657,
+        "load_cv": 0.9213928039751976
+      },
+      "tail_cap_s": 65.68264216564981,
+      "opportunistic_baseline_objective": {
+        "uncovered_count": 0,
+        "uac_h_s": 16.769932550255373,
+        "t95_s": 26.475417453909504,
+        "t100_s": 36.554331910139574,
+        "total_motion_deg": 22.513328701633192,
+        "load_cv": 0.7947135301255326
+      },
+      "opportunistic_final_objective": {
+        "uncovered_count": 0,
+        "uac_h_s": 4.7905306908008525,
+        "t95_s": 17.624497017604543,
+        "t100_s": 19.424497017604544,
+        "total_motion_deg": 18.450844619618657,
+        "load_cv": 0.9213928039751976
+      },
+      "opportunistic_tail_cap_s": 36.554331910139574,
+      "opportunistic_tail_nonregression_verified": true,
+      "uac_non_regression_verified": true,
+      "t100_non_regression_verified": true,
+      "accepted_moves": [
+        "measured_static_seed"
+      ],
+      "operation_counts": {
+        "measured_static_seed": 1,
+        "redundant_delete": 8
+      },
+      "rejection_counts": {
+        "incomplete_coverage": 5,
+        "uac_not_strictly_improved": 3
+      },
+      "evaluations": 8,
+      "evaluation_limit": 8,
+      "evaluation_limit_respected": true,
+      "search_stop_reason": "evaluation_limit",
+      "initial_pose_box_enabled": true,
+      "initial_pose_box_deg": {
+        "yaw": 1.0,
+        "pitch": 1.0
+      },
+      "configured_budget_ms": 5000.0,
+      "deadline_guard_ms": 5.0,
+      "effective_search_budget_ms": 4995.0
+    },
+    "candidate_audit": {
+      "guarantee_reference": "mag",
+      "baseline_objective": {
+        "uncovered_count": 0,
+        "uac_h_s": 23.025358017278524,
+        "t95_s": 51.43078648487618,
+        "t100_s": 65.68264216564981,
+        "total_motion_deg": 22.513328701633192,
+        "load_cv": 0.7947135301255326
+      },
+      "final_objective": {
+        "uncovered_count": 0,
+        "uac_h_s": 9.9697265813757,
+        "t95_s": 23.024497017604546,
+        "t100_s": 40.3475666481386,
+        "total_motion_deg": 18.450844619618657,
+        "load_cv": 0.9213928039751976
+      },
+      "tail_cap_s": 65.68264216564981,
+      "opportunistic_baseline_objective": {
+        "uncovered_count": 0,
+        "uac_h_s": 16.769932550255373,
+        "t95_s": 26.475417453909504,
+        "t100_s": 36.554331910139574,
+        "total_motion_deg": 22.513328701633192,
+        "load_cv": 0.7947135301255326
+      },
+      "opportunistic_final_objective": {
+        "uncovered_count": 0,
+        "uac_h_s": 4.7905306908008525,
+        "t95_s": 17.624497017604543,
+        "t100_s": 19.424497017604544,
+        "total_motion_deg": 18.450844619618657,
+        "load_cv": 0.9213928039751976
+      },
+      "opportunistic_tail_cap_s": 36.554331910139574,
+      "opportunistic_tail_nonregression_verified": true,
+      "uac_non_regression_verified": true,
+      "t100_non_regression_verified": true,
+      "accepted_moves": [
+        "measured_static_seed"
+      ],
+      "operation_counts": {
+        "measured_static_seed": 1,
+        "redundant_delete": 8
+      },
+      "rejection_counts": {
+        "incomplete_coverage": 5,
+        "uac_not_strictly_improved": 3
+      },
+      "evaluations": 8,
+      "evaluation_limit": 8,
+      "evaluation_limit_respected": true,
+      "search_stop_reason": "evaluation_limit",
+      "initial_pose_box_enabled": true,
+      "initial_pose_box_deg": {
+        "yaw": 1.0,
+        "pitch": 1.0
+      },
+      "configured_budget_ms": 5000.0,
+      "deadline_guard_ms": 5.0,
+      "effective_search_budget_ms": 4995.0
+    }
+  },
+  "benchmark": {
+    "online_budget_ms": 200.0,
+    "checks": {
+      "all_online_plans_within_budget": true,
+      "all_routes_identical": true,
+      "all_final_objectives_identical": true,
+      "all_static_edge_counts_positive_and_identical": true
+    },
+    "policy_construction_ms": {
+      "min": 1287.9593999823555,
+      "median": 1310.803100001067,
+      "p95": 1361.9085399928736,
+      "max": 1381.40429998748
+    },
+    "static_precompute_ms": {
+      "min": 39.888500003144145,
+      "median": 41.81514999072533,
+      "p95": 46.952149996650405,
+      "max": 55.652599985478446
+    },
+    "online_planner_ms": {
+      "min": 20.07580001372844,
+      "median": 20.745600006193854,
+      "p95": 21.849774989823345,
+      "max": 23.24029998271726
+    },
+    "online_planner_samples_ms": [
+      20.76600000145845,
+      20.163599983789027,
+      20.274699985748157,
+      20.359299989650026,
+      20.160999993095174,
+      20.537400007015094,
+      20.7974000077229,
+      20.12899998226203,
+      20.15549998031929,
+      20.43160001630895,
+      21.42540001659654,
+      21.76899998448789,
+      21.605600020848215,
+      20.53349997731857,
+      20.285800012061372,
+      20.233399991411716,
+      20.07580001372844,
+      20.37630000268109,
+      20.22080001188442,
+      20.912200008751824,
+      20.234900002833456,
+      20.259999990230426,
+      20.978700020350516,
+      20.614800014300272,
+      20.699900022009388,
+      20.274000009521842,
+      20.800700003746897,
+      21.14969998365268,
+      20.92779998201877,
+      21.63910001399927,
+      20.946500007994473,
+      20.82519998657517,
+      20.94380001653917,
+      21.27570001175627,
+      21.384499996202067,
+      21.19410000159405,
+      23.24029998271726,
+      22.670499980449677,
+      21.091800008434802,
+      20.949600002495572,
+      21.78389998152852,
+      21.864399983314797,
+      21.831899997778237,
+      20.476300007430837,
+      21.22090000193566,
+      20.356900000479072,
+      20.552200003294274,
+      20.725200010929257,
+      20.482299994910136,
+      20.08020001812838
+    ],
+    "route_signatures": [
+      "092bcfb2ddc408a5f98e7a19f2339d60f405635e6671bc489a7e060d85ed5fb0"
+    ],
+    "static_precomputed_edge_counts": [
+      4163
+    ]
+  },
+  "pass": true,
+  "report_sha256": "4f0764d6a25f1af8fffb83103473bf515900de9a57eb51c466e9fb61d1b612f4"
+}

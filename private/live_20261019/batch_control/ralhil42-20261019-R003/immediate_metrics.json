@@ -1,0 +1,22 @@
+{
+  "run_id": "hardware_20261019T104527_303409Z",
+  "plan_run_id": "ralhil42-20261019-R003",
+  "method": "raster",
+  "condition": "nominal",
+  "mission_duration_s": 119.90607740000996,
+  "t95_s": 16.210757900000317,
+  "t95_reached": true,
+  "t100_s": 19.309358300000895,
+  "t100_reached": true,
+  "uac_h_s": 9.316087618236422,
+  "coverage_final": 1.0,
+  "mission_success": true,
+  "command_count": 4484,
+  "ack_failure_count": 0,
+  "command_error_count": 0,
+  "unusable_frame_count": 0,
+  "deadline_miss_rate": 0.0,
+  "fault_count": 4,
+  "replan_count": 0,
+  "source_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261019\\main_runs\\hardware_20261019T104527_303409Z"
+}

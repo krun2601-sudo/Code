@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "protocol_version": "ral-hil-1",
+  "generated_utc": "2026-10-19T12:51:18.477695+00:00",
+  "plan_metadata": {
+    "schema_version": 1,
+    "protocol_version": "ral-hil-1",
+    "design_id": "confirmatory-30-nominal-plus-12-pause-v1",
+    "plan_id": "ralhil42-20261019",
+    "generated_utc": "2026-10-19T10:56:32.382821+00:00",
+    "plan_randomization_seed": 20261019,
+    "workload_audit": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261019\\formal_plan\\workload_audit_frozen.json",
+    "frozen_horizon_s": 120.0,
+    "runtime_duration_s": 123.0,
+    "expected_policy_sha256": "9fa1e2f78ac72161e02a1a4ceb9addc09de558618253d570835fe2f27c2b0d77",
+    "expected_policy_version": "1.0.1",
+    "blocks": 6,
+    "nominal_methods": [
+      "raster",
+      "mag",
+      "open_loop_cml",
+      "measured_static",
+      "full_eacml"
+    ],
+    "pause_methods": [
+      "measured_static",
+      "full_eacml"
+    ],
+    "run_count": 42,
+    "independent_unit": "one complete hardware run"
+  },
+  "planned_runs": 42,
+  "accepted_runs": 42,
+  "rejected_or_missing": 0,
+  "statistics_status": "scipy available; fixed-horizon attainment uses Cochran Q/McNemar-Holm; continuous complete-pair tests computed where n>=2",
+  "primary_inference": "paired effect sizes/bootstrap confidence intervals, including paired fixed-H attainment risk differences, and fixed-H UAC; no significance is guaranteed",
+  "independent_unit": "one completed real-hardware run",
+  "cycle_rows_used_as_samples": false,
+  "right_censoring_policy": "T95/T100 not reached by fixed H are recorded at H with event_observed=false only in time_to_threshold; completion time fields remain missing",
+  "binary_tests": "Cochran Q and exact paired McNemar-Holm use fixed-H T95/T100 attainment",
+  "completion_time_tests": "Friedman/Wilcoxon on T95/T100 use completed pairs only and are explicitly exploratory",
+  "uac_policy": "uac_h_s integrates uncovered fraction to the preregistered fixed H for every accepted run",
+  "mean_first_policy": "equals UAC_H only when T100 occurs by H; missing for censored runs",
+  "outputs": [
+    "run_metrics_wide.csv",
+    "long_table.csv",
+    "main_table.csv",
+    "paired_bootstrap.csv",
+    "hypothesis_tests.csv",
+    "time_to_threshold.csv",
+    "rejection_report.csv"
+  ]
+}

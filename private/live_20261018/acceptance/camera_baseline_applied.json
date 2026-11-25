@@ -1,0 +1,190 @@
+{
+  "schema": "zr10-camera-baseline-v1",
+  "created_utc_s": 1792299474.3642566,
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\configs\\private_site_overlay.yaml",
+  "apply": true,
+  "gimbal_motion_commands_sent": false,
+  "devices": [
+    {
+      "device_id": "zr10_25",
+      "ip": "192.168.144.25",
+      "apply": true,
+      "gimbal_motion_commands_sent": false,
+      "camera_configuration_commands_sent": 0,
+      "lens_zoom_commands_sent": 0,
+      "before": {
+        "attitude_raw": {
+          "yaw_deg": -120.4,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.1,
+          "roll_rate_dps": 0.1
+        },
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H264",
+          "resolution_w": 1920,
+          "resolution_h": 1080,
+          "bitrate_kbps": 3584,
+          "frame_rate": 30
+        },
+        "zoom": 1.0
+      },
+      "target": {
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H264",
+          "resolution_w": 1920,
+          "resolution_h": 1080,
+          "bitrate_kbps": 3584
+        },
+        "zoom": 10.0
+      },
+      "planned_changes": {
+        "encoding": false,
+        "zoom": true
+      },
+      "ok": false,
+      "verified": false,
+      "error": "TimeoutError: Timeout waiting for response to command 0x0F after 0.8s",
+      "elapsed_ms": 851.4838000000964
+    },
+    {
+      "device_id": "zr10_26",
+      "ip": "192.168.144.26",
+      "apply": true,
+      "gimbal_motion_commands_sent": false,
+      "camera_configuration_commands_sent": 1,
+      "lens_zoom_commands_sent": 0,
+      "before": {
+        "attitude_raw": {
+          "yaw_deg": -79.1,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.2,
+          "roll_rate_dps": 0.0
+        },
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H265",
+          "resolution_w": 1280,
+          "resolution_h": 720,
+          "bitrate_kbps": 1607,
+          "frame_rate": 30
+        },
+        "zoom": 1.0
+      },
+      "target": {
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H264",
+          "resolution_w": 1920,
+          "resolution_h": 1080,
+          "bitrate_kbps": 3584
+        },
+        "zoom": 10.0
+      },
+      "planned_changes": {
+        "encoding": true,
+        "zoom": true
+      },
+      "ok": false,
+      "verified": false,
+      "error": "TimeoutError: Timeout waiting for response to command 0x0F after 0.8s",
+      "elapsed_ms": 1964.237599999933
+    },
+    {
+      "device_id": "zr10_27",
+      "ip": "192.168.144.27",
+      "apply": true,
+      "gimbal_motion_commands_sent": false,
+      "camera_configuration_commands_sent": 1,
+      "lens_zoom_commands_sent": 0,
+      "before": {
+        "attitude_raw": {
+          "yaw_deg": -62.4,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.3,
+          "roll_rate_dps": -0.1
+        },
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H265",
+          "resolution_w": 1280,
+          "resolution_h": 720,
+          "bitrate_kbps": 1607,
+          "frame_rate": 30
+        },
+        "zoom": 1.0
+      },
+      "target": {
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H264",
+          "resolution_w": 1920,
+          "resolution_h": 1080,
+          "bitrate_kbps": 3584
+        },
+        "zoom": 10.0
+      },
+      "planned_changes": {
+        "encoding": true,
+        "zoom": true
+      },
+      "ok": false,
+      "verified": false,
+      "error": "TimeoutError: Timeout waiting for response to command 0x0F after 0.8s",
+      "elapsed_ms": 1948.208300000033
+    },
+    {
+      "device_id": "zr10_28",
+      "ip": "192.168.144.28",
+      "apply": true,
+      "gimbal_motion_commands_sent": false,
+      "camera_configuration_commands_sent": 1,
+      "lens_zoom_commands_sent": 0,
+      "before": {
+        "attitude_raw": {
+          "yaw_deg": -107.6,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.0
+        },
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H265",
+          "resolution_w": 1280,
+          "resolution_h": 720,
+          "bitrate_kbps": 1607,
+          "frame_rate": 30
+        },
+        "zoom": 1.0
+      },
+      "target": {
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H264",
+          "resolution_w": 1920,
+          "resolution_h": 1080,
+          "bitrate_kbps": 3584
+        },
+        "zoom": 10.0
+      },
+      "planned_changes": {
+        "encoding": true,
+        "zoom": true
+      },
+      "ok": false,
+      "verified": false,
+      "error": "TimeoutError: Timeout waiting for response to command 0x0F after 0.8s",
+      "elapsed_ms": 1934.72840000004
+    }
+  ],
+  "pass": false
+}

@@ -1,0 +1,22 @@
+{
+  "run_id": "hardware_20261019T123523_981765Z",
+  "plan_run_id": "ralhil42-20261019-R039",
+  "method": "open_loop_cml",
+  "condition": "nominal",
+  "mission_duration_s": 120.0089702999976,
+  "t95_s": 25.713932999991812,
+  "t95_reached": true,
+  "t100_s": 36.30852739998954,
+  "t100_reached": true,
+  "uac_h_s": 15.93351941718148,
+  "coverage_final": 1.0,
+  "mission_success": true,
+  "command_count": 4616,
+  "ack_failure_count": 0,
+  "command_error_count": 0,
+  "unusable_frame_count": 0,
+  "deadline_miss_rate": 0.0,
+  "fault_count": 0,
+  "replan_count": 0,
+  "source_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261019\\formal_runs\\hardware_20261019T123523_981765Z"
+}

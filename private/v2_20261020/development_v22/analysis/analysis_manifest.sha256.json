@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "plan_sha256": "65f83d2d7e7e3d2613d4c8b0314a105090e8c19ca96f1b9ce808cf0c9599997e",
+  "artifacts": {
+    "run_metrics_wide.csv": "53d3821a8f899caf2d3ac701336ab83e797c7ed19dac3dcf46bdd93cfef51c22",
+    "long_table.csv": "79a05151093a2e729ec3a53e938358dfad4f4b170ba05de95485d9373301254c",
+    "main_table.csv": "ae06331e464ebb7d4c8264c7206103adfa752fe84aae2f8d7767c2b8d06bb3bf",
+    "paired_bootstrap.csv": "82231afad31d0964b16389461a663f4b28720345d279fd8445a0fdeb73567d8a",
+    "hypothesis_tests.csv": "1cede5c26c59b9b12377d40aa867f7bc8397d83ff29bf3808563395fbe4e6efb",
+    "time_to_threshold.csv": "38d0c46017988bc2cb18cadd13bafabad2e0fb3bcfdddcd6b952628ae3003ae0",
+    "rejection_report.csv": "1319d9db37ee7a854d2c36e384ffffbf44d6d2608408c3cd212836616a8c0f06",
+    "v2_decision_gates.json": "817c883a3471a22f00f7355bf71efb8c7a0d01b6acb66999eaff782dc6577ded",
+    "analysis_summary.json": "7593dec5f043f90c9849d6374d729f58cf34098b8f4ba25a630b801484060e6b"
+  }
+}

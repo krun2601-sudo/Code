@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "gate": "v2_freeze_before_confirmatory_campaign",
+  "generated_utc": "2026-10-20T11:44:35.312664+00:00",
+  "inputs": {
+    "rtsp_report": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\rtsp\\rtsp_5min.json",
+    "rtsp_report_sha256": "7ecee98870d8b6d31b91949222082249bd7b69abb41d5f6b467ec8830d4b07d2",
+    "execution_model": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\model\\execution_model.json",
+    "execution_model_sha256": "c468ba08a9d7d7a14b010fb7130f4588f0dc335731dac88bd1774037290b9974",
+    "development_analysis_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\development_v23\\analysis",
+    "development_analysis_summary_sha256": "16fbce13a93acc77902a925f063b724df601e83e57e36e49f7a6d478204ed95b"
+  },
+  "pose_error_bounds_deg": {
+    "yaw": 1.0,
+    "pitch": 0.8930000000000056,
+    "source": "maximum absolute arrival error over disjoint calibration runs",
+    "sample_count": 48
+  },
+  "development_frozen_software_sha256": {
+    "algorithms/user_policy.py": "668d823ba6626c5f1e832b7128adae5d9b1b09cf8cd9b512c0f90d3d58f7d64e",
+    "tools/analyze_runs.py": "874b7a5c51a08f75d892c54d6bb2b54ea6160ade6b55604645a74a093a9a63e9",
+    "tools/preflight.py": "9602a154830befb2e8b19decf40d643250bc367337fccc2bd4df8611f7cf562c",
+    "tools/prepare_run_context.py": "5ada126fdea88c196da1dbf5e2033005b433d8288c1976611ad7b7e1689b3be9",
+    "tools/run_confirmatory_batch.py": "aef11ac34a999713f3276b7f18b8de659d7bfd8ed4d4f201cf13abb8150d77b3",
+    "tools/generate_v2_confirmatory_plan.py": "e25a208c6f718a31e35135002693fdf21e05806dc4263f417a3f662f90fb4658",
+    "tools/audit_v2_readiness.py": "9ba2657f7496621ae8371f8795e8b7347fd54abce3e2882b696ce209bef3279d",
+    "platform_patch/patchset.py": "00c21617bf31fb2056947eff3422676941ebd7202508030abe69c8472e8b7dac"
+  },
+  "development_base_config_sha256": "e0b382d52354a9c5a5f0ec3b848b120e588e0a08206cefb6a981f30c947f563e",
+  "development_observed": {
+    "nominal_v2_uac_h_s": 5.5656858507863936,
+    "nominal_mag_uac_h_s": 9.422238325791492,
+    "nominal_v2_t100_s": 13.318621000013081,
+    "nominal_mag_t100_s": 21.937718300003326,
+    "pause_v2_effective_replan_count": 1.0,
+    "pause_v2_reassigned_coverage_before_recovery_count": 0.0
+  },
+  "gates": {
+    "rtsp_four_stream_5min_max_gap_2s": true,
+    "run_disjoint_banded_execution_model": true,
+    "development_analysis_manifest_integrity": true,
+    "development_plan_used_same_execution_model": true,
+    "development_freeze_metadata_present": true,
+    "six_development_runs_accepted": true,
+    "development_v2_uac_better_than_mag": true,
+    "development_v2_t100_within_5pct_of_mag": true,
+    "development_effective_repair_observed": false
+  },
+  "ready_to_freeze_and_generate_formal_plan": false,
+  "report_sha256": "39e7d36eecb83e3585eb23aa7ac3aaeae606fc65035684705dc72a635531e410"
+}

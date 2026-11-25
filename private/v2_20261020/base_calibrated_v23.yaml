@@ -1,0 +1,18 @@
+extends: base_calibrated_v22.yaml
+
+policy:
+  # A fixed evaluation cap is reached before the 200 ms wall-clock limit on
+  # the experiment computer, making the initial local-search result invariant
+  # to small CPU scheduling fluctuations while retaining the hard time stop.
+  initial_local_search_max_evaluations: 96
+  repair_local_search_max_evaluations: 48
+
+  robust_objective:
+    initial_pose_box:
+      enabled: true
+      # All accepted development home reports lie within this box.  Initial
+      # route construction uses the configured home and the worst first-edge
+      # time over the box; execution and coverage confirmation still use the
+      # measured pose.
+      yaw_bound_deg: 1.0
+      pitch_bound_deg: 1.0

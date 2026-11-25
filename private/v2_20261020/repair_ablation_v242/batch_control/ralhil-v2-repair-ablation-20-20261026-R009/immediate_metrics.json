@@ -1,0 +1,22 @@
+{
+  "run_id": "hardware_20261021T013319_953810Z",
+  "plan_run_id": "ralhil-v2-repair-ablation-20-20261026-R009",
+  "method": "uac_robust_repair_v2",
+  "condition": "pause_repair_on",
+  "mission_duration_s": 82.29528189997654,
+  "t95_s": 30.99652889999561,
+  "t95_reached": true,
+  "t100_s": 37.997460999991745,
+  "t100_reached": true,
+  "uac_h_s": 3.7508822515503653,
+  "coverage_final": 1.0,
+  "mission_success": true,
+  "command_count": 2968,
+  "ack_failure_count": 0,
+  "command_error_count": 0,
+  "unusable_frame_count": 0,
+  "deadline_miss_rate": 0.0,
+  "fault_count": 1,
+  "replan_count": 2,
+  "source_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_ablation_v242\\runs\\hardware_20261021T013319_953810Z"
+}

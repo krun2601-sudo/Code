@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-10-21T01:59:01.333088+00:00",
+  "plan_id": "ralhil-v2-repair-ablation-20-20261026",
+  "planned_runs": 20,
+  "accepted_runs": 20,
+  "rejected_or_missing": 1,
+  "bootstrap_samples": 100000,
+  "uac_on_minus_off_s": {
+    "n": 10,
+    "median": -1.7798913768286126,
+    "bootstrap_95ci": [
+      -2.3184641229272556,
+      -1.6504072562365024
+    ],
+    "one_sided_exact_sign_p": 0.0009765625
+  },
+  "t100_on_over_off": {
+    "n": 10,
+    "median": 1.0032935552881952,
+    "bootstrap_95ci": [
+      0.9971772722622955,
+      1.0066680944296924
+    ],
+    "noninferiority_margin": 1.05
+  },
+  "gates": {
+    "complete_10_pairs": false,
+    "same_paused_device_within_every_pair": true,
+    "same_initial_plan_signature_within_every_pair": true,
+    "repair_on_uac_superior": true,
+    "repair_on_t100_noninferior_5pct": true,
+    "repair_mechanism_observed_in_every_pair": true
+  },
+  "repair_ablation_passed": false,
+  "inference_note": "This independently registered follow-up isolates online repair; it does not replace or alter the original 50-run confirmatory results.",
+  "report_sha256": "2705fe602f98053b8b954c83908d6b520b7fdc9dbef334b5d853b2781315802d"
+}

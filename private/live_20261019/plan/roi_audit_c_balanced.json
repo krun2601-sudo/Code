@@ -1,0 +1,131 @@
+{
+  "schema": "ral-hil-confirmatory-workload-audit-v1",
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261019\\confirmatory_base.yaml",
+  "roi_override": {
+    "x": [
+      112.0,
+      128.0
+    ],
+    "y": [
+      -6.0,
+      6.0
+    ],
+    "z": [
+      54.0,
+      66.0
+    ]
+  },
+  "generated_utc_s": 1792405652.2675667,
+  "deadline_rule": "ceil(max_method_device_upper_workload * safety_factor / round_to_s) * round_to_s",
+  "safety_factor": 1.5,
+  "round_to_s": 30.0,
+  "maximum_predicted_upper_makespan_s": 44.544658543203695,
+  "frozen_horizon_s": 90.0,
+  "methods": [
+    {
+      "method": "raster",
+      "evaluation_cell_count": 384,
+      "reachable_count": 384,
+      "candidate_count": 502,
+      "planner_chunks": 1,
+      "offline_planning_ms": 2.958200013381429,
+      "task_count_by_device": {
+        "zr10_25": 1,
+        "zr10_26": 1,
+        "zr10_27": 1,
+        "zr10_28": 2
+      },
+      "upper_workload_s_by_device": {
+        "zr10_25": 22.291356754564767,
+        "zr10_26": 22.26829480765112,
+        "zr10_27": 23.14756224584716,
+        "zr10_28": 44.544658543203695
+      },
+      "predicted_upper_makespan_s": 44.544658543203695
+    },
+    {
+      "method": "mag",
+      "evaluation_cell_count": 384,
+      "reachable_count": 384,
+      "candidate_count": 502,
+      "planner_chunks": 1,
+      "offline_planning_ms": 7.309699998586439,
+      "task_count_by_device": {
+        "zr10_25": 2,
+        "zr10_26": 1,
+        "zr10_27": 0,
+        "zr10_28": 0
+      },
+      "upper_workload_s_by_device": {
+        "zr10_25": 43.74392896688076,
+        "zr10_26": 22.26256879773978,
+        "zr10_27": 0.0,
+        "zr10_28": 0.0
+      },
+      "predicted_upper_makespan_s": 43.74392896688076
+    },
+    {
+      "method": "open_loop_cml",
+      "evaluation_cell_count": 384,
+      "reachable_count": 384,
+      "candidate_count": 502,
+      "planner_chunks": 1,
+      "offline_planning_ms": 9.762500005308539,
+      "task_count_by_device": {
+        "zr10_25": 1,
+        "zr10_26": 1,
+        "zr10_27": 1,
+        "zr10_28": 0
+      },
+      "upper_workload_s_by_device": {
+        "zr10_25": 22.013654962856553,
+        "zr10_26": 22.504599635105773,
+        "zr10_27": 22.6958832206963,
+        "zr10_28": 0.0
+      },
+      "predicted_upper_makespan_s": 22.6958832206963
+    },
+    {
+      "method": "measured_static",
+      "evaluation_cell_count": 384,
+      "reachable_count": 384,
+      "candidate_count": 502,
+      "planner_chunks": 1,
+      "offline_planning_ms": 7.673999993130565,
+      "task_count_by_device": {
+        "zr10_25": 1,
+        "zr10_26": 1,
+        "zr10_27": 0,
+        "zr10_28": 1
+      },
+      "upper_workload_s_by_device": {
+        "zr10_25": 22.262003978599996,
+        "zr10_26": 22.224989015091626,
+        "zr10_27": 0.0,
+        "zr10_28": 22.23388070878163
+      },
+      "predicted_upper_makespan_s": 22.262003978599996
+    },
+    {
+      "method": "full_eacml",
+      "evaluation_cell_count": 384,
+      "reachable_count": 384,
+      "candidate_count": 502,
+      "planner_chunks": 1,
+      "offline_planning_ms": 8.121599996229634,
+      "task_count_by_device": {
+        "zr10_25": 1,
+        "zr10_26": 1,
+        "zr10_27": 0,
+        "zr10_28": 1
+      },
+      "upper_workload_s_by_device": {
+        "zr10_25": 22.262003978599996,
+        "zr10_26": 22.224989015091626,
+        "zr10_27": 0.0,
+        "zr10_28": 22.23388070878163
+      },
+      "predicted_upper_makespan_s": 22.262003978599996
+    }
+  ]
+}

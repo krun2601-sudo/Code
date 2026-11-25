@@ -1,0 +1,29 @@
+extends: D:\Desktop\Tasks\航天会议\效能评估\work\ral_hil_stage1\.pytest_tmp\v243_freeze_20261021\test_development_plan_generato0\base.yaml
+system:
+  duration_s: 63.0
+policy:
+  method: uac_robust_repair_v2
+  execution_confirmation:
+    measured_pose_projection: true
+  robust_fov:
+    enforce_for_all_methods: true
+  robust_objective:
+    horizon_s: 60.0
+    complete_mag_reference: true
+  experiment:
+    protocol_version: ral-hil-2-development
+    design_id: v2-development-six-run-gate
+    plan_id: ralhil-v2-dev6-20261020
+    plan_run_id: ralhil-v2-dev6-20261020-R006
+    run_index: 6
+    block: 1
+    pair_id: B01-repeatability
+    method: uac_robust_repair_v2
+    condition: repeatability
+    instance_seed: 0
+    injection_seed: 0
+    solver_seed: 0
+    horizon_s: 60.0
+  fault_injection:
+    kind: none
+    enabled: false

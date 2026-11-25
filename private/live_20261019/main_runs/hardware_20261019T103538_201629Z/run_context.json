@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-19T10:35:38.159984+00:00",
+  "motion_or_network_performed": false,
+  "operator_arm_authorization": true,
+  "operator_arm_authorization_basis": "explicit_user_request",
+  "plan_file_sha256": "cec7961acf495a8116506b36c184e6f6963aab6310a4070ec3cf19323c92dd99",
+  "preflight_file_sha256": "634cc3f20d4ff52c4e2740d2306ec9c7f7861e815ba228470319dbb2534c4db4",
+  "preflight_report_sha256": "c65cb9292088982f6952f583b35c64adab332f4e9bbbd17637b93c07b7754cf7",
+  "preflight_summary": {
+    "ready_to_move": true,
+    "phase": "experiment",
+    "static_pass": true,
+    "live_pass": true,
+    "config_sha256": "615d540147a8540ecf53ec212c5718bf5a3cc1dd300e393f79c03be74c4efa49",
+    "hardware_config_sha256": "7e808a8d5d474fb4ea471e6664f8b3810529f00a15b1d1fc366c255492789684",
+    "coverage_task_observed": {
+      "evaluation_cell_count": 384,
+      "reachable_count": 384,
+      "reachable_ratio": 1.0,
+      "evaluation_grid": [
+        8,
+        12,
+        4
+      ],
+      "candidate_count": 824
+    }
+  },
+  "plan_row": {
+    "schema_version": 1,
+    "protocol_version": "ral-hil-1",
+    "design_id": "confirmatory-30-nominal-plus-12-pause-v1",
+    "plan_id": "ralhil42-20261019",
+    "plan_run_id": "ralhil42-20261019-R001",
+    "run_index": 1,
+    "block": 1,
+    "pair_id": "B01-nominal",
+    "within_pair_order": 1,
+    "method": "mag",
+    "condition": "nominal",
+    "instance_seed": 0,
+    "injection_seed": 0,
+    "solver_seed": 0,
+    "horizon_s": 120.0,
+    "condition_parameters_json": "{\"enabled\":false,\"kind\":\"none\"}",
+    "expected_config_sha256": "615d540147a8540ecf53ec212c5718bf5a3cc1dd300e393f79c03be74c4efa49",
+    "expected_hardware_config_sha256": "7e808a8d5d474fb4ea471e6664f8b3810529f00a15b1d1fc366c255492789684",
+    "expected_pair_frozen_sha256": "bd0ba54795ab1942b22ec3e9566fcbee9ac386d24d2fd0725a51e8763a1caa00",
+    "expected_evaluation_cell_count": 384,
+    "overlay_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261019\\plan\\overlays\\001_mag_nominal.yaml",
+    "cooldown_s": 10.0,
+    "status": "planned"
+  },
+  "context_sha256": "8ac56870dddb68175fa41088ccf8411ffeb29861448886c8d80061b828897037"
+}

@@ -1,0 +1,22 @@
+{
+  "run_id": "hardware_20261021T031058_959482Z",
+  "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R005",
+  "method": "uac_robust_repair_v2",
+  "condition": "pause_repair_on",
+  "mission_duration_s": 82.10050910001155,
+  "t95_s": 9.202202099986607,
+  "t95_reached": true,
+  "t100_s": 38.02180529999896,
+  "t100_reached": true,
+  "uac_h_s": 3.487118523963545,
+  "coverage_final": 1.0,
+  "mission_success": true,
+  "command_count": 2917,
+  "ack_failure_count": 0,
+  "command_error_count": 0,
+  "unusable_frame_count": 0,
+  "deadline_miss_rate": 0.0,
+  "fault_count": 1,
+  "replan_count": 2,
+  "source_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T031058_959482Z"
+}

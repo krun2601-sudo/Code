@@ -1,0 +1,207 @@
+{
+  "schema": "zr10-attitude-stability-v1",
+  "created_utc_s": 1792328804.7259789,
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\configs\\private_site_overlay.yaml",
+  "duration_s": 1.0,
+  "interval_s": 0.5,
+  "motion_commands_sent": false,
+  "devices": [
+    {
+      "device_id": "zr10_25",
+      "ip": "192.168.144.25",
+      "gimbal_mode": "LOCK",
+      "ok": true,
+      "samples": [
+        {
+          "t_s": 0.048538499999267515,
+          "yaw_raw_deg": -82.5,
+          "pitch_raw_deg": -179.9,
+          "yaw_deg": -82.5,
+          "pitch_deg": 0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.2
+        },
+        {
+          "t_s": 0.5740052000001015,
+          "yaw_raw_deg": -82.5,
+          "pitch_raw_deg": -179.9,
+          "yaw_deg": -82.5,
+          "pitch_deg": 0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.1
+        },
+        {
+          "t_s": 1.110265100000106,
+          "yaw_raw_deg": -82.5,
+          "pitch_raw_deg": -179.9,
+          "yaw_deg": -82.5,
+          "pitch_deg": 0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0
+        }
+      ],
+      "summary": {
+        "sample_count": 3,
+        "duration_s": 1.0617266000008385,
+        "yaw_start_deg": -82.5,
+        "yaw_end_deg": -82.5,
+        "yaw_range_deg": 0.0,
+        "yaw_slope_dps_all": 0.0,
+        "yaw_slope_dps_tail": 0.0,
+        "pitch_start_deg": 0.09999999999999432,
+        "pitch_end_deg": 0.09999999999999432,
+        "pitch_range_deg": 0.0,
+        "pitch_slope_dps_all": 0.0,
+        "pitch_slope_dps_tail": 0.0
+      }
+    },
+    {
+      "device_id": "zr10_26",
+      "ip": "192.168.144.26",
+      "gimbal_mode": "LOCK",
+      "ok": true,
+      "samples": [
+        {
+          "t_s": 0.053394400001707254,
+          "yaw_raw_deg": -35.5,
+          "pitch_raw_deg": -179.9,
+          "yaw_deg": -35.5,
+          "pitch_deg": 0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.1
+        },
+        {
+          "t_s": 0.5727044999985083,
+          "yaw_raw_deg": -35.3,
+          "pitch_raw_deg": 179.9,
+          "yaw_deg": -35.3,
+          "pitch_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.1
+        },
+        {
+          "t_s": 1.0963540999982797,
+          "yaw_raw_deg": -35.5,
+          "pitch_raw_deg": -179.9,
+          "yaw_deg": -35.5,
+          "pitch_deg": 0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0
+        }
+      ],
+      "summary": {
+        "sample_count": 3,
+        "duration_s": 1.0429596999965725,
+        "yaw_start_deg": -35.5,
+        "yaw_end_deg": -35.5,
+        "yaw_range_deg": 0.20000000000000284,
+        "yaw_slope_dps_all": -0.0005319133228866626,
+        "yaw_slope_dps_tail": -0.0005319133228866626,
+        "pitch_start_deg": 0.09999999999999432,
+        "pitch_end_deg": 0.09999999999999432,
+        "pitch_range_deg": 0.19999999999998863,
+        "pitch_slope_dps_all": 0.000531913322886631,
+        "pitch_slope_dps_tail": 0.000531913322886631
+      }
+    },
+    {
+      "device_id": "zr10_27",
+      "ip": "192.168.144.27",
+      "gimbal_mode": "LOCK",
+      "ok": true,
+      "samples": [
+        {
+          "t_s": 0.05346419999841601,
+          "yaw_raw_deg": 12.2,
+          "pitch_raw_deg": 179.9,
+          "yaw_deg": 12.2,
+          "pitch_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0
+        },
+        {
+          "t_s": 0.5740239999977348,
+          "yaw_raw_deg": 12.2,
+          "pitch_raw_deg": 179.9,
+          "yaw_deg": 12.2,
+          "pitch_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.2
+        },
+        {
+          "t_s": 1.0921937999992224,
+          "yaw_raw_deg": 12.2,
+          "pitch_raw_deg": 179.9,
+          "yaw_deg": 12.2,
+          "pitch_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.3
+        }
+      ],
+      "summary": {
+        "sample_count": 3,
+        "duration_s": 1.0387296000008064,
+        "yaw_start_deg": 12.2,
+        "yaw_end_deg": 12.2,
+        "yaw_range_deg": 0.0,
+        "yaw_slope_dps_all": -3.65565040061471e-31,
+        "yaw_slope_dps_tail": -3.65565040061471e-31,
+        "pitch_start_deg": -0.09999999999999432,
+        "pitch_end_deg": -0.09999999999999432,
+        "pitch_range_deg": 0.0,
+        "pitch_slope_dps_all": 0.0,
+        "pitch_slope_dps_tail": 0.0
+      }
+    },
+    {
+      "device_id": "zr10_28",
+      "ip": "192.168.144.28",
+      "gimbal_mode": "LOCK",
+      "ok": true,
+      "samples": [
+        {
+          "t_s": 0.04152879999674042,
+          "yaw_raw_deg": -63.9,
+          "pitch_raw_deg": 179.9,
+          "yaw_deg": -63.9,
+          "pitch_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0
+        },
+        {
+          "t_s": 0.5810036999973818,
+          "yaw_raw_deg": -64.1,
+          "pitch_raw_deg": 179.9,
+          "yaw_deg": -64.1,
+          "pitch_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": 0.0
+        },
+        {
+          "t_s": 1.1218684999985271,
+          "yaw_raw_deg": -64.1,
+          "pitch_raw_deg": 179.9,
+          "yaw_deg": -64.1,
+          "pitch_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.2
+        }
+      ],
+      "summary": {
+        "sample_count": 3,
+        "duration_s": 1.0803397000017867,
+        "yaw_start_deg": -63.9,
+        "yaw_end_deg": -64.1,
+        "yaw_range_deg": 0.19999999999999574,
+        "yaw_slope_dps_all": -0.1850474627403834,
+        "yaw_slope_dps_tail": -0.1850474627403834,
+        "pitch_start_deg": -0.09999999999999432,
+        "pitch_end_deg": -0.09999999999999432,
+        "pitch_range_deg": 0.0,
+        "pitch_slope_dps_all": 0.0,
+        "pitch_slope_dps_tail": 0.0
+      }
+    }
+  ],
+  "pass": true
+}

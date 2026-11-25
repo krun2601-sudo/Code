@@ -1,0 +1,336 @@
+{
+  "schema": "zr10-safe-stop-all-v1",
+  "created_utc_s": 1792328675.8462703,
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\configs\\private_site_overlay.yaml",
+  "nonzero_motion_commands_sent": false,
+  "zero_velocity_stop_requested": true,
+  "lock_mode_requested": true,
+  "stop_acknowledged": {
+    "zr10_26": true,
+    "zr10_25": true,
+    "zr10_28": true,
+    "zr10_27": true
+  },
+  "lock_mode_sent": {
+    "zr10_26": true,
+    "zr10_25": true,
+    "zr10_28": true,
+    "zr10_27": true
+  },
+  "snapshots_before_close": {
+    "zr10_25": {
+      "device_id": "zr10_25",
+      "t": 30631.0631055,
+      "yaw_deg": -72.6,
+      "pitch_deg": 0.09999999999999432,
+      "roll_deg": 0.0,
+      "zoom": 10.0,
+      "yaw_rate_dps": -0.1,
+      "pitch_rate_dps": 0.0,
+      "connected": true,
+      "sequence": 22,
+      "source": "stream",
+      "raw": {
+        "yaw_deg": -72.6,
+        "pitch_deg": -179.9,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": -0.1,
+        "pitch_rate_dps": 0.0,
+        "roll_rate_dps": 0.0,
+        "timestamp_kind": "host_receive_estimate",
+        "received_utc_s": 1792328675.7211635,
+        "zoom_known": true,
+        "zoom_t": 30630.1754374,
+        "zoom_stable": true,
+        "sink_error": ""
+      }
+    },
+    "zr10_26": {
+      "device_id": "zr10_26",
+      "t": 30631.0524844,
+      "yaw_deg": -32.2,
+      "pitch_deg": 0.09999999999999432,
+      "roll_deg": 0.0,
+      "zoom": 10.0,
+      "yaw_rate_dps": 0.1,
+      "pitch_rate_dps": -0.1,
+      "connected": true,
+      "sequence": 22,
+      "source": "stream",
+      "raw": {
+        "yaw_deg": -32.2,
+        "pitch_deg": -179.9,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": 0.1,
+        "pitch_rate_dps": -0.1,
+        "roll_rate_dps": 0.0,
+        "timestamp_kind": "host_receive_estimate",
+        "received_utc_s": 1792328675.7105403,
+        "zoom_known": true,
+        "zoom_t": 30630.1202826,
+        "zoom_stable": true,
+        "sink_error": ""
+      }
+    },
+    "zr10_27": {
+      "device_id": "zr10_27",
+      "t": 30631.0673509,
+      "yaw_deg": 13.1,
+      "pitch_deg": -0.09999999999999432,
+      "roll_deg": 0.0,
+      "zoom": 10.0,
+      "yaw_rate_dps": 0.0,
+      "pitch_rate_dps": 0.4,
+      "connected": true,
+      "sequence": 22,
+      "source": "stream",
+      "raw": {
+        "yaw_deg": 13.1,
+        "pitch_deg": 179.9,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": 0.0,
+        "pitch_rate_dps": 0.4,
+        "roll_rate_dps": 0.0,
+        "timestamp_kind": "host_receive_estimate",
+        "received_utc_s": 1792328675.7254097,
+        "zoom_known": true,
+        "zoom_t": 30630.1206293,
+        "zoom_stable": true,
+        "sink_error": ""
+      }
+    },
+    "zr10_28": {
+      "device_id": "zr10_28",
+      "t": 30631.0966711,
+      "yaw_deg": -54.7,
+      "pitch_deg": -0.09999999999999432,
+      "roll_deg": 0.0,
+      "zoom": 10.0,
+      "yaw_rate_dps": 0.0,
+      "pitch_rate_dps": 0.0,
+      "connected": true,
+      "sequence": 22,
+      "source": "stream",
+      "raw": {
+        "yaw_deg": -54.7,
+        "pitch_deg": 179.9,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": 0.0,
+        "pitch_rate_dps": 0.0,
+        "roll_rate_dps": 0.0,
+        "timestamp_kind": "host_receive_estimate",
+        "received_utc_s": 1792328675.754737,
+        "zoom_known": true,
+        "zoom_t": 30630.1261436,
+        "zoom_stable": true,
+        "sink_error": ""
+      }
+    }
+  },
+  "events": [
+    {
+      "kind": "connected",
+      "device_id": "zr10_27",
+      "t": 30628.9362133,
+      "ip": "192.168.144.27",
+      "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)"
+    },
+    {
+      "kind": "connected",
+      "device_id": "zr10_26",
+      "t": 30628.9385243,
+      "ip": "192.168.144.26",
+      "firmware": "FirmwareVersion(camera=1845494536, gimbal=1795163138, zoom=1828717059)"
+    },
+    {
+      "kind": "stop",
+      "device_id": "zr10_27",
+      "t": 30628.9442883,
+      "reason": "connect",
+      "ack": true,
+      "error": ""
+    },
+    {
+      "kind": "mode_sent",
+      "device_id": "zr10_27",
+      "t": 30628.9444171,
+      "mode": "lock",
+      "ack": false
+    },
+    {
+      "kind": "stop",
+      "device_id": "zr10_26",
+      "t": 30628.9468791,
+      "reason": "connect",
+      "ack": true,
+      "error": ""
+    },
+    {
+      "kind": "mode_sent",
+      "device_id": "zr10_26",
+      "t": 30628.9470168,
+      "mode": "lock",
+      "ack": false
+    },
+    {
+      "kind": "connected",
+      "device_id": "zr10_28",
+      "t": 30628.9493933,
+      "ip": "192.168.144.28",
+      "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)"
+    },
+    {
+      "kind": "connected",
+      "device_id": "zr10_25",
+      "t": 30628.9529352,
+      "ip": "192.168.144.25",
+      "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)"
+    },
+    {
+      "kind": "stop",
+      "device_id": "zr10_28",
+      "t": 30628.9536337,
+      "reason": "connect",
+      "ack": true,
+      "error": ""
+    },
+    {
+      "kind": "mode_sent",
+      "device_id": "zr10_28",
+      "t": 30628.9537727,
+      "mode": "lock",
+      "ack": false
+    },
+    {
+      "kind": "stop",
+      "device_id": "zr10_25",
+      "t": 30628.9572097,
+      "reason": "connect",
+      "ack": true,
+      "error": ""
+    },
+    {
+      "kind": "mode_sent",
+      "device_id": "zr10_25",
+      "t": 30628.9573736,
+      "mode": "lock",
+      "ack": false
+    },
+    {
+      "kind": "zoom_telemetry",
+      "device_id": "zr10_26",
+      "t": 30629.0361119,
+      "zoom": 10.0
+    },
+    {
+      "kind": "zoom_telemetry",
+      "device_id": "zr10_27",
+      "t": 30629.0380105,
+      "zoom": 10.0
+    },
+    {
+      "kind": "zoom_telemetry",
+      "device_id": "zr10_28",
+      "t": 30629.0462948,
+      "zoom": 10.0
+    },
+    {
+      "kind": "zoom_telemetry",
+      "device_id": "zr10_25",
+      "t": 30629.053053,
+      "zoom": 10.0
+    },
+    {
+      "kind": "stop",
+      "device_id": "zr10_28",
+      "t": 30629.1281812,
+      "reason": "commissioning_zero_velocity_lock",
+      "ack": true,
+      "error": ""
+    },
+    {
+      "kind": "stop",
+      "device_id": "zr10_27",
+      "t": 30629.129103,
+      "reason": "commissioning_zero_velocity_lock",
+      "ack": true,
+      "error": ""
+    },
+    {
+      "kind": "stop",
+      "device_id": "zr10_25",
+      "t": 30629.1293295,
+      "reason": "commissioning_zero_velocity_lock",
+      "ack": true,
+      "error": ""
+    },
+    {
+      "kind": "stop",
+      "device_id": "zr10_26",
+      "t": 30629.1325648,
+      "reason": "commissioning_zero_velocity_lock",
+      "ack": true,
+      "error": ""
+    },
+    {
+      "kind": "zoom_telemetry",
+      "device_id": "zr10_26",
+      "t": 30630.1202982,
+      "zoom": 10.0
+    },
+    {
+      "kind": "zoom_telemetry",
+      "device_id": "zr10_27",
+      "t": 30630.120645,
+      "zoom": 10.0
+    },
+    {
+      "kind": "zoom_telemetry",
+      "device_id": "zr10_28",
+      "t": 30630.1261649,
+      "zoom": 10.0
+    },
+    {
+      "kind": "zoom_telemetry",
+      "device_id": "zr10_25",
+      "t": 30630.175456,
+      "zoom": 10.0
+    },
+    {
+      "kind": "stop",
+      "device_id": "zr10_25",
+      "t": 30631.151413,
+      "reason": "disconnect",
+      "ack": true,
+      "error": ""
+    },
+    {
+      "kind": "stop",
+      "device_id": "zr10_26",
+      "t": 30631.1519795,
+      "reason": "disconnect",
+      "ack": true,
+      "error": ""
+    },
+    {
+      "kind": "stop",
+      "device_id": "zr10_28",
+      "t": 30631.1573008,
+      "reason": "disconnect",
+      "ack": true,
+      "error": ""
+    },
+    {
+      "kind": "stop",
+      "device_id": "zr10_27",
+      "t": 30631.1589692,
+      "reason": "disconnect",
+      "ack": true,
+      "error": ""
+    }
+  ],
+  "command_results": [],
+  "error": null,
+  "elapsed_s": 2.3513751000027696,
+  "pass": true
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "zr10-camera-only-reboot-v1",
+  "created_utc_s": 1792299734.2542903,
+  "device_id": "zr10_26",
+  "ip": "192.168.144.26",
+  "apply": true,
+  "camera_reboot_requested": true,
+  "gimbal_reboot_requested": false,
+  "gimbal_motion_commands_sent": false,
+  "before": {
+    "attitude_raw": {
+      "yaw_deg": -92.2,
+      "pitch_deg": -179.9,
+      "roll_deg": 0.0,
+      "yaw_rate_dps": 0.0,
+      "pitch_rate_dps": 0.0,
+      "roll_rate_dps": 0.0
+    },
+    "zoom": 10.0,
+    "main_stream_encoding": {
+      "stream_type": "MAIN",
+      "enc_type": "H265",
+      "resolution_w": 1920,
+      "resolution_h": 1080,
+      "bitrate_kbps": 3584,
+      "frame_rate": 30
+    }
+  },
+  "reboot_ack": {
+    "camera": true,
+    "gimbal": false
+  },
+  "ok": false,
+  "pass_": false,
+  "error": "TimeoutError: camera module did not recover before deadline"
+}

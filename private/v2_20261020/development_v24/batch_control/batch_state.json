@@ -1,0 +1,70 @@
+{
+  "schema": "zr10-confirmatory-batch-v1",
+  "plan_id": "ralhil-v2-dev6-20261024",
+  "created_utc": "2026-10-20T12:31:14.526665+00:00",
+  "updated_utc": "2026-10-20T12:35:04.770717+00:00",
+  "runs": {
+    "ralhil-v2-dev6-20261024-R001": {
+      "status": "invalidated_block_retry",
+      "started_utc": "2026-10-20T12:31:14.527524+00:00",
+      "run_index": 1,
+      "method": "measured_static",
+      "condition": "nominal",
+      "finished_utc": "2026-10-20T12:32:52.849730+00:00",
+      "elapsed_s": 98.31882810001844,
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\development_v24\\runs\\hardware_20261020T123124_177932Z",
+      "metrics": {
+        "run_id": "hardware_20261020T123124_177932Z",
+        "plan_run_id": "ralhil-v2-dev6-20261024-R001",
+        "method": "measured_static",
+        "condition": "nominal",
+        "mission_duration_s": 81.58980240000528,
+        "t95_s": 24.50212429999374,
+        "t95_reached": true,
+        "t100_s": 24.59753499997896,
+        "t100_reached": true,
+        "uac_h_s": 4.046794544780824,
+        "coverage_final": 1.0,
+        "mission_success": true,
+        "command_count": 3171,
+        "ack_failure_count": 0,
+        "command_error_count": 0,
+        "unusable_frame_count": 0,
+        "deadline_miss_rate": 0.0,
+        "fault_count": 0,
+        "replan_count": 0,
+        "source_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\development_v24\\runs\\hardware_20261020T123124_177932Z"
+      },
+      "invalidated_utc": "2026-10-20T12:34:53.399634+00:00",
+      "invalidation_reason": "another run in block 1 failed; full block must be repeated"
+    },
+    "ralhil-v2-dev6-20261024-R002": {
+      "status": "failed",
+      "started_utc": "2026-10-20T12:33:02.860154+00:00",
+      "run_index": 2,
+      "method": "uac_robust_repair_v2",
+      "condition": "nominal",
+      "finished_utc": "2026-10-20T12:34:53.399651+00:00",
+      "error": "RejectRun: V2 coverage event violates frame/pose synchronization bound",
+      "elapsed_s": 110.54075149999699
+    }
+  },
+  "block_failure_count": {
+    "1": 1
+  },
+  "excluded_run_dirs": {
+    "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\development_v24\\runs\\hardware_20261020T123324_831439Z": "failed gate in block 1: RejectRun: V2 coverage event violates frame/pose synchronization bound",
+    "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\development_v24\\runs\\hardware_20261020T123124_177932Z": "another run in block 1 failed; full block must be repeated"
+  },
+  "plan_file": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\development_v24\\development_plan.json",
+  "run_root": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\development_v24\\runs",
+  "selected_start_index": 1,
+  "selected_max_runs": null,
+  "final_home": {
+    "attempted": true,
+    "pass": true,
+    "report": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\development_v24\\batch_control\\final_home.json"
+  },
+  "batch_error": "RejectRun: V2 coverage event violates frame/pose synchronization bound",
+  "accepted_count": 0
+}

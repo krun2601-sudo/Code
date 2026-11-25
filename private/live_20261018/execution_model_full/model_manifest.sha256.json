@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "plan_sha256": "0d5909c2b93cb6c3dbcee258ab0b1baae86d5673914a4e0a5134af10570b7edc",
+  "measured_input_sha256": null,
+  "artifacts": {
+    "execution_model.json": "276d108fa3a26d2776df2dc8c25fbde40f420c9ef4a2d7d3c6706cbb0c0b1240",
+    "predictions.csv": "6730cede564b6b4ac93c785257e868faa435411505bc77d81f876f4545dcd28c",
+    "model_summary.csv": "90e3cd2a4e35b6c5d1915c67a67eb41eee97711f9bb9fd85c3702828a00735ff",
+    "rejected_transitions.csv": "9a2e600333b3b5e7c2c4a75a2d7ffd0abd70d3075c75051653bc6c7204585566"
+  }
+}

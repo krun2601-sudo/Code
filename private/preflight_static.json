@@ -1,0 +1,370 @@
+{
+  "schema_version": 1,
+  "protocol_version": "ral-hil-1",
+  "generated_utc": "2026-10-17T09:29:52.521024+00:00",
+  "mode": "read_only",
+  "network_or_motion_performed": false,
+  "phase": "commissioning",
+  "config_sha256": "99c2066f830152a0ebad6e4d6b21748a8dd00019c57af8d3526d73dbe5143460",
+  "hardware_config_sha256": "be9d6fa35e362f3990ca9990166c2f13d126a31e35508d807bd6b047d21dc277",
+  "top_level_yaml_sha256": "eeaddf0824db79cd746269e1947480c1cb2591174f61520f04da0e41381656da",
+  "kit_reference": {
+    "kit_root_present": true,
+    "platform_snapshot_sha256": "41522bcee1fbc5360b2674df31e96ca2fa5d46b970fffc0170f6cd29e9e84d64",
+    "platform_version": "4.0.0",
+    "source_file_count": 36,
+    "source_hash_mismatches": []
+  },
+  "coverage_task_configuration": {
+    "shape": [
+      8,
+      12,
+      4
+    ],
+    "computed_cell_count": 384,
+    "declared_cell_count": 384,
+    "shape_valid": true,
+    "declared_count_matches": true,
+    "role": "evaluation_cells",
+    "construction": "uniform_roi_cell_centers",
+    "frozen_within_run": true
+  },
+  "coverage_task_observed": null,
+  "static_pass": true,
+  "live_evaluated": false,
+  "live_pass": false,
+  "ready_to_move": false,
+  "findings": [
+    {
+      "check": "four_enabled_devices",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "enabled=4; required=4"
+    },
+    {
+      "check": "unique_nonempty_device_ids",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "ids=['zr10_25', 'zr10_26', 'zr10_27', 'zr10_28']"
+    },
+    {
+      "check": "device_endpoint_configured",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "configured=True; value intentionally not echoed"
+    },
+    {
+      "check": "video_endpoint_configured",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "configured=True; value intentionally not echoed"
+    },
+    {
+      "check": "velocity_p",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "mode='velocity_p'"
+    },
+    {
+      "check": "ack_enabled",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "use_ack=True"
+    },
+    {
+      "check": "calibration_flag",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "flag only; it is not independent metrology evidence"
+    },
+    {
+      "check": "configured_image_size",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "image_size=[1920, 1080]"
+    },
+    {
+      "check": "fixed_zoom_in_limits",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "fixed_zoom=10.0; limits=[1, 10]"
+    },
+    {
+      "check": "device_endpoint_configured",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "configured=True; value intentionally not echoed"
+    },
+    {
+      "check": "video_endpoint_configured",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "configured=True; value intentionally not echoed"
+    },
+    {
+      "check": "velocity_p",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "mode='velocity_p'"
+    },
+    {
+      "check": "ack_enabled",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "use_ack=True"
+    },
+    {
+      "check": "calibration_flag",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "flag only; it is not independent metrology evidence"
+    },
+    {
+      "check": "configured_image_size",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "image_size=[1920, 1080]"
+    },
+    {
+      "check": "fixed_zoom_in_limits",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "fixed_zoom=10.0; limits=[1, 10]"
+    },
+    {
+      "check": "device_endpoint_configured",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "configured=True; value intentionally not echoed"
+    },
+    {
+      "check": "video_endpoint_configured",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "configured=True; value intentionally not echoed"
+    },
+    {
+      "check": "velocity_p",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "mode='velocity_p'"
+    },
+    {
+      "check": "ack_enabled",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "use_ack=True"
+    },
+    {
+      "check": "calibration_flag",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "flag only; it is not independent metrology evidence"
+    },
+    {
+      "check": "configured_image_size",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "image_size=[1920, 1080]"
+    },
+    {
+      "check": "fixed_zoom_in_limits",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "fixed_zoom=10.0; limits=[1, 10]"
+    },
+    {
+      "check": "device_endpoint_configured",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "configured=True; value intentionally not echoed"
+    },
+    {
+      "check": "video_endpoint_configured",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "configured=True; value intentionally not echoed"
+    },
+    {
+      "check": "velocity_p",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "mode='velocity_p'"
+    },
+    {
+      "check": "ack_enabled",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "use_ack=True"
+    },
+    {
+      "check": "calibration_flag",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "flag only; it is not independent metrology evidence"
+    },
+    {
+      "check": "configured_image_size",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "image_size=[1920, 1080]"
+    },
+    {
+      "check": "fixed_zoom_in_limits",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "fixed_zoom=10.0; limits=[1, 10]"
+    },
+    {
+      "check": "per_device_intrinsics_distinctness",
+      "status": "WARN",
+      "device_id": "",
+      "detail": "all four intrinsic tables are byte-identical; verify each device independently"
+    },
+    {
+      "check": "distortion_coefficients",
+      "status": "WARN",
+      "device_id": "",
+      "detail": "all configured distortion coefficients are zero; retain only if calibration supports this"
+    },
+    {
+      "check": "video_latency",
+      "status": "WARN",
+      "device_id": "",
+      "detail": "all configured video latencies are zero; capture_t is uncorrected host timing"
+    },
+    {
+      "check": "evaluation_grid_schema",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "shape=[8, 12, 4]; computed_M=384; declared_M=384; role='evaluation_cells'; frozen_within_run=True"
+    },
+    {
+      "check": "evaluation_grid_semantics",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "evaluation_grid is the frozen task-cell set; candidate viewpoints are policy-defined separately"
+    },
+    {
+      "check": "evaluation_cell_count",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "configured_M=384; preregistered_M=384"
+    },
+    {
+      "check": "deprecated_scan_grid_alias",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "scan_grid=[8, 12, 4]; evaluation_grid.shape=[8, 12, 4]; alias_only=true"
+    },
+    {
+      "check": "execution_confirmation.pose_tolerance_deg",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=1.0"
+    },
+    {
+      "check": "execution_confirmation.max_rate_dps",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=0.8"
+    },
+    {
+      "check": "execution_confirmation.settle_hold_s",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=0.35"
+    },
+    {
+      "check": "execution_confirmation.min_dwell_s",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=0.8"
+    },
+    {
+      "check": "execution_confirmation.distinct_frames",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=3"
+    },
+    {
+      "check": "execution_confirmation.frame_timeout_s",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=2.0"
+    },
+    {
+      "check": "execution_confirmation.transition_timeout_s",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=12.0"
+    },
+    {
+      "check": "execution_confirmation.require_ack",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=True"
+    },
+    {
+      "check": "execution_confirmation.require_frame",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=True"
+    },
+    {
+      "check": "pose_only_fallback_disabled",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=False"
+    },
+    {
+      "check": "fixed_zoom_action_mask",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "enabled=['yaw_deg', 'pitch_deg']"
+    },
+    {
+      "check": "detector_disabled",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "type='none'"
+    },
+    {
+      "check": "video_context_required",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "requires_video=True"
+    },
+    {
+      "check": "dated_calibration_evidence",
+      "status": "WARN",
+      "device_id": "",
+      "detail": "flags={'station_pose_verified': False, 'per_device_intrinsics_verified': False, 'fixed_zoom_verified': False, 'video_latency_measured': False}; evidence_id='UNSET'"
+    },
+    {
+      "check": "kit_reference_version",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "platform_version='4.0.0'; required='4.0.0'"
+    },
+    {
+      "check": "kit_reference_source_hashes",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "checked=36; mismatches=[]"
+    },
+    {
+      "check": "direct_extends_yaml_hash",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "actual=cf499069d14c59fa79ce974f9d774bd648bffc29fadde4057509fe8a0e91e200; expected=cf499069d14c59fa79ce974f9d774bd648bffc29fadde4057509fe8a0e91e200"
+    },
+    {
+      "check": "live_snapshot",
+      "status": "NOT_EVALUATED",
+      "device_id": "",
+      "detail": "provide --snapshot or --run-dir; no device was contacted"
+    }
+  ],
+  "report_sha256": "e084ecaf144f546c95ba7cd3d4e684557e00e0ff27ae7576efccc7d0fc8695d3"
+}

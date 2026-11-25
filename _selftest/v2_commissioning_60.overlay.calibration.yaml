@@ -1,0 +1,59 @@
+extends: ../private/live_20261019/confirmatory_base.yaml
+policy:
+  method: commissioning
+  fault_injection:
+    kind: none
+    enabled: false
+  commissioning:
+    plan_path: D:\Desktop\Tasks\航天会议\效能评估\work\ral_hil_stage1\_selftest\v2_commissioning_60.json
+    commissioning_id: commission-20261020-60pd
+    run_group: calibration
+    transition_ids:
+    - commission-20261020-60pd:zr10_25:004
+    - commission-20261020-60pd:zr10_25:013
+    - commission-20261020-60pd:zr10_25:021
+    - commission-20261020-60pd:zr10_25:025
+    - commission-20261020-60pd:zr10_25:030
+    - commission-20261020-60pd:zr10_25:031
+    - commission-20261020-60pd:zr10_25:038
+    - commission-20261020-60pd:zr10_25:041
+    - commission-20261020-60pd:zr10_25:046
+    - commission-20261020-60pd:zr10_25:055
+    - commission-20261020-60pd:zr10_25:059
+    - commission-20261020-60pd:zr10_25:060
+    - commission-20261020-60pd:zr10_26:002
+    - commission-20261020-60pd:zr10_26:004
+    - commission-20261020-60pd:zr10_26:007
+    - commission-20261020-60pd:zr10_26:016
+    - commission-20261020-60pd:zr10_26:017
+    - commission-20261020-60pd:zr10_26:019
+    - commission-20261020-60pd:zr10_26:032
+    - commission-20261020-60pd:zr10_26:041
+    - commission-20261020-60pd:zr10_26:045
+    - commission-20261020-60pd:zr10_26:047
+    - commission-20261020-60pd:zr10_26:050
+    - commission-20261020-60pd:zr10_26:057
+    - commission-20261020-60pd:zr10_27:003
+    - commission-20261020-60pd:zr10_27:004
+    - commission-20261020-60pd:zr10_27:007
+    - commission-20261020-60pd:zr10_27:020
+    - commission-20261020-60pd:zr10_27:026
+    - commission-20261020-60pd:zr10_27:029
+    - commission-20261020-60pd:zr10_27:030
+    - commission-20261020-60pd:zr10_27:036
+    - commission-20261020-60pd:zr10_27:046
+    - commission-20261020-60pd:zr10_27:050
+    - commission-20261020-60pd:zr10_27:054
+    - commission-20261020-60pd:zr10_27:059
+    - commission-20261020-60pd:zr10_28:004
+    - commission-20261020-60pd:zr10_28:010
+    - commission-20261020-60pd:zr10_28:013
+    - commission-20261020-60pd:zr10_28:018
+    - commission-20261020-60pd:zr10_28:028
+    - commission-20261020-60pd:zr10_28:030
+    - commission-20261020-60pd:zr10_28:033
+    - commission-20261020-60pd:zr10_28:036
+    - commission-20261020-60pd:zr10_28:037
+    - commission-20261020-60pd:zr10_28:038
+    - commission-20261020-60pd:zr10_28:055
+    - commission-20261020-60pd:zr10_28:060

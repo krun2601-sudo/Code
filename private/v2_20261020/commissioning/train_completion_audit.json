@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "plan": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\commissioning\\commissioning_plan.json",
+  "plan_sha256": "3753457508b3cac4dd697ae46f9467ea71e34b1f28bb59fa64797abd4fd0da22",
+  "runs": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\commissioning\\runs",
+  "split": "train",
+  "planned": 144,
+  "completed": 144,
+  "remaining": 0,
+  "planned_by_device": {
+    "zr10_25": 36,
+    "zr10_26": 36,
+    "zr10_27": 36,
+    "zr10_28": 36
+  },
+  "completed_by_device": {
+    "zr10_25": 36,
+    "zr10_26": 36,
+    "zr10_27": 36,
+    "zr10_28": 36
+  },
+  "remaining_by_device": {},
+  "rejected_runs": [],
+  "output": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\commissioning\\commissioning.overlay.train.audit.yaml",
+  "output_sha256": "6643a82b0f49d41fb2fde6dcd5b28b942738e3658089b359cf43b30cc0fdbb3a"
+}

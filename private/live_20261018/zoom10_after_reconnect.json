@@ -1,0 +1,512 @@
+{
+  "schema": "zr10-fixed-zoom-v1",
+  "created_utc_s": 1792332787.8444958,
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261018\\commissioning_full_60pd.overlay.yaml",
+  "apply": true,
+  "target_zoom": 10.0,
+  "gimbal_motion_commands_sent": false,
+  "camera_encoding_commands_sent": false,
+  "devices": [
+    {
+      "device_id": "zr10_25",
+      "ip": "192.168.144.25",
+      "apply": true,
+      "target_zoom": 10.0,
+      "gimbal_motion_commands_sent": false,
+      "camera_encoding_commands_sent": false,
+      "lens_zoom_commands_sent": 1,
+      "before": {
+        "zoom": 1.0,
+        "attitude_raw": {
+          "yaw_deg": -0.8,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "planned_change": true,
+      "command_ack": "timeout_pending_readback",
+      "command_ack_detail": "TimeoutError: Timeout waiting for response to command 0x0F after 0.8s",
+      "after": {
+        "zoom": 10.0,
+        "attitude_raw": {
+          "yaw_deg": -1.0,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "readback_samples": [
+        {
+          "t_monotonic_s": 34743.9511606,
+          "zoom": 1.3
+        },
+        {
+          "t_monotonic_s": 34744.2506658,
+          "zoom": 1.4
+        },
+        {
+          "t_monotonic_s": 34744.551621,
+          "zoom": 1.5
+        },
+        {
+          "t_monotonic_s": 34744.8536041,
+          "zoom": 1.6
+        },
+        {
+          "t_monotonic_s": 34745.1702292,
+          "zoom": 1.8
+        },
+        {
+          "t_monotonic_s": 34745.4709686,
+          "zoom": 1.9
+        },
+        {
+          "t_monotonic_s": 34745.7903403,
+          "zoom": 2.2
+        },
+        {
+          "t_monotonic_s": 34746.0945517,
+          "zoom": 2.4
+        },
+        {
+          "t_monotonic_s": 34746.4167227,
+          "zoom": 2.6
+        },
+        {
+          "t_monotonic_s": 34746.7375155,
+          "zoom": 2.8
+        },
+        {
+          "t_monotonic_s": 34747.0522374,
+          "zoom": 3.2
+        },
+        {
+          "t_monotonic_s": 34747.3504068,
+          "zoom": 3.5
+        },
+        {
+          "t_monotonic_s": 34747.6509434,
+          "zoom": 3.8
+        },
+        {
+          "t_monotonic_s": 34747.9722947,
+          "zoom": 4.4
+        },
+        {
+          "t_monotonic_s": 34748.2702341,
+          "zoom": 4.8
+        },
+        {
+          "t_monotonic_s": 34748.5908092,
+          "zoom": 5.4
+        },
+        {
+          "t_monotonic_s": 34748.8944478,
+          "zoom": 5.9
+        },
+        {
+          "t_monotonic_s": 34749.2156249,
+          "zoom": 6.7
+        },
+        {
+          "t_monotonic_s": 34749.5333936,
+          "zoom": 7.5
+        },
+        {
+          "t_monotonic_s": 34749.8348109,
+          "zoom": 8.4
+        },
+        {
+          "t_monotonic_s": 34750.1501694,
+          "zoom": 10.0
+        }
+      ],
+      "verified": true,
+      "ok": true,
+      "elapsed_ms": 7444.795799994608
+    },
+    {
+      "device_id": "zr10_26",
+      "ip": "192.168.144.26",
+      "apply": true,
+      "target_zoom": 10.0,
+      "gimbal_motion_commands_sent": false,
+      "camera_encoding_commands_sent": false,
+      "lens_zoom_commands_sent": 1,
+      "before": {
+        "zoom": 1.0,
+        "attitude_raw": {
+          "yaw_deg": -0.7,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": -0.1
+        }
+      },
+      "planned_change": true,
+      "command_ack": "timeout_pending_readback",
+      "command_ack_detail": "TimeoutError: Timeout waiting for response to command 0x0F after 0.8s",
+      "after": {
+        "zoom": 10.0,
+        "attitude_raw": {
+          "yaw_deg": -0.7,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": -0.1,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "readback_samples": [
+        {
+          "t_monotonic_s": 34751.3597003,
+          "zoom": 1.5
+        },
+        {
+          "t_monotonic_s": 34751.6630706,
+          "zoom": 1.6
+        },
+        {
+          "t_monotonic_s": 34751.9592298,
+          "zoom": 1.7
+        },
+        {
+          "t_monotonic_s": 34752.2645668,
+          "zoom": 1.8
+        },
+        {
+          "t_monotonic_s": 34752.5794922,
+          "zoom": 2.0
+        },
+        {
+          "t_monotonic_s": 34752.8790645,
+          "zoom": 2.1
+        },
+        {
+          "t_monotonic_s": 34753.1989876,
+          "zoom": 2.4
+        },
+        {
+          "t_monotonic_s": 34753.5006967,
+          "zoom": 2.6
+        },
+        {
+          "t_monotonic_s": 34753.8007697,
+          "zoom": 2.8
+        },
+        {
+          "t_monotonic_s": 34754.1010074,
+          "zoom": 3.0
+        },
+        {
+          "t_monotonic_s": 34754.4201454,
+          "zoom": 3.4
+        },
+        {
+          "t_monotonic_s": 34754.7204754,
+          "zoom": 3.7
+        },
+        {
+          "t_monotonic_s": 34755.0400548,
+          "zoom": 4.0
+        },
+        {
+          "t_monotonic_s": 34755.3411048,
+          "zoom": 4.5
+        },
+        {
+          "t_monotonic_s": 34755.6598297,
+          "zoom": 5.0
+        },
+        {
+          "t_monotonic_s": 34755.9589384,
+          "zoom": 5.5
+        },
+        {
+          "t_monotonic_s": 34756.2590974,
+          "zoom": 6.2
+        },
+        {
+          "t_monotonic_s": 34756.5611098,
+          "zoom": 6.9
+        },
+        {
+          "t_monotonic_s": 34756.880103,
+          "zoom": 7.7
+        },
+        {
+          "t_monotonic_s": 34757.180801,
+          "zoom": 8.6
+        },
+        {
+          "t_monotonic_s": 34757.4996558,
+          "zoom": 9.8
+        },
+        {
+          "t_monotonic_s": 34757.8036168,
+          "zoom": 10.0
+        }
+      ],
+      "verified": true,
+      "ok": true,
+      "elapsed_ms": 7653.443999995943
+    },
+    {
+      "device_id": "zr10_27",
+      "ip": "192.168.144.27",
+      "apply": true,
+      "target_zoom": 10.0,
+      "gimbal_motion_commands_sent": false,
+      "camera_encoding_commands_sent": false,
+      "lens_zoom_commands_sent": 1,
+      "before": {
+        "zoom": 1.0,
+        "attitude_raw": {
+          "yaw_deg": -0.7,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.1
+        }
+      },
+      "planned_change": true,
+      "command_ack": "timeout_pending_readback",
+      "command_ack_detail": "TimeoutError: Timeout waiting for response to command 0x0F after 0.8s",
+      "after": {
+        "zoom": 10.0,
+        "attitude_raw": {
+          "yaw_deg": -0.8,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.1,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "readback_samples": [
+        {
+          "t_monotonic_s": 34758.9832732,
+          "zoom": 1.3
+        },
+        {
+          "t_monotonic_s": 34759.3036411,
+          "zoom": 1.4
+        },
+        {
+          "t_monotonic_s": 34759.604214,
+          "zoom": 1.5
+        },
+        {
+          "t_monotonic_s": 34759.9059309,
+          "zoom": 1.6
+        },
+        {
+          "t_monotonic_s": 34760.2219111,
+          "zoom": 1.8
+        },
+        {
+          "t_monotonic_s": 34760.5236508,
+          "zoom": 1.9
+        },
+        {
+          "t_monotonic_s": 34760.8420114,
+          "zoom": 2.2
+        },
+        {
+          "t_monotonic_s": 34761.1444371,
+          "zoom": 2.4
+        },
+        {
+          "t_monotonic_s": 34761.4437245,
+          "zoom": 2.6
+        },
+        {
+          "t_monotonic_s": 34761.7435902,
+          "zoom": 2.8
+        },
+        {
+          "t_monotonic_s": 34762.062757,
+          "zoom": 3.2
+        },
+        {
+          "t_monotonic_s": 34762.3637933,
+          "zoom": 3.5
+        },
+        {
+          "t_monotonic_s": 34762.6823422,
+          "zoom": 3.8
+        },
+        {
+          "t_monotonic_s": 34762.9820179,
+          "zoom": 4.3
+        },
+        {
+          "t_monotonic_s": 34763.3028255,
+          "zoom": 4.8
+        },
+        {
+          "t_monotonic_s": 34763.601977,
+          "zoom": 5.4
+        },
+        {
+          "t_monotonic_s": 34763.9033364,
+          "zoom": 5.9
+        },
+        {
+          "t_monotonic_s": 34764.2057586,
+          "zoom": 6.6
+        },
+        {
+          "t_monotonic_s": 34764.5224266,
+          "zoom": 7.4
+        },
+        {
+          "t_monotonic_s": 34764.8245853,
+          "zoom": 8.3
+        },
+        {
+          "t_monotonic_s": 34765.14249,
+          "zoom": 9.5
+        },
+        {
+          "t_monotonic_s": 34765.4430727,
+          "zoom": 10.0
+        }
+      ],
+      "verified": true,
+      "ok": true,
+      "elapsed_ms": 7639.46130000113
+    },
+    {
+      "device_id": "zr10_28",
+      "ip": "192.168.144.28",
+      "apply": true,
+      "target_zoom": 10.0,
+      "gimbal_motion_commands_sent": false,
+      "camera_encoding_commands_sent": false,
+      "lens_zoom_commands_sent": 1,
+      "before": {
+        "zoom": 1.0,
+        "attitude_raw": {
+          "yaw_deg": -0.7,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.2,
+          "pitch_rate_dps": 0.1,
+          "roll_rate_dps": 0.1
+        }
+      },
+      "planned_change": true,
+      "command_ack": "timeout_pending_readback",
+      "command_ack_detail": "TimeoutError: Timeout waiting for response to command 0x0F after 0.8s",
+      "after": {
+        "zoom": 10.0,
+        "attitude_raw": {
+          "yaw_deg": -0.5,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.1
+        }
+      },
+      "readback_samples": [
+        {
+          "t_monotonic_s": 34766.6219025,
+          "zoom": 1.3
+        },
+        {
+          "t_monotonic_s": 34766.9188335,
+          "zoom": 1.4
+        },
+        {
+          "t_monotonic_s": 34767.2215421,
+          "zoom": 1.5
+        },
+        {
+          "t_monotonic_s": 34767.5422417,
+          "zoom": 1.6
+        },
+        {
+          "t_monotonic_s": 34767.8395686,
+          "zoom": 1.8
+        },
+        {
+          "t_monotonic_s": 34768.1796105,
+          "zoom": 1.9
+        },
+        {
+          "t_monotonic_s": 34768.4789379,
+          "zoom": 2.2
+        },
+        {
+          "t_monotonic_s": 34768.779922,
+          "zoom": 2.4
+        },
+        {
+          "t_monotonic_s": 34769.0997535,
+          "zoom": 2.6
+        },
+        {
+          "t_monotonic_s": 34769.3985982,
+          "zoom": 2.8
+        },
+        {
+          "t_monotonic_s": 34769.7183198,
+          "zoom": 3.2
+        },
+        {
+          "t_monotonic_s": 34770.0213176,
+          "zoom": 3.5
+        },
+        {
+          "t_monotonic_s": 34770.3415825,
+          "zoom": 3.9
+        },
+        {
+          "t_monotonic_s": 34770.6586653,
+          "zoom": 4.4
+        },
+        {
+          "t_monotonic_s": 34770.9593085,
+          "zoom": 4.8
+        },
+        {
+          "t_monotonic_s": 34771.2791543,
+          "zoom": 5.4
+        },
+        {
+          "t_monotonic_s": 34771.5799613,
+          "zoom": 6.0
+        },
+        {
+          "t_monotonic_s": 34771.899322,
+          "zoom": 6.7
+        },
+        {
+          "t_monotonic_s": 34772.2008057,
+          "zoom": 7.5
+        },
+        {
+          "t_monotonic_s": 34772.5187377,
+          "zoom": 8.5
+        },
+        {
+          "t_monotonic_s": 34772.8196753,
+          "zoom": 10.0
+        }
+      ],
+      "verified": true,
+      "ok": true,
+      "elapsed_ms": 7376.58769999689
+    }
+  ],
+  "pass": true
+}

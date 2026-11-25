@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "source": "synchronized_live_hardware_capture",
+  "captured_monotonic_s": 32404.8519284,
+  "created_utc_s": 1792330449.797565,
+  "hardware_config_sha256": "5f536a1fb459f75e41eae8a8e075b5ad568eab17d7ce3b66d624ebece10a8a69",
+  "platform_version": "4.0.0",
+  "platform_patch_version": "ral-hil-context-1.0.0",
+  "coverage_task": {},
+  "motion_commands_sent": false,
+  "zero_velocity_stop_sent": true,
+  "devices": {
+    "zr10_25": {
+      "telemetry": {
+        "connected": true,
+        "sample_t": 32404.8245043,
+        "age_s": 0.027424100000644103,
+        "zoom": 10.0,
+        "raw": {
+          "yaw_deg": -88.0,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.2,
+          "roll_rate_dps": 0.0,
+          "timestamp_kind": "host_receive_estimate",
+          "received_utc_s": 1792330449.7700295,
+          "zoom_known": true,
+          "zoom_t": 32404.5139387,
+          "zoom_stable": true,
+          "sink_error": ""
+        },
+        "state": {
+          "device_id": "zr10_25",
+          "t": 32404.8245043,
+          "yaw_deg": 0.4000000000000057,
+          "pitch_deg": 0.0,
+          "roll_deg": 0.0,
+          "zoom": 10.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.2,
+          "connected": true,
+          "sequence": 80,
+          "source": "stream",
+          "raw": {
+            "yaw_deg": -88.0,
+            "pitch_deg": -179.9,
+            "roll_deg": 0.0,
+            "yaw_rate_dps": 0.0,
+            "pitch_rate_dps": -0.2,
+            "roll_rate_dps": 0.0,
+            "timestamp_kind": "host_receive_estimate",
+            "received_utc_s": 1792330449.7700295,
+            "zoom_known": true,
+            "zoom_t": 32404.5139387,
+            "zoom_stable": true,
+            "sink_error": ""
+          }
+        }
+      },
+      "frame": {
+        "frame_id": "4f0b20f26c7ad40779349b7d8ad211f0bd0c7870b7e3a902da2ee1ac091a9d99",
+        "capture_t": 32399.0773794,
+        "age_s": 5.774548999997933,
+        "width": 1920,
+        "height": 1080,
+        "usable": true,
+        "resolution_ok": true,
+        "decoded_frames": 12,
+        "requested_frame_reads": 12,
+        "frame_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261018\\preflight_frames_v1\\zr10_25\\zr10_25.jpg",
+        "mean_luma": 90.56418740354938,
+        "contrast": 53.30862079695479,
+        "laplacian_variance": 49.98404765965759
+      },
+      "command_result": {
+        "status": "acknowledged",
+        "sent": true,
+        "ack": true,
+        "error": "",
+        "age_s": 0.05427829999825917,
+        "reason": "preflight_zero_velocity_ack"
+      }
+    },
+    "zr10_26": {
+      "telemetry": {
+        "connected": true,
+        "sample_t": 32404.7884742,
+        "age_s": 0.0634542000007059,
+        "zoom": 10.0,
+        "raw": {
+          "yaw_deg": -37.3,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.0,
+          "timestamp_kind": "host_receive_estimate",
+          "received_utc_s": 1792330449.7339954,
+          "zoom_known": true,
+          "zoom_t": 32404.6002165,
+          "zoom_stable": true,
+          "sink_error": ""
+        },
+        "state": {
+          "device_id": "zr10_26",
+          "t": 32404.7884742,
+          "yaw_deg": 0.5,
+          "pitch_deg": 0.19999999999998863,
+          "roll_deg": 0.0,
+          "zoom": 10.0,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": 0.0,
+          "connected": true,
+          "sequence": 80,
+          "source": "stream",
+          "raw": {
+            "yaw_deg": -37.3,
+            "pitch_deg": -179.9,
+            "roll_deg": 0.0,
+            "yaw_rate_dps": 0.1,
+            "pitch_rate_dps": 0.0,
+            "roll_rate_dps": 0.0,
+            "timestamp_kind": "host_receive_estimate",
+            "received_utc_s": 1792330449.7339954,
+            "zoom_known": true,
+            "zoom_t": 32404.6002165,
+            "zoom_stable": true,
+            "sink_error": ""
+          }
+        }
+      },
+      "frame": {
+        "frame_id": "92458ff5bee579f9601d8fffdfa2bf44225920996722b272b09462d08e885be3",
+        "capture_t": 32401.1933609,
+        "age_s": 3.658567499998753,
+        "width": 1920,
+        "height": 1080,
+        "usable": true,
+        "resolution_ok": true,
+        "decoded_frames": 12,
+        "requested_frame_reads": 12,
+        "frame_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261018\\preflight_frames_v1\\zr10_26\\zr10_26.jpg",
+        "mean_luma": 104.75139515817901,
+        "contrast": 39.124107796742294,
+        "laplacian_variance": 34.15711589675761
+      },
+      "command_result": {
+        "status": "acknowledged",
+        "sent": true,
+        "ack": true,
+        "error": "",
+        "age_s": 0.05196009999781381,
+        "reason": "preflight_zero_velocity_ack"
+      }
+    },
+    "zr10_27": {
+      "telemetry": {
+        "connected": true,
+        "sample_t": 32404.8377657,
+        "age_s": 0.014162700001179473,
+        "zoom": 10.0,
+        "raw": {
+          "yaw_deg": 11.6,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.2,
+          "roll_rate_dps": -0.1,
+          "timestamp_kind": "host_receive_estimate",
+          "received_utc_s": 1792330449.7832925,
+          "zoom_known": true,
+          "zoom_t": 32404.6033298,
+          "zoom_stable": true,
+          "sink_error": ""
+        },
+        "state": {
+          "device_id": "zr10_27",
+          "t": 32404.8377657,
+          "yaw_deg": 0.5,
+          "pitch_deg": 0.0,
+          "roll_deg": 0.0,
+          "zoom": 10.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.2,
+          "connected": true,
+          "sequence": 80,
+          "source": "stream",
+          "raw": {
+            "yaw_deg": 11.6,
+            "pitch_deg": 179.9,
+            "roll_deg": 0.0,
+            "yaw_rate_dps": 0.0,
+            "pitch_rate_dps": -0.2,
+            "roll_rate_dps": -0.1,
+            "timestamp_kind": "host_receive_estimate",
+            "received_utc_s": 1792330449.7832925,
+            "zoom_known": true,
+            "zoom_t": 32404.6033298,
+            "zoom_stable": true,
+            "sink_error": ""
+          }
+        }
+      },
+      "frame": {
+        "frame_id": "a472ddbce43e97bd2df4e011f57f41f97c9513005de5906f5d948b467389dd5b",
+        "capture_t": 32404.7938853,
+        "age_s": 0.05804309999803081,
+        "width": 1920,
+        "height": 1080,
+        "usable": true,
+        "resolution_ok": true,
+        "decoded_frames": 12,
+        "requested_frame_reads": 12,
+        "frame_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261018\\preflight_frames_v1\\zr10_27\\zr10_27.jpg",
+        "mean_luma": 98.17861111111111,
+        "contrast": 23.79375286955137,
+        "laplacian_variance": 25.080370301422317
+      },
+      "command_result": {
+        "status": "acknowledged",
+        "sent": true,
+        "ack": true,
+        "error": "",
+        "age_s": 0.0534561999993457,
+        "reason": "preflight_zero_velocity_ack"
+      }
+    },
+    "zr10_28": {
+      "telemetry": {
+        "connected": true,
+        "sample_t": 32404.7556492,
+        "age_s": 0.09627919999911683,
+        "zoom": 10.0,
+        "raw": {
+          "yaw_deg": -69.2,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.1,
+          "roll_rate_dps": 0.0,
+          "timestamp_kind": "host_receive_estimate",
+          "received_utc_s": 1792330449.7011666,
+          "zoom_known": true,
+          "zoom_t": 32404.6055482,
+          "zoom_stable": true,
+          "sink_error": ""
+        },
+        "state": {
+          "device_id": "zr10_28",
+          "t": 32404.7556492,
+          "yaw_deg": 0.3999999999999915,
+          "pitch_deg": 0.0,
+          "roll_deg": 0.0,
+          "zoom": 10.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.1,
+          "connected": true,
+          "sequence": 80,
+          "source": "stream",
+          "raw": {
+            "yaw_deg": -69.2,
+            "pitch_deg": 179.9,
+            "roll_deg": 0.0,
+            "yaw_rate_dps": 0.0,
+            "pitch_rate_dps": 0.1,
+            "roll_rate_dps": 0.0,
+            "timestamp_kind": "host_receive_estimate",
+            "received_utc_s": 1792330449.7011666,
+            "zoom_known": true,
+            "zoom_t": 32404.6055482,
+            "zoom_stable": true,
+            "sink_error": ""
+          }
+        }
+      },
+      "frame": {
+        "frame_id": "5bf82d9b5624614c828c744e8db15b1dfb04eb9071d63f923175c537f4e8eead",
+        "capture_t": 32403.017201,
+        "age_s": 1.834727400000702,
+        "width": 1920,
+        "height": 1080,
+        "usable": true,
+        "resolution_ok": true,
+        "decoded_frames": 12,
+        "requested_frame_reads": 12,
+        "frame_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261018\\preflight_frames_v1\\zr10_28\\zr10_28.jpg",
+        "mean_luma": 80.89181182484568,
+        "contrast": 55.571748335340146,
+        "laplacian_variance": 25.325162388121516
+      },
+      "command_result": {
+        "status": "acknowledged",
+        "sent": true,
+        "ack": true,
+        "error": "",
+        "age_s": 0.05283439999766415,
+        "reason": "preflight_zero_velocity_ack"
+      }
+    }
+  }
+}

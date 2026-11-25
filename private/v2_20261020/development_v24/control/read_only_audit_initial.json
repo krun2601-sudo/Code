@@ -1,0 +1,191 @@
+{
+  "schema": "zr10-read-only-audit-v1",
+  "created_utc_s": 1792499247.5970967,
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\development_v24\\overlays\\001_measured_static_nominal.yaml",
+  "motion_commands_sent": false,
+  "telemetry": [
+    {
+      "device_id": "zr10_25",
+      "ip": "192.168.144.25",
+      "port": 37260,
+      "ok": true,
+      "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)",
+      "attitude_raw": {
+        "yaw_deg": -87.8,
+        "pitch_deg": 179.6,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": 0.0,
+        "pitch_rate_dps": 0.0,
+        "roll_rate_dps": 0.1
+      },
+      "attitude_calibrated": {
+        "yaw_deg": 0.6000000000000085,
+        "pitch_deg": -0.5
+      },
+      "zoom": 10.0,
+      "main_stream_encoding": {
+        "stream_type": "MAIN",
+        "enc_type": "H264",
+        "resolution_w": 1920,
+        "resolution_h": 1080,
+        "bitrate_kbps": 3584,
+        "frame_rate": 30
+      },
+      "latency_ms": 80.07550000911579
+    },
+    {
+      "device_id": "zr10_26",
+      "ip": "192.168.144.26",
+      "port": 37260,
+      "ok": true,
+      "firmware": "FirmwareVersion(camera=1845494536, gimbal=1795163138, zoom=1828717059)",
+      "attitude_raw": {
+        "yaw_deg": -38.3,
+        "pitch_deg": -179.6,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": 0.0,
+        "pitch_rate_dps": 0.1,
+        "roll_rate_dps": 0.0
+      },
+      "attitude_calibrated": {
+        "yaw_deg": -0.5,
+        "pitch_deg": 0.5
+      },
+      "zoom": 10.0,
+      "main_stream_encoding": {
+        "stream_type": "MAIN",
+        "enc_type": "H264",
+        "resolution_w": 1920,
+        "resolution_h": 1080,
+        "bitrate_kbps": 3670,
+        "frame_rate": 30
+      },
+      "latency_ms": 67.90069999988191
+    },
+    {
+      "device_id": "zr10_27",
+      "ip": "192.168.144.27",
+      "port": 37260,
+      "ok": true,
+      "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)",
+      "attitude_raw": {
+        "yaw_deg": 10.8,
+        "pitch_deg": -179.6,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": -0.1,
+        "pitch_rate_dps": 0.1,
+        "roll_rate_dps": -0.1
+      },
+      "attitude_calibrated": {
+        "yaw_deg": -0.29999999999999893,
+        "pitch_deg": 0.5
+      },
+      "zoom": 10.0,
+      "main_stream_encoding": {
+        "stream_type": "MAIN",
+        "enc_type": "H264",
+        "resolution_w": 1920,
+        "resolution_h": 1080,
+        "bitrate_kbps": 3670,
+        "frame_rate": 30
+      },
+      "latency_ms": 62.96110001858324
+    },
+    {
+      "device_id": "zr10_28",
+      "ip": "192.168.144.28",
+      "port": 37260,
+      "ok": true,
+      "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)",
+      "attitude_raw": {
+        "yaw_deg": -70.1,
+        "pitch_deg": 179.4,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": 0.0,
+        "pitch_rate_dps": 0.4,
+        "roll_rate_dps": 0.0
+      },
+      "attitude_calibrated": {
+        "yaw_deg": -0.5,
+        "pitch_deg": -0.5
+      },
+      "zoom": 10.0,
+      "main_stream_encoding": {
+        "stream_type": "MAIN",
+        "enc_type": "H264",
+        "resolution_w": 1920,
+        "resolution_h": 1080,
+        "bitrate_kbps": 3670,
+        "frame_rate": 30
+      },
+      "latency_ms": 65.32080000033602
+    }
+  ],
+  "video": [
+    {
+      "device_id": "zr10_25",
+      "url": "rtsp://192.168.144.25:8554/main.264",
+      "ok": true,
+      "width": 1920,
+      "height": 1080,
+      "resolution_ok": true,
+      "mean_luma": 119.16350308641975,
+      "contrast": 22.052305354486666,
+      "laplacian_variance": 13.70627744875703,
+      "requested_frame_reads": 1,
+      "decoded_frames": 1,
+      "frame_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\development_v24\\control\\frames\\zr10_25.jpg",
+      "frame_sha256": "6bc899dba157b7aa2e18da7ee1e5697cbb95876dd637785916fa3a952855f322",
+      "elapsed_ms": 1374.394000013126
+    },
+    {
+      "device_id": "zr10_26",
+      "url": "rtsp://192.168.144.26:8554/main.264",
+      "ok": true,
+      "width": 1920,
+      "height": 1080,
+      "resolution_ok": true,
+      "mean_luma": 111.91332706404322,
+      "contrast": 33.628808541788835,
+      "laplacian_variance": 21.9762353994864,
+      "requested_frame_reads": 1,
+      "decoded_frames": 1,
+      "frame_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\development_v24\\control\\frames\\zr10_26.jpg",
+      "frame_sha256": "f45fc30d3469b49713d2ec848422fcff188109c154eebfcc7f73d4a520ea6b05",
+      "elapsed_ms": 3609.237500000745
+    },
+    {
+      "device_id": "zr10_27",
+      "url": "rtsp://192.168.144.27:8554/main.264",
+      "ok": true,
+      "width": 1920,
+      "height": 1080,
+      "resolution_ok": true,
+      "mean_luma": 101.98077546296297,
+      "contrast": 36.16003275127167,
+      "laplacian_variance": 47.50981594281609,
+      "requested_frame_reads": 1,
+      "decoded_frames": 1,
+      "frame_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\development_v24\\control\\frames\\zr10_27.jpg",
+      "frame_sha256": "adf49a2582e67cd37a41c5112ab3015fc7cb36c95564fb5344804014b5315773",
+      "elapsed_ms": 6767.848700023023
+    },
+    {
+      "device_id": "zr10_28",
+      "url": "rtsp://192.168.144.28:8554/main.264",
+      "ok": true,
+      "width": 1920,
+      "height": 1080,
+      "resolution_ok": true,
+      "mean_luma": 104.34835262345679,
+      "contrast": 48.78015038666882,
+      "laplacian_variance": 27.86506350111029,
+      "requested_frame_reads": 1,
+      "decoded_frames": 1,
+      "frame_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\development_v24\\control\\frames\\zr10_28.jpg",
+      "frame_sha256": "0efe277c5ac4d6f6999e40ef6c00e453d64a9749948baa5f9f283600190c7bc1",
+      "elapsed_ms": 5589.035499986494
+    }
+  ],
+  "pass": true
+}

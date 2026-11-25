@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "source_sha256": "b4b446145829c79f77ac74dceaa71d1ad4f55345c3d46d0a4577369bd7894037",
+  "english_main_sha256": "603fb119ac44aeaf3305c37244218ec69cce21deb1f477c6f373950eaf472956",
+  "english_sources_sha256": "ac33b7eb6cc4b82fd64b637872ec70c1bd8f66d270d5578ea75d34f05c841e70",
+  "chinese_markdown_sha256": "5edb46903281543456592f199c6902919e6f75c23d9e01bc0af734fb33a8c877",
+  "equations_compared": 10,
+  "propositions_checked": 4,
+  "figures_checked": 4,
+  "tables_checked": 3,
+  "locked_numeric_tokens_checked": 19,
+  "changed_equations": "No",
+  "changed_experimental_data": "No",
+  "added_experiments": "No",
+  "added_unsupported_claims": "No",
+  "changed_conclusions": "No"
+}

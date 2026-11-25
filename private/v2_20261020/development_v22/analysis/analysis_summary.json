@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "protocol_version": "ral-hil-2-development",
+  "generated_utc": "2026-10-20T11:22:49.217391+00:00",
+  "plan_metadata": {
+    "schema_version": 2,
+    "protocol_version": "ral-hil-2-development",
+    "design_id": "v2-development-six-run-gate",
+    "plan_id": "ralhil-v2-dev6-20261022",
+    "generated_utc": "2026-10-20T11:10:48.138135+00:00",
+    "plan_randomization_seed": 20261022,
+    "primary_method": "uac_robust_repair_v2",
+    "nominal_methods": [
+      "uac_robust_repair_v2",
+      "mag",
+      "measured_static"
+    ],
+    "pause_methods": [
+      "uac_robust_repair_v2",
+      "measured_static"
+    ],
+    "methods_by_condition": {
+      "nominal": [
+        "uac_robust_repair_v2",
+        "mag",
+        "measured_static"
+      ],
+      "pause": [
+        "uac_robust_repair_v2",
+        "measured_static"
+      ],
+      "repeatability": [
+        "uac_robust_repair_v2"
+      ]
+    },
+    "frozen_horizon_s": 60.0,
+    "runtime_duration_s": 75.0,
+    "cooldown_s": 10.0,
+    "pause_duration_s": 20.0,
+    "blocks": 1,
+    "stage": "development",
+    "run_count": 6,
+    "expected_policy_sha256": "5a9c0d5ca02a39b3d5320d55718abd2dd1c29f02f8c768e042ffeb2d8861b724",
+    "expected_policy_version": "2.2.0",
+    "expected_analysis_sha256": "874b7a5c51a08f75d892c54d6bb2b54ea6160ade6b55604645a74a093a9a63e9",
+    "frozen_software_sha256": {
+      "algorithms/user_policy.py": "5a9c0d5ca02a39b3d5320d55718abd2dd1c29f02f8c768e042ffeb2d8861b724",
+      "tools/analyze_runs.py": "874b7a5c51a08f75d892c54d6bb2b54ea6160ade6b55604645a74a093a9a63e9",
+      "tools/preflight.py": "9602a154830befb2e8b19decf40d643250bc367337fccc2bd4df8611f7cf562c",
+      "tools/prepare_run_context.py": "5ada126fdea88c196da1dbf5e2033005b433d8288c1976611ad7b7e1689b3be9",
+      "tools/run_confirmatory_batch.py": "aef11ac34a999713f3276b7f18b8de659d7bfd8ed4d4f201cf13abb8150d77b3",
+      "tools/generate_v2_confirmatory_plan.py": "e25a208c6f718a31e35135002693fdf21e05806dc4263f417a3f662f90fb4658",
+      "tools/audit_v2_readiness.py": "9ba2657f7496621ae8371f8795e8b7347fd54abce3e2882b696ce209bef3279d",
+      "platform_patch/patchset.py": "00c21617bf31fb2056947eff3422676941ebd7202508030abe69c8472e8b7dac"
+    },
+    "execution_model_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\model\\execution_model.json",
+    "expected_execution_model_sha256": "c468ba08a9d7d7a14b010fb7130f4588f0dc335731dac88bd1774037290b9974",
+    "base_config_sha256": "dc9019e47c2c99eaa9211c0f63bc7b8b6046a3f854bb10b07a93a06fbebd24f3",
+    "readiness_report_sha256": null,
+    "paper_start_gates": {
+      "nominal_uac": "median(V2-MAG)<0, bootstrap_95ci_upper<0, one-sided exact paired p<0.05",
+      "nominal_t100": "bootstrap_95ci_upper of paired V2/MAG ratio <=1.05",
+      "pause_uac": "bootstrap_95ci_upper of difference-in-differences <0",
+      "repair_evidence": "at least one reassigned cell confirmed before recovery"
+    },
+    "independent_unit": "one complete real-hardware run"
+  },
+  "planned_runs": 6,
+  "accepted_runs": 6,
+  "rejected_or_missing": 0,
+  "excluded_attempts_retained": 0,
+  "invalid_or_missing_active_attempts": 0,
+  "statistics_status": "scipy available; fixed-horizon attainment uses Cochran Q/McNemar-Holm; continuous complete-pair tests computed where n>=2",
+  "primary_method": "uac_robust_repair_v2",
+  "methods_by_condition": {
+    "nominal": [
+      "uac_robust_repair_v2",
+      "mag",
+      "measured_static"
+    ],
+    "pause": [
+      "uac_robust_repair_v2",
+      "measured_static"
+    ],
+    "repeatability": [
+      "uac_robust_repair_v2"
+    ]
+  },
+  "paper_start_allowed": false,
+  "primary_inference": "paired effect sizes/bootstrap confidence intervals, including paired fixed-H attainment risk differences, and fixed-H UAC; no significance is guaranteed",
+  "independent_unit": "one completed real-hardware run",
+  "cycle_rows_used_as_samples": false,
+  "right_censoring_policy": "T95/T100 not reached by fixed H are recorded at H with event_observed=false only in time_to_threshold; completion time fields remain missing",
+  "binary_tests": "Cochran Q and exact paired McNemar-Holm use fixed-H T95/T100 attainment",
+  "completion_time_tests": "Friedman/Wilcoxon on T95/T100 use completed pairs only and are explicitly exploratory",
+  "uac_policy": "uac_h_s integrates uncovered fraction to the preregistered fixed H for every accepted run",
+  "mean_first_policy": "equals UAC_H only when T100 occurs by H; missing for censored runs",
+  "outputs": [
+    "run_metrics_wide.csv",
+    "long_table.csv",
+    "main_table.csv",
+    "paired_bootstrap.csv",
+    "hypothesis_tests.csv",
+    "time_to_threshold.csv",
+    "rejection_report.csv",
+    "v2_decision_gates.json"
+  ]
+}

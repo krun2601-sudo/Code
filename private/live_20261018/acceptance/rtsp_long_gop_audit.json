@@ -1,0 +1,191 @@
+{
+  "schema": "zr10-read-only-audit-v1",
+  "created_utc_s": 1792299660.2052681,
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\configs\\private_site_overlay.yaml",
+  "motion_commands_sent": false,
+  "telemetry": [
+    {
+      "device_id": "zr10_25",
+      "ip": "192.168.144.25",
+      "port": 37260,
+      "ok": true,
+      "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)",
+      "attitude_raw": {
+        "yaw_deg": -92.0,
+        "pitch_deg": -179.9,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": 0.1,
+        "pitch_rate_dps": -0.4,
+        "roll_rate_dps": 0.0
+      },
+      "attitude_calibrated": {
+        "yaw_deg": -92.0,
+        "pitch_deg": 0.09999999999999432
+      },
+      "zoom": 10.0,
+      "main_stream_encoding": {
+        "stream_type": "MAIN",
+        "enc_type": "H264",
+        "resolution_w": 1920,
+        "resolution_h": 1080,
+        "bitrate_kbps": 3584,
+        "frame_rate": 30
+      },
+      "latency_ms": 71.86560000013742
+    },
+    {
+      "device_id": "zr10_26",
+      "ip": "192.168.144.26",
+      "port": 37260,
+      "ok": true,
+      "firmware": "FirmwareVersion(camera=1845494536, gimbal=1795163138, zoom=1828717059)",
+      "attitude_raw": {
+        "yaw_deg": -91.7,
+        "pitch_deg": -179.9,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": 0.0,
+        "pitch_rate_dps": -0.1,
+        "roll_rate_dps": 0.0
+      },
+      "attitude_calibrated": {
+        "yaw_deg": -91.7,
+        "pitch_deg": 0.09999999999999432
+      },
+      "zoom": 10.0,
+      "main_stream_encoding": {
+        "stream_type": "MAIN",
+        "enc_type": "H265",
+        "resolution_w": 1920,
+        "resolution_h": 1080,
+        "bitrate_kbps": 3584,
+        "frame_rate": 30
+      },
+      "latency_ms": 72.70949999997356
+    },
+    {
+      "device_id": "zr10_27",
+      "ip": "192.168.144.27",
+      "port": 37260,
+      "ok": true,
+      "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)",
+      "attitude_raw": {
+        "yaw_deg": -85.6,
+        "pitch_deg": 179.9,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": 0.0,
+        "pitch_rate_dps": 0.1,
+        "roll_rate_dps": 0.0
+      },
+      "attitude_calibrated": {
+        "yaw_deg": -85.6,
+        "pitch_deg": -0.09999999999999432
+      },
+      "zoom": 10.0,
+      "main_stream_encoding": {
+        "stream_type": "MAIN",
+        "enc_type": "H265",
+        "resolution_w": 1920,
+        "resolution_h": 1080,
+        "bitrate_kbps": 3584,
+        "frame_rate": 30
+      },
+      "latency_ms": 63.79760000004353
+    },
+    {
+      "device_id": "zr10_28",
+      "ip": "192.168.144.28",
+      "port": 37260,
+      "ok": true,
+      "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)",
+      "attitude_raw": {
+        "yaw_deg": -118.7,
+        "pitch_deg": 179.9,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": -0.1,
+        "pitch_rate_dps": 0.2,
+        "roll_rate_dps": 0.0
+      },
+      "attitude_calibrated": {
+        "yaw_deg": -118.7,
+        "pitch_deg": -0.09999999999999432
+      },
+      "zoom": 10.0,
+      "main_stream_encoding": {
+        "stream_type": "MAIN",
+        "enc_type": "H265",
+        "resolution_w": 1920,
+        "resolution_h": 1080,
+        "bitrate_kbps": 3584,
+        "frame_rate": 30
+      },
+      "latency_ms": 83.11719999983325
+    }
+  ],
+  "video": [
+    {
+      "device_id": "zr10_25",
+      "url": "rtsp://192.168.144.25:8554/main.264",
+      "ok": true,
+      "width": 1920,
+      "height": 1080,
+      "resolution_ok": true,
+      "mean_luma": 117.8447723765432,
+      "contrast": 8.931435591806894,
+      "laplacian_variance": 16.539750642099655,
+      "requested_frame_reads": 90,
+      "decoded_frames": 90,
+      "frame_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261018\\acceptance\\frames\\zr10_25.jpg",
+      "frame_sha256": "e25a1044b8aae9ca0367f4ed30fce6d5b5458729b8fcbda457ab9c1fe63c0c6a",
+      "elapsed_ms": 4517.654300000004
+    },
+    {
+      "device_id": "zr10_26",
+      "url": "rtsp://192.168.144.26:8554/main.264",
+      "ok": true,
+      "width": 1280,
+      "height": 720,
+      "resolution_ok": false,
+      "mean_luma": 89.1948708767361,
+      "contrast": 20.16729535743721,
+      "laplacian_variance": 60.950252653841325,
+      "requested_frame_reads": 90,
+      "decoded_frames": 90,
+      "frame_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261018\\acceptance\\frames\\zr10_26.jpg",
+      "frame_sha256": "9f8c8e89f210b96b0c0631252b531544e4291ee9aab59e55c043ca3332083cef",
+      "elapsed_ms": 4382.056799999873
+    },
+    {
+      "device_id": "zr10_27",
+      "url": "rtsp://192.168.144.27:8554/main.264",
+      "ok": true,
+      "width": 1280,
+      "height": 720,
+      "resolution_ok": false,
+      "mean_luma": 96.437861328125,
+      "contrast": 24.532416672201563,
+      "laplacian_variance": 64.48071939748012,
+      "requested_frame_reads": 90,
+      "decoded_frames": 90,
+      "frame_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261018\\acceptance\\frames\\zr10_27.jpg",
+      "frame_sha256": "c1dbc54b6c74051107309954ad556904957b5b8659916684419041be9fea3cd5",
+      "elapsed_ms": 4377.1376000001965
+    },
+    {
+      "device_id": "zr10_28",
+      "url": "rtsp://192.168.144.28:8554/main.264",
+      "ok": true,
+      "width": 1280,
+      "height": 720,
+      "resolution_ok": false,
+      "mean_luma": 106.85180121527777,
+      "contrast": 37.71876189545148,
+      "laplacian_variance": 1781.2504352864582,
+      "requested_frame_reads": 90,
+      "decoded_frames": 90,
+      "frame_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261018\\acceptance\\frames\\zr10_28.jpg",
+      "frame_sha256": "8fd612fb9cc43176541c9252f2aaabdd643066b2c39885f9eb72a82ddc0ddf19",
+      "elapsed_ms": 3655.208799999855
+    }
+  ],
+  "pass": false
+}

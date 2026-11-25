@@ -1,0 +1,22 @@
+devices:
+- id: cam_0
+  enabled: true
+- id: cam_1
+  enabled: true
+- id: cam_2
+  enabled: true
+- id: cam_3
+  enabled: true
+system:
+  duration_s: 63.0
+policy:
+  execution_model:
+    status: calibrated
+    model_path: "D:\\Desktop\\Tasks\\\u822A\u5929\u4F1A\u8BAE\\\u6548\u80FD\u8BC4\u4F30\
+      \\work\\ral_hil_stage1\\_selftest\\pytest_rtsp_fix_20261020\\test_development_plan_generato0\\\
+      model.json"
+    sha256: c65d883c215cbc233031bd8b2d5d08dcad8c122fe5fac5899f6b9295c049cc2f
+  robust_fov:
+    pose_error_yaw_deg: 0.4
+    pose_error_pitch_deg: 0.5
+action_space: {}

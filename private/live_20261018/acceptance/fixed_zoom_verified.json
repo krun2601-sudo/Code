@@ -1,0 +1,176 @@
+{
+  "schema": "zr10-fixed-zoom-v1",
+  "created_utc_s": 1792328355.6104019,
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\configs\\private_site_overlay.yaml",
+  "apply": true,
+  "target_zoom": 10.0,
+  "gimbal_motion_commands_sent": false,
+  "camera_encoding_commands_sent": false,
+  "devices": [
+    {
+      "device_id": "zr10_25",
+      "ip": "192.168.144.25",
+      "apply": true,
+      "target_zoom": 10.0,
+      "gimbal_motion_commands_sent": false,
+      "camera_encoding_commands_sent": false,
+      "lens_zoom_commands_sent": 0,
+      "before": {
+        "zoom": 10.0,
+        "attitude_raw": {
+          "yaw_deg": -46.4,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.1,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "planned_change": false,
+      "after": {
+        "zoom": 10.0,
+        "attitude_raw": {
+          "yaw_deg": -46.4,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": -0.2,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.1
+        }
+      },
+      "readback_samples": [
+        {
+          "t_monotonic_s": 30311.7136614,
+          "zoom": 10.0
+        }
+      ],
+      "verified": true,
+      "ok": true,
+      "elapsed_ms": 692.1792000030109
+    },
+    {
+      "device_id": "zr10_26",
+      "ip": "192.168.144.26",
+      "apply": true,
+      "target_zoom": 10.0,
+      "gimbal_motion_commands_sent": false,
+      "camera_encoding_commands_sent": false,
+      "lens_zoom_commands_sent": 0,
+      "before": {
+        "zoom": 10.0,
+        "attitude_raw": {
+          "yaw_deg": -22.6,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "planned_change": false,
+      "after": {
+        "zoom": 10.0,
+        "attitude_raw": {
+          "yaw_deg": -22.7,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "readback_samples": [
+        {
+          "t_monotonic_s": 30312.3133884,
+          "zoom": 10.0
+        }
+      ],
+      "verified": true,
+      "ok": true,
+      "elapsed_ms": 599.617700001545
+    },
+    {
+      "device_id": "zr10_27",
+      "ip": "192.168.144.27",
+      "apply": true,
+      "target_zoom": 10.0,
+      "gimbal_motion_commands_sent": false,
+      "camera_encoding_commands_sent": false,
+      "lens_zoom_commands_sent": 0,
+      "before": {
+        "zoom": 10.0,
+        "attitude_raw": {
+          "yaw_deg": 11.6,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.1,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "planned_change": false,
+      "after": {
+        "zoom": 10.0,
+        "attitude_raw": {
+          "yaw_deg": 11.7,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "readback_samples": [
+        {
+          "t_monotonic_s": 30312.914133,
+          "zoom": 10.0
+        }
+      ],
+      "verified": true,
+      "ok": true,
+      "elapsed_ms": 600.74380000151
+    },
+    {
+      "device_id": "zr10_28",
+      "ip": "192.168.144.28",
+      "apply": true,
+      "target_zoom": 10.0,
+      "gimbal_motion_commands_sent": false,
+      "camera_encoding_commands_sent": false,
+      "lens_zoom_commands_sent": 0,
+      "before": {
+        "zoom": 10.0,
+        "attitude_raw": {
+          "yaw_deg": -34.6,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": -0.1,
+          "pitch_rate_dps": 0.2,
+          "roll_rate_dps": 0.1
+        }
+      },
+      "planned_change": false,
+      "after": {
+        "zoom": 10.0,
+        "attitude_raw": {
+          "yaw_deg": -34.7,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.1,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "readback_samples": [
+        {
+          "t_monotonic_s": 30313.5223916,
+          "zoom": 10.0
+        }
+      ],
+      "verified": true,
+      "ok": true,
+      "elapsed_ms": 608.254399998259
+    }
+  ],
+  "pass": true
+}

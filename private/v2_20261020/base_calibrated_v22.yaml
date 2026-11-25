@@ -1,0 +1,10 @@
+extends: base_calibrated_v21.yaml
+
+policy:
+  robust_objective:
+    # Robust coverage remains the theorem-bearing primary objective.  The
+    # nominal measured-pose footprint is used only as an additional MAG tail
+    # guard, preventing local search from deleting the parallel overlap that
+    # produced MAG's short empirical T100 in development V2.1.
+    opportunistic_tail_nonregression: true
+    opportunistic_tail_factor: 1.0

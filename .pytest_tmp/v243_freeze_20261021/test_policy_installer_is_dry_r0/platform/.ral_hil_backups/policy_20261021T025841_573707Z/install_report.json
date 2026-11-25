@@ -1,0 +1,24 @@
+{
+  "operation": "install_policy",
+  "platform_root": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\.pytest_tmp\\v243_freeze_20261021\\test_policy_installer_is_dry_r0\\platform",
+  "dry_run": false,
+  "files": [
+    {
+      "relative_path": "algorithms/__init__.py",
+      "source_sha256": "1567817b91c2955ca966eb1b7b0696dc4d236fb1b3ca0e531f45609f8a13f90a",
+      "previous_sha256": null,
+      "action": "create",
+      "backup_path": null,
+      "installed_sha256": "1567817b91c2955ca966eb1b7b0696dc4d236fb1b3ca0e531f45609f8a13f90a"
+    },
+    {
+      "relative_path": "algorithms/user_policy.py",
+      "source_sha256": "da8037d9d19d4121cc60cfe37db91c93db9bce472f6e0811ca9ee087f81cb5d5",
+      "previous_sha256": null,
+      "action": "create",
+      "backup_path": null,
+      "installed_sha256": "da8037d9d19d4121cc60cfe37db91c93db9bce472f6e0811ca9ee087f81cb5d5"
+    }
+  ],
+  "report_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\.pytest_tmp\\v243_freeze_20261021\\test_policy_installer_is_dry_r0\\platform\\.ral_hil_backups\\policy_20261021T025841_573707Z\\install_report.json"
+}

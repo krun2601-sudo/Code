@@ -1,0 +1,744 @@
+{
+  "schema_version": 1,
+  "platform_version": "4.0.0",
+  "mode": "hardware",
+  "run_id": "hardware_20261019T123800_336901Z",
+  "created_utc": "2026-10-19T12:38:00.340918+00:00",
+  "python": "3.14.7",
+  "os": "Windows-11-10.0.26200-SP0",
+  "start_t": 115431.0698755,
+  "time_basis": "host_monotonic_seconds",
+  "platform_patch_version": "ral-hil-context-1.0.0",
+  "config": {
+    "devices": [
+      {
+        "id": "zr10_25",
+        "ip": "192.168.144.25",
+        "port": 37260,
+        "position_m": [
+          -5,
+          -5,
+          1.5
+        ],
+        "mount_rpy_deg": [
+          0,
+          25,
+          0
+        ],
+        "enabled": true,
+        "yaw_limits_deg": [
+          -130,
+          130
+        ],
+        "pitch_limits_deg": [
+          -85,
+          25
+        ],
+        "zoom_limits": [
+          1,
+          10
+        ],
+        "initial_yaw_deg": 0.0,
+        "initial_pitch_deg": 0.0,
+        "initial_zoom": 10.0,
+        "max_slew_dps": 30,
+        "camera": {
+          "image_size": [
+            1920,
+            1080
+          ],
+          "angular_std_deg": 0.15,
+          "video_latency_s": 0,
+          "time_uncertainty_s": 0.15,
+          "intrinsics": [
+            {
+              "zoom": 1,
+              "fx": 1613.72,
+              "fy": 1613.72,
+              "cx": 960,
+              "cy": 540,
+              "dist": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "zoom": 10,
+              "fx": 15696.52,
+              "fy": 15696.52,
+              "cx": 960,
+              "cy": 540,
+              "dist": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "control": {
+          "mode": "velocity_p",
+          "yaw_sign": 1,
+          "pitch_sign": 1,
+          "yaw_offset_deg": -88.4,
+          "pitch_offset_deg": 0.09999999999999432,
+          "yaw_velocity_sign": 1,
+          "pitch_velocity_sign": -1,
+          "normalize_pitch_feedback": true,
+          "yaw_kp": 2,
+          "pitch_kp": 2,
+          "deadband_deg": 0.5,
+          "yaw_speed_limit": 25,
+          "pitch_speed_limit": 25,
+          "command_timeout_s": 0.25,
+          "use_ack": true,
+          "startup_lock": false,
+          "bench_mode": "FOLLOW"
+        },
+        "capabilities": {
+          "zoom": true,
+          "focus_direction": false,
+          "autofocus": false,
+          "gimbal_mode": false
+        },
+        "calibration_verified": true,
+        "rtsp_url": "rtsp://192.168.144.25:8554/main.264"
+      },
+      {
+        "id": "zr10_26",
+        "ip": "192.168.144.26",
+        "port": 37260,
+        "position_m": [
+          -5,
+          5,
+          1.5
+        ],
+        "mount_rpy_deg": [
+          0,
+          25,
+          0
+        ],
+        "enabled": true,
+        "yaw_limits_deg": [
+          -130,
+          130
+        ],
+        "pitch_limits_deg": [
+          -85,
+          25
+        ],
+        "zoom_limits": [
+          1,
+          10
+        ],
+        "initial_yaw_deg": 0.0,
+        "initial_pitch_deg": 0.0,
+        "initial_zoom": 10.0,
+        "max_slew_dps": 30,
+        "camera": {
+          "image_size": [
+            1920,
+            1080
+          ],
+          "angular_std_deg": 0.15,
+          "video_latency_s": 0,
+          "time_uncertainty_s": 0.15,
+          "intrinsics": [
+            {
+              "zoom": 1,
+              "fx": 1613.72,
+              "fy": 1613.72,
+              "cx": 960,
+              "cy": 540,
+              "dist": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "zoom": 10,
+              "fx": 15696.52,
+              "fy": 15696.52,
+              "cx": 960,
+              "cy": 540,
+              "dist": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "control": {
+          "mode": "velocity_p",
+          "yaw_sign": 1,
+          "pitch_sign": 1,
+          "yaw_offset_deg": -37.8,
+          "pitch_offset_deg": -0.09999999999999432,
+          "yaw_velocity_sign": 1,
+          "pitch_velocity_sign": -1,
+          "normalize_pitch_feedback": true,
+          "yaw_kp": 2,
+          "pitch_kp": 2,
+          "deadband_deg": 0.5,
+          "yaw_speed_limit": 25,
+          "pitch_speed_limit": 25,
+          "command_timeout_s": 0.25,
+          "use_ack": true,
+          "startup_lock": false,
+          "bench_mode": "FOLLOW"
+        },
+        "capabilities": {
+          "zoom": true,
+          "focus_direction": false,
+          "autofocus": false,
+          "gimbal_mode": false
+        },
+        "calibration_verified": true,
+        "rtsp_url": "rtsp://192.168.144.26:8554/main.264"
+      },
+      {
+        "id": "zr10_27",
+        "ip": "192.168.144.27",
+        "port": 37260,
+        "position_m": [
+          5,
+          5,
+          1.5
+        ],
+        "mount_rpy_deg": [
+          0,
+          25,
+          0
+        ],
+        "enabled": true,
+        "yaw_limits_deg": [
+          -130,
+          130
+        ],
+        "pitch_limits_deg": [
+          -85,
+          25
+        ],
+        "zoom_limits": [
+          1,
+          10
+        ],
+        "initial_yaw_deg": 0.0,
+        "initial_pitch_deg": 0.0,
+        "initial_zoom": 10.0,
+        "max_slew_dps": 30,
+        "camera": {
+          "image_size": [
+            1920,
+            1080
+          ],
+          "angular_std_deg": 0.15,
+          "video_latency_s": 0,
+          "time_uncertainty_s": 0.15,
+          "intrinsics": [
+            {
+              "zoom": 1,
+              "fx": 1613.72,
+              "fy": 1613.72,
+              "cx": 960,
+              "cy": 540,
+              "dist": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "zoom": 10,
+              "fx": 15696.52,
+              "fy": 15696.52,
+              "cx": 960,
+              "cy": 540,
+              "dist": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "control": {
+          "mode": "velocity_p",
+          "yaw_sign": 1,
+          "pitch_sign": 1,
+          "yaw_offset_deg": 11.1,
+          "pitch_offset_deg": -0.09999999999999432,
+          "yaw_velocity_sign": 1,
+          "pitch_velocity_sign": -1,
+          "normalize_pitch_feedback": true,
+          "yaw_kp": 2,
+          "pitch_kp": 2,
+          "deadband_deg": 0.5,
+          "yaw_speed_limit": 25,
+          "pitch_speed_limit": 25,
+          "command_timeout_s": 0.25,
+          "use_ack": true,
+          "startup_lock": false,
+          "bench_mode": "FOLLOW"
+        },
+        "capabilities": {
+          "zoom": true,
+          "focus_direction": false,
+          "autofocus": false,
+          "gimbal_mode": false
+        },
+        "calibration_verified": true,
+        "rtsp_url": "rtsp://192.168.144.27:8554/main.264"
+      },
+      {
+        "id": "zr10_28",
+        "ip": "192.168.144.28",
+        "port": 37260,
+        "position_m": [
+          5,
+          -5,
+          1.5
+        ],
+        "mount_rpy_deg": [
+          0,
+          25,
+          0
+        ],
+        "enabled": true,
+        "yaw_limits_deg": [
+          -130,
+          130
+        ],
+        "pitch_limits_deg": [
+          -85,
+          25
+        ],
+        "zoom_limits": [
+          1,
+          10
+        ],
+        "initial_yaw_deg": 0.0,
+        "initial_pitch_deg": 0.0,
+        "initial_zoom": 10.0,
+        "max_slew_dps": 30,
+        "camera": {
+          "image_size": [
+            1920,
+            1080
+          ],
+          "angular_std_deg": 0.15,
+          "video_latency_s": 0,
+          "time_uncertainty_s": 0.15,
+          "intrinsics": [
+            {
+              "zoom": 1,
+              "fx": 1613.72,
+              "fy": 1613.72,
+              "cx": 960,
+              "cy": 540,
+              "dist": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "zoom": 10,
+              "fx": 15696.52,
+              "fy": 15696.52,
+              "cx": 960,
+              "cy": 540,
+              "dist": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "control": {
+          "mode": "velocity_p",
+          "yaw_sign": 1,
+          "pitch_sign": 1,
+          "yaw_offset_deg": -69.6,
+          "pitch_offset_deg": -0.09999999999999432,
+          "yaw_velocity_sign": 1,
+          "pitch_velocity_sign": -1,
+          "normalize_pitch_feedback": true,
+          "yaw_kp": 2,
+          "pitch_kp": 2,
+          "deadband_deg": 0.5,
+          "yaw_speed_limit": 25,
+          "pitch_speed_limit": 25,
+          "command_timeout_s": 0.25,
+          "use_ack": true,
+          "startup_lock": false,
+          "bench_mode": "FOLLOW"
+        },
+        "capabilities": {
+          "zoom": true,
+          "focus_direction": false,
+          "autofocus": false,
+          "gimbal_mode": false
+        },
+        "calibration_verified": true,
+        "rtsp_url": "rtsp://192.168.144.28:8554/main.264"
+      }
+    ],
+    "system": {
+      "rate_hz": 10,
+      "duration_s": 123.0,
+      "telemetry_stale_s": 0.5,
+      "max_frame_age_s": 0.6,
+      "pose_max_gap_s": 0.2,
+      "action_ttl_s": 0.5,
+      "require_all_devices": true,
+      "startup_timeout_s": 8
+    },
+    "policy": {
+      "name": "custom",
+      "mode": "multi",
+      "roi": {
+        "x": [
+          112.0,
+          128.0
+        ],
+        "y": [
+          -8.0,
+          8.0
+        ],
+        "z": [
+          52.0,
+          68.0
+        ]
+      },
+      "scan_points_m": null,
+      "scan_grid": [
+        8,
+        12,
+        4
+      ],
+      "scan_dwell_s": 0.8,
+      "scan_settle_tolerance_deg": 1,
+      "fov_margin": 0.08,
+      "minimum_dwell_s": 0.8,
+      "assignment_switch_penalty": 0.35,
+      "prediction_horizon_s": 0.2,
+      "ray_search_distance_m": 140,
+      "search_hypothesis_ttl_s": 1.5,
+      "custom": "algorithms.user_policy:MyPolicy",
+      "method": "mag",
+      "requires_detection": false,
+      "requires_video": true,
+      "fixed_zoom": 10.0,
+      "evaluation_grid": {
+        "shape": [
+          8,
+          12,
+          4
+        ],
+        "cell_count": 384,
+        "role": "evaluation_cells",
+        "construction": "uniform_roi_cell_centers",
+        "frozen_within_run": true
+      },
+      "safe_envelope_deg": {
+        "yaw": [
+          -35.0,
+          35.0
+        ],
+        "pitch": [
+          -20.0,
+          20.0
+        ]
+      },
+      "execution_confirmation": {
+        "pose_tolerance_deg": 1.0,
+        "max_rate_dps": 0.8,
+        "settle_hold_s": 0.35,
+        "min_dwell_s": 0.8,
+        "distinct_frames": 3,
+        "frame_timeout_s": 2.0,
+        "transition_timeout_s": 45.0,
+        "require_ack": true,
+        "require_frame": true,
+        "allow_pose_only_fallback": false
+      },
+      "frame_quality": {
+        "min_mean_luma": 8.0,
+        "max_mean_luma": 247.0,
+        "min_contrast": 4.0,
+        "min_sharpness": 0.5
+      },
+      "calibration_evidence": {
+        "station_pose_verified": false,
+        "per_device_intrinsics_verified": false,
+        "fixed_zoom_verified": true,
+        "video_latency_measured": false,
+        "evidence_id": "local-angular-datum-and-zoom-2026-10-18",
+        "local_angular_datum_evidence": "D:/Desktop/Tasks/航天会议/效能评估/work/ral_hil_stage1/private/live_20261018/acceptance/local_datum_v2.json",
+        "world_station_pose_verified": false,
+        "fixed_zoom_evidence": "D:/Desktop/Tasks/航天会议/效能评估/work/ral_hil_stage1/private/live_20261019/precheck/set_zoom10.json"
+      },
+      "experiment": {
+        "protocol_version": "ral-hil-1",
+        "horizon_s": 120.0,
+        "plan_id": "ralhil42-20261019",
+        "plan_run_id": "ralhil42-20261019-R040",
+        "block": 6,
+        "method": "mag",
+        "condition": "nominal",
+        "instance_seed": 0,
+        "injection_seed": 0,
+        "solver_seed": 0,
+        "optional_diagnostics": {
+          "included_in_confirmatory_plan": false,
+          "design": "one_factor_at_a_time",
+          "max_selected_profiles": 3,
+          "device_counts": [
+            2,
+            3,
+            4
+          ],
+          "roi_scale_factors": [
+            0.75,
+            1.0,
+            1.25
+          ],
+          "overlap_targets": [
+            0.1,
+            0.25,
+            0.4
+          ],
+          "task_grid_shapes": [
+            [
+              6,
+              10,
+              4
+            ],
+            [
+              8,
+              12,
+              4
+            ],
+            [
+              10,
+              15,
+              5
+            ]
+          ]
+        },
+        "pair_id": "B06-nominal",
+        "design_id": "confirmatory-30-nominal-plus-12-pause-v1",
+        "run_index": 40
+      },
+      "fault_injection": {
+        "kind": "none",
+        "enabled": false
+      },
+      "commissioning": {
+        "plan_path": "",
+        "commissioning_id": "",
+        "transition_ids": []
+      },
+      "strict_measured_model": true,
+      "execution_model": {
+        "status": "calibrated",
+        "model_path": "D:/Desktop/Tasks/航天会议/效能评估/work/ral_hil_stage1/private/live_20261018/execution_model_full/execution_model.json",
+        "target_definition": "command_issued_to_frame_confirm",
+        "includes_settle_dwell_and_frame_confirmation": true,
+        "review_decision": "accepted_for_confirmatory_planning_2026-10-19"
+      },
+      "require_full_reachability": true,
+      "require_zoom_verified": true
+    },
+    "fusion": {
+      "max_time_skew_s": 0.08,
+      "min_ray_angle_deg": 2,
+      "max_condition_number": 100000,
+      "max_residual_m": 2,
+      "max_range_m": 2000,
+      "measurement_floor_m": 0.05,
+      "process_accel_std_mps2": 3,
+      "track_gate_mahalanobis": 16.27,
+      "track_gate_distance_m": 15,
+      "track_timeout_s": 2,
+      "confirmation_hits": 3,
+      "max_hypotheses": 300,
+      "max_rays": 80,
+      "ambiguity_margin": 0.15
+    },
+    "simulation": {
+      "seed": 7,
+      "detection_probability": 0.96,
+      "pixel_noise_std": 0.7,
+      "zoom_rate_per_s": 3,
+      "targets": [
+        {
+          "id": "uav_1",
+          "position_m": [
+            110,
+            -15,
+            62
+          ],
+          "amplitude_m": [
+            8,
+            20,
+            5
+          ],
+          "period_s": 36,
+          "phase_rad": [
+            0,
+            1.5707963,
+            0.4
+          ]
+        },
+        {
+          "id": "uav_2",
+          "position_m": [
+            135,
+            22,
+            76
+          ],
+          "amplitude_m": [
+            5,
+            -20,
+            7
+          ],
+          "period_s": 45,
+          "phase_rad": [
+            0.6,
+            2.1707963,
+            0.2
+          ]
+        }
+      ],
+      "outages": []
+    },
+    "detector": {
+      "type": "none",
+      "weights": "",
+      "confidence": 0.35,
+      "imgsz": 640,
+      "classes": [
+        0
+      ],
+      "device": "cpu",
+      "model_path": ""
+    },
+    "action_space": {
+      "enabled": [
+        "yaw_deg",
+        "pitch_deg"
+      ]
+    },
+    "logging": {
+      "root": "D:/Desktop/Tasks/航天会议/效能评估/work/ral_hil_stage1/private/live_20261019/main_runs",
+      "queue_size": 30000
+    },
+    "control_center": {
+      "enabled": true,
+      "open_browser": true,
+      "port": 0,
+      "video_enabled": false,
+      "preview_fps": 6,
+      "heartbeat_timeout_s": 3,
+      "frustum_range_m": 200,
+      "default_mode": "full_eacml",
+      "duration_s": 0,
+      "modes": [
+        {
+          "id": "raster",
+          "label": "Raster",
+          "policy": "algorithms.user_policy:MyPolicy",
+          "requires_detection": false,
+          "requires_calibration": true,
+          "requires_video": true,
+          "settings": {
+            "method": "raster"
+          }
+        },
+        {
+          "id": "mag",
+          "label": "Motion-aware greedy",
+          "policy": "algorithms.user_policy:MyPolicy",
+          "requires_detection": false,
+          "requires_calibration": true,
+          "requires_video": true,
+          "settings": {
+            "method": "mag"
+          }
+        },
+        {
+          "id": "open_loop_cml",
+          "label": "Nominal-CML-H",
+          "policy": "algorithms.user_policy:MyPolicy",
+          "requires_detection": false,
+          "requires_calibration": true,
+          "requires_video": true,
+          "settings": {
+            "method": "open_loop_cml"
+          }
+        },
+        {
+          "id": "measured_static",
+          "label": "Measured-CML-H",
+          "policy": "algorithms.user_policy:MyPolicy",
+          "requires_detection": false,
+          "requires_calibration": true,
+          "requires_video": true,
+          "settings": {
+            "method": "measured_static"
+          }
+        },
+        {
+          "id": "full_eacml",
+          "label": "Full EA-CML-H",
+          "policy": "algorithms.user_policy:MyPolicy",
+          "requires_detection": false,
+          "requires_calibration": true,
+          "requires_video": true,
+          "settings": {
+            "method": "full_eacml"
+          }
+        }
+      ]
+    },
+    "source": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261019\\formal_plan\\overlays\\040_mag_nominal.yaml"
+  },
+  "completed": true,
+  "rows": {
+    "telemetry": 4920,
+    "detections": 0,
+    "rays": 0,
+    "localizations": 0,
+    "tracks": 0,
+    "actions": 4920,
+    "commands": 4608,
+    "events": 5405,
+    "cycles": 1230,
+    "truth": 0,
+    "frames": 4653,
+    "telemetry_stream": 4929
+  },
+  "error": ""
+}

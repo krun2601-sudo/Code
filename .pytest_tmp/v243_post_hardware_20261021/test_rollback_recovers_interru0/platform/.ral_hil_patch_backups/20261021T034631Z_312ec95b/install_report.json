@@ -1,0 +1,36 @@
+{
+  "report_schema": 1,
+  "patch_version": "ral-hil-context-1.0.0",
+  "platform_version": "4.0.0",
+  "created_utc": "2026-10-21T03:46:31+00:00",
+  "updated_utc": "2026-10-21T03:46:31+00:00",
+  "status": "rolled_back",
+  "files": {
+    "zr10lab/models.py": {
+      "original_sha256": "fffc90ec61721814698a558d0972f0a1d750c788cf02eaf7a09b3d30bcadc32a",
+      "patched_sha256": "905f4efe242034c99c6447b1a85eab61d364df39b760ba4f8cf4bf45c0bd6e11"
+    },
+    "zr10lab/vision.py": {
+      "original_sha256": "5a7659c4334421dbb32db1c74ded694b0aed37de6128cd5c4dbb914df90c6b1f",
+      "patched_sha256": "a07f078456beb26bc09c6264f53d76c451c36d15c726fdc9b4a374f57d3b9dcf"
+    },
+    "zr10lab/recording.py": {
+      "original_sha256": "6fab599a92e7b01e3db4209381292bf4f5f71c4dc86ae51d5b882cab180d8156",
+      "patched_sha256": "eee34a53e34592336946150eaf5d5a5361e5f677360f2f98b7a913f34b8ed807"
+    },
+    "zr10lab/runtime.py": {
+      "original_sha256": "9db1c6d52e5b5848946de0d625c2973bd706b46c488d84565b050c0c24edd0dc",
+      "patched_sha256": "3019075e9bac0a1fdff5a1cace3bcb7ad620ee0180e0b539855d90150808f83d"
+    },
+    "zr10lab/control_modes.py": {
+      "original_sha256": "0b4ae9342ae490fe30e2b4d0a584bce40d564245c0e901fa8fb30e6ee898b9a2",
+      "patched_sha256": "bc72510dc55c50958553fbef6f4d5772ad2b465bca8aef8d22f4b4a78d39ad8a"
+    },
+    "zr10lab/control_center.py": {
+      "original_sha256": "8e591b7f95a297f637cdf15a3a9ab6120eaca52fea621cf40ca1270eff61b5bc",
+      "patched_sha256": "089bd62d4965c1fbf6bab6f8280e7bfaaf81fd68a04b3b7aef3f1a7881ac52ae"
+    }
+  },
+  "error": "",
+  "restore_errors": []
+}

@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99e (TeX Live 2026)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: wileyNJD-Chicago.bst
+Database file #1: references.bib
+Warning--can't use both volume and number fields in tang2024local
+You've used 26 entries,
+            2773 wiz_defined-function locations,
+            764 strings with 11014 characters,
+and the built_in function-call counts, 16870 in all, are:
+= -- 1532
+> -- 1185
+< -- 15
++ -- 395
+- -- 369
+* -- 1566
+:= -- 2570
+add.period$ -- 102
+call.type$ -- 26
+change.case$ -- 201
+chr.to.int$ -- 26
+cite$ -- 53
+duplicate$ -- 609
+empty$ -- 1171
+format.name$ -- 411
+if$ -- 3495
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 26
+newline$ -- 162
+num.names$ -- 104
+pop$ -- 348
+preamble$ -- 1
+purify$ -- 175
+quote$ -- 0
+skip$ -- 533
+stack$ -- 0
+substring$ -- 879
+swap$ -- 90
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 286
+warning$ -- 1
+while$ -- 135
+width$ -- 0
+write$ -- 395
+(There was 1 warning)

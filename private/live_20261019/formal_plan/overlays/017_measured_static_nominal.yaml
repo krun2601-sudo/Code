@@ -1,0 +1,22 @@
+extends: ../../confirmatory_base.yaml
+system:
+  duration_s: 123.0
+policy:
+  method: measured_static
+  experiment:
+    protocol_version: ral-hil-1
+    design_id: confirmatory-30-nominal-plus-12-pause-v1
+    plan_id: ralhil42-20261019
+    plan_run_id: ralhil42-20261019-R017
+    run_index: 17
+    block: 3
+    pair_id: B03-nominal
+    method: measured_static
+    condition: nominal
+    instance_seed: 0
+    injection_seed: 0
+    solver_seed: 0
+    horizon_s: 120.0
+  fault_injection:
+    kind: none
+    enabled: false

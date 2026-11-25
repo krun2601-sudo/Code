@@ -1,0 +1,49 @@
+{
+  "run_id": "hardware_20261018T141423_783935Z",
+  "transition_count": 240,
+  "test_transition_count": 48,
+  "actual_s": {
+    "mean": 26.22565357458331,
+    "median": 25.60788225000215,
+    "p95": 31.914520324998733,
+    "min": 20.399820999999065,
+    "max": 34.50697960000252
+  },
+  "nominal_model": {
+    "mean_prediction_s": 2.613554027777778,
+    "mae_s": 23.61209954680553,
+    "rmse_s": 23.77790572671851,
+    "underprediction_rate": 1.0,
+    "mean_actual_to_prediction_ratio": 10.078612136651717
+  },
+  "fitted_model_test": {
+    "mae_s": 1.1634204178734802,
+    "rmse_s": 1.4189211194332878,
+    "underprediction_rate": 0.5,
+    "upper_coverage": 0.9583333333333334
+  },
+  "endpoint_error_deg": {
+    "yaw_max": 0.9890000000000043,
+    "pitch_max": 0.8970000000000002
+  },
+  "link": {
+    "sent_commands": 60666,
+    "acknowledged_commands": 60666,
+    "command_errors": 0,
+    "frames": 143927,
+    "usable_frames": 143923,
+    "resolution_ok_frames": 143927
+  },
+  "ack_latency_ms_p95_by_device": {
+    "ZR10-3": 7.765139995899517,
+    "ZR10-2": 7.7792800002498526,
+    "ZR10-4": 7.831355001326293,
+    "ZR10-1": 7.765940002718681
+  },
+  "frame_age_s_p95_by_device": {
+    "ZR10-2": 0.05968830000165326,
+    "ZR10-3": 0.05992355999769643,
+    "ZR10-4": 0.06493721500082758,
+    "ZR10-1": 0.059194594999280536
+  }
+}

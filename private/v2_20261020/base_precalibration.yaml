@@ -1,0 +1,82 @@
+extends: ../live_20261019/confirmatory_base.yaml
+
+system:
+  # The experiment generator later overrides each development/formal run to
+  # 63 s, preserving a complete fixed H=60 s after mission start.
+  duration_s: 63.0
+  require_all_devices: true
+
+policy:
+  method: uac_robust_repair_v2
+  requires_detection: false
+  requires_video: true
+  fixed_zoom: 10.0
+  require_full_reachability: true
+  require_zoom_verified: true
+  strict_measured_model: true
+  initial_planner_budget_ms: 200.0
+  repair_planner_budget_ms: 40.0
+  planner_max_evaluations: 50000
+
+  execution_confirmation:
+    pose_tolerance_deg: 1.0
+    max_rate_dps: 0.8
+    settle_hold_s: 0.35
+    min_dwell_s: 0.8
+    distinct_frames: 3
+    frame_timeout_s: 2.0
+    frame_pose_max_gap_s: 0.2
+    transition_timeout_s: 45.0
+    require_ack: true
+    require_frame: true
+    measured_pose_projection: true
+    allow_pose_only_fallback: false
+
+  robust_fov:
+    # Provisional commissioning-safe bounds.  The reviewed schema-2 model
+    # replaces them with values no smaller than its calibration maxima.
+    pose_error_yaw_deg: 1.0
+    pose_error_pitch_deg: 1.0
+    planning_pixel_margin: 0.0
+    confirmation_pixel_margin: 0.0
+    enforce_for_all_methods: true
+
+  robust_objective:
+    horizon_s: 60.0
+    epsilon_s: 1.0e-6
+    switch_min_gain_s: 0.05
+    fault_recovery_bound_s: 8.0
+    complete_mag_reference: true
+
+  execution_model:
+    status: uncalibrated
+    model_path: ""
+    sha256: ""
+    target_definition: command_issued_to_frame_confirm
+    includes_settle_dwell_and_frame_confirmation: true
+
+  experiment:
+    protocol_version: ral-hil-2-development
+    horizon_s: 60.0
+    plan_id: UNSET
+    plan_run_id: UNSET
+    block: -1
+    pair_id: UNSET
+    method: uac_robust_repair_v2
+    condition: nominal
+    instance_seed: 0
+    injection_seed: 0
+    solver_seed: 0
+
+  fault_injection: {kind: none, enabled: false}
+
+detector: {type: none, weights: "", model_path: ""}
+action_space: {enabled: [yaw_deg, pitch_deg]}
+
+logging:
+  root: D:/Desktop/Tasks/航天会议/效能评估/work/ral_hil_stage1/private/v2_20261020/runs
+  queue_size: 30000
+
+control_center:
+  enabled: false
+  open_browser: false

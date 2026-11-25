@@ -1,0 +1,49 @@
+{
+  "technical_source": "../ral_cn_final.md",
+  "equations": 10,
+  "propositions": 4,
+  "display_items": {
+    "figures": 4,
+    "tables": 3
+  },
+  "platform": {
+    "devices": 4,
+    "device_type": "ZR10",
+    "cells": 384,
+    "transfers": 240,
+    "formal_runs": 70,
+    "coverage_confirmation_events": 461
+  },
+  "protocol": {
+    "nominal_blocks": 10,
+    "nominal_runs": 30,
+    "repair_ablation_blocks": 10,
+    "interruption_trigger_confirmed_coverage_percent": 50,
+    "logical_pause_seconds": 25,
+    "initial_planning_budget_ms": 200,
+    "repair_planning_budget_ms": 40,
+    "bootstrap_resamples": 100000,
+    "t100_noninferiority_margin": 1.05
+  },
+  "locked_effects": {
+    "nominal_uac_ecr_minus_mag_median_s": -4.941,
+    "nominal_uac_ecr_minus_mag_ci95_s": [-6.707, -3.910],
+    "nominal_uac_ecr_minus_static_median_s": -0.265,
+    "nominal_uac_ecr_minus_static_ci95_s": [-1.046, -0.110],
+    "repair_uac_on_minus_off_median_s": -1.979,
+    "repair_uac_on_minus_off_ci95_s": [-2.496, -1.821],
+    "repair_t100_ratio_median": 0.998,
+    "repair_t100_ratio_ci95": [0.954, 1.0001],
+    "repair_improved_blocks": 9,
+    "repair_adverse_blocks": 1,
+    "repair_sign_test_p": 0.010742
+  },
+  "claim_boundaries": [
+    "A planned viewpoint does not establish physical observation.",
+    "UAC is truncated first-observation latency unless the stated stationary, uniform, certain-detection assumptions hold.",
+    "The four-corner intersection is a frozen feasible-map construction, not a physical confidence region.",
+    "Baseline preservation is model-relative and is not a universal physical-superiority claim.",
+    "The interrupted ECR-Cover versus calibrated-static comparison does not isolate repair.",
+    "The single adverse repair block remains reported."
+  ]
+}

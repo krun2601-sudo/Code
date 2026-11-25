@@ -1,0 +1,10 @@
+extends: base_calibrated.yaml
+
+policy:
+  execution_confirmation:
+    # The commissioning set contains commanded non-zero transitions, so its
+    # fitted intercept is not valid for an already aligned view.  This bound
+    # covers the full 0.35 s settle, 0.8 s dwell and three-new-frame gate.  It
+    # is above the 1.20--1.31 s stationary confirmations observed in the first
+    # development block and is frozen before the replacement block.
+    stationary_upper_s: 1.8

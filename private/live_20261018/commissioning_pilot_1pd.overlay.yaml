@@ -1,0 +1,24 @@
+extends: runtime_follow_local_zero_v2.yaml
+
+system:
+  duration_s: 180.0
+
+policy:
+  method: commissioning
+  fault_injection:
+    kind: none
+    enabled: false
+  execution_confirmation:
+    transition_timeout_s: 120.0
+  commissioning:
+    plan_path: 'D:\Desktop\Tasks\航天会议\效能评估\work\ral_hil_stage1\configs\generated\commissioning_plan_seed20261018.json'
+    commissioning_id: commission-20261018-60pd
+    transition_ids:
+      - commission-20261018-60pd:zr10_25:001
+      - commission-20261018-60pd:zr10_26:001
+      - commission-20261018-60pd:zr10_27:001
+      - commission-20261018-60pd:zr10_28:001
+
+control_center:
+  enabled: false
+  open_browser: false

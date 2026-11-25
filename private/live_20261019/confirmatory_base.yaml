@@ -1,0 +1,60 @@
+extends: ../live_20261018/runtime_follow_local_zero_v2.yaml
+
+system:
+  # Frozen before outcome collection from roi_audit_b_balanced.json.
+  # Acquire three extra seconds so the mission clock still has a complete
+  # fixed H=120 s after connection-local telemetry/zoom/frame readiness.
+  duration_s: 123.0
+  require_all_devices: true
+
+policy:
+  fixed_zoom: 10.0
+  execution_confirmation:
+    # Frozen from the independent 240-transition commissioning run.  The
+    # observed maximum was about 34.5 s; 45 s prevents ordinary slow slews
+    # from being mislabeled as faults while remaining below the fixed 120 s H.
+    transition_timeout_s: 45.0
+  # Compact controlled ROI chosen before outcome collection by the frozen
+  # execution-time workload audit.  The 8x12x4 evaluation grid remains M=384.
+  roi:
+    x: [112.0, 128.0]
+    y: [-8.0, 8.0]
+    z: [52.0, 68.0]
+  strict_measured_model: true
+  require_full_reachability: true
+  require_zoom_verified: true
+  execution_model:
+    status: calibrated
+    model_path: D:/Desktop/Tasks/航天会议/效能评估/work/ral_hil_stage1/private/live_20261018/execution_model_full/execution_model.json
+    target_definition: command_issued_to_frame_confirm
+    includes_settle_dwell_and_frame_confirmation: true
+    review_decision: accepted_for_confirmatory_planning_2026-10-19
+  calibration_evidence:
+    # These false flags preserve the paper's metrology boundary: the experiment
+    # compares execution-confirmed coverage on one frozen configuration model;
+    # it does not claim absolute world-frame pointing or calibrated 3-D volume.
+    station_pose_verified: false
+    per_device_intrinsics_verified: false
+    fixed_zoom_verified: true
+    video_latency_measured: false
+    evidence_id: local-angular-datum-and-zoom-2026-10-18
+    local_angular_datum_evidence: D:/Desktop/Tasks/航天会议/效能评估/work/ral_hil_stage1/private/live_20261018/acceptance/local_datum_v2.json
+    fixed_zoom_evidence: D:/Desktop/Tasks/航天会议/效能评估/work/ral_hil_stage1/private/live_20261019/precheck/set_zoom10.json
+    world_station_pose_verified: false
+  experiment:
+    protocol_version: ral-hil-1-confirmatory-42
+    horizon_s: 120.0
+    plan_id: UNSET
+    plan_run_id: UNSET
+    block: -1
+    pair_id: UNSET
+    method: full_eacml
+    condition: nominal
+    instance_seed: 0
+    injection_seed: 0
+    solver_seed: 0
+  fault_injection: {kind: none, enabled: false}
+
+logging:
+  root: D:/Desktop/Tasks/航天会议/效能评估/work/ral_hil_stage1/private/live_20261019/main_runs
+  queue_size: 30000

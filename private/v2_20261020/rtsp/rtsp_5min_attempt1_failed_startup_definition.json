@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "gate": "v2_four_stream_rtsp_stability",
+  "generated_utc": "2026-10-20T09:24:50.118708+00:00",
+  "network_read_only": true,
+  "motion_or_sdk_command_performed": false,
+  "hardware_config_sha256": "0764cf034a191762d3c4f09ad8e6cd2593b5bd88c774691ecd011c9a234ecb92",
+  "duration_s": 300.0,
+  "max_gap_s": 2.0,
+  "devices": [
+    {
+      "device_id": "zr10_25",
+      "pass": false,
+      "requested_duration_s": 300.0,
+      "observed_wall_duration_s": 300.00880740000866,
+      "decoded_span_s": 297.71211560000665,
+      "decoded_frame_count": 8946,
+      "failed_read_count": 0,
+      "maximum_decoded_frame_gap_s": 2.2966726000013296,
+      "maximum_allowed_gap_s": 2.0,
+      "observed_resolutions": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "expected_resolution": [
+        1920,
+        1080
+      ],
+      "error": ""
+    },
+    {
+      "device_id": "zr10_26",
+      "pass": false,
+      "requested_duration_s": 300.0,
+      "observed_wall_duration_s": 300.02112669998314,
+      "decoded_span_s": 292.77433069999097,
+      "decoded_frame_count": 8799,
+      "failed_read_count": 0,
+      "maximum_decoded_frame_gap_s": 7.246784999995725,
+      "maximum_allowed_gap_s": 2.0,
+      "observed_resolutions": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "expected_resolution": [
+        1920,
+        1080
+      ],
+      "error": ""
+    },
+    {
+      "device_id": "zr10_27",
+      "pass": false,
+      "requested_duration_s": 300.0,
+      "observed_wall_duration_s": 300.0640174,
+      "decoded_span_s": 295.0025624000118,
+      "decoded_frame_count": 8865,
+      "failed_read_count": 0,
+      "maximum_decoded_frame_gap_s": 5.061447699990822,
+      "maximum_allowed_gap_s": 2.0,
+      "observed_resolutions": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "expected_resolution": [
+        1920,
+        1080
+      ],
+      "error": ""
+    },
+    {
+      "device_id": "zr10_28",
+      "pass": false,
+      "requested_duration_s": 300.0,
+      "observed_wall_duration_s": 300.0206506999966,
+      "decoded_span_s": 290.00943689999986,
+      "decoded_frame_count": 8716,
+      "failed_read_count": 0,
+      "maximum_decoded_frame_gap_s": 10.011197000014363,
+      "maximum_allowed_gap_s": 2.0,
+      "observed_resolutions": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "expected_resolution": [
+        1920,
+        1080
+      ],
+      "error": ""
+    }
+  ],
+  "pass": false,
+  "report_sha256": "00fb63bad7c6b9c8e5a14ae89d8cda64b21bf575d6dd91e8269ef71e34a1a23f"
+}

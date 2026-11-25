@@ -1,0 +1,99 @@
+{
+  "schema": "ral-hil-confirmatory-workload-audit-v1",
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\base_calibrated_v24.yaml",
+  "roi_override": null,
+  "generated_utc_s": 1792498245.552937,
+  "deadline_rule": "ceil(max_method_device_upper_workload * safety_factor / round_to_s) * round_to_s",
+  "safety_factor": 1.5,
+  "round_to_s": 30.0,
+  "maximum_predicted_upper_makespan_s": 38.71219472176229,
+  "frozen_horizon_s": 60.0,
+  "methods": [
+    {
+      "method": "uac_robust_repair_v2",
+      "evaluation_cell_count": 384,
+      "reachable_count": 384,
+      "candidate_count": 820,
+      "planner_chunks": 1,
+      "offline_planning_ms": 176.30910000298172,
+      "task_count_by_device": {
+        "zr10_25": 1,
+        "zr10_26": 10,
+        "zr10_27": 4,
+        "zr10_28": 1
+      },
+      "upper_workload_s_by_device": {
+        "zr10_25": 1.8,
+        "zr10_26": 38.71219472176229,
+        "zr10_27": 28.769621677761656,
+        "zr10_28": 1.8
+      },
+      "predicted_upper_makespan_s": 38.71219472176229,
+      "plan_audit": {
+        "guarantee_reference": "mag",
+        "baseline_objective": {
+          "uncovered_count": 0,
+          "uac_h_s": 23.025358017278524,
+          "t95_s": 51.43078648487618,
+          "t100_s": 65.68264216564981,
+          "total_motion_deg": 22.513328701633192,
+          "load_cv": 0.7947135301255326
+        },
+        "final_objective": {
+          "uncovered_count": 0,
+          "uac_h_s": 9.9697265813757,
+          "t95_s": 23.024497017604546,
+          "t100_s": 40.3475666481386,
+          "total_motion_deg": 18.450844619618657,
+          "load_cv": 0.9213928039751976
+        },
+        "tail_cap_s": 65.68264216564981,
+        "opportunistic_baseline_objective": {
+          "uncovered_count": 0,
+          "uac_h_s": 16.769932550255373,
+          "t95_s": 26.475417453909504,
+          "t100_s": 36.554331910139574,
+          "total_motion_deg": 22.513328701633192,
+          "load_cv": 0.7947135301255326
+        },
+        "opportunistic_final_objective": {
+          "uncovered_count": 0,
+          "uac_h_s": 4.7905306908008525,
+          "t95_s": 17.624497017604543,
+          "t100_s": 19.424497017604544,
+          "total_motion_deg": 18.450844619618657,
+          "load_cv": 0.9213928039751976
+        },
+        "opportunistic_tail_cap_s": 36.554331910139574,
+        "opportunistic_tail_nonregression_verified": true,
+        "uac_non_regression_verified": true,
+        "t100_non_regression_verified": true,
+        "accepted_moves": [
+          "measured_static_seed"
+        ],
+        "operation_counts": {
+          "measured_static_seed": 1,
+          "redundant_delete": 8
+        },
+        "rejection_counts": {
+          "incomplete_coverage": 5,
+          "uac_not_strictly_improved": 3
+        },
+        "evaluations": 8,
+        "evaluation_limit": 8,
+        "evaluation_limit_respected": true,
+        "search_stop_reason": "evaluation_limit",
+        "initial_pose_box_enabled": true,
+        "initial_pose_box_deg": {
+          "yaw": 1.0,
+          "pitch": 1.0
+        },
+        "configured_budget_ms": 200.0,
+        "deadline_guard_ms": 5.0,
+        "effective_search_budget_ms": 195.0,
+        "observed_planner_ms": 176.30359999020584,
+        "budget_contract_satisfied": true
+      }
+    }
+  ]
+}

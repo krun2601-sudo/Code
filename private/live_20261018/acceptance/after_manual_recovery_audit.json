@@ -1,0 +1,191 @@
+{
+  "schema": "zr10-read-only-audit-v1",
+  "created_utc_s": 1792328224.6701074,
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\configs\\private_site_overlay.yaml",
+  "motion_commands_sent": false,
+  "telemetry": [
+    {
+      "device_id": "zr10_25",
+      "ip": "192.168.144.25",
+      "port": 37260,
+      "ok": true,
+      "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)",
+      "attitude_raw": {
+        "yaw_deg": -31.2,
+        "pitch_deg": -179.9,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": -0.1,
+        "pitch_rate_dps": 0.0,
+        "roll_rate_dps": -0.1
+      },
+      "attitude_calibrated": {
+        "yaw_deg": -31.2,
+        "pitch_deg": 0.09999999999999432
+      },
+      "zoom": 1.0,
+      "main_stream_encoding": {
+        "stream_type": "MAIN",
+        "enc_type": "H264",
+        "resolution_w": 1920,
+        "resolution_h": 1080,
+        "bitrate_kbps": 3584,
+        "frame_rate": 30
+      },
+      "latency_ms": 68.4320000000298
+    },
+    {
+      "device_id": "zr10_26",
+      "ip": "192.168.144.26",
+      "port": 37260,
+      "ok": true,
+      "firmware": "FirmwareVersion(camera=1845494536, gimbal=1795163138, zoom=1828717059)",
+      "attitude_raw": {
+        "yaw_deg": -14.7,
+        "pitch_deg": -179.9,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": 0.0,
+        "pitch_rate_dps": 0.0,
+        "roll_rate_dps": -0.1
+      },
+      "attitude_calibrated": {
+        "yaw_deg": -14.7,
+        "pitch_deg": 0.09999999999999432
+      },
+      "zoom": 1.0,
+      "main_stream_encoding": {
+        "stream_type": "MAIN",
+        "enc_type": "H264",
+        "resolution_w": 1920,
+        "resolution_h": 1080,
+        "bitrate_kbps": 3670,
+        "frame_rate": 30
+      },
+      "latency_ms": 93.52919999946607
+    },
+    {
+      "device_id": "zr10_27",
+      "ip": "192.168.144.27",
+      "port": 37260,
+      "ok": true,
+      "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)",
+      "attitude_raw": {
+        "yaw_deg": 2.8,
+        "pitch_deg": 179.9,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": 0.0,
+        "pitch_rate_dps": -0.3,
+        "roll_rate_dps": 0.0
+      },
+      "attitude_calibrated": {
+        "yaw_deg": 2.8,
+        "pitch_deg": -0.09999999999999432
+      },
+      "zoom": 1.0,
+      "main_stream_encoding": {
+        "stream_type": "MAIN",
+        "enc_type": "H264",
+        "resolution_w": 1920,
+        "resolution_h": 1080,
+        "bitrate_kbps": 3670,
+        "frame_rate": 30
+      },
+      "latency_ms": 92.26910000143107
+    },
+    {
+      "device_id": "zr10_28",
+      "ip": "192.168.144.28",
+      "port": 37260,
+      "ok": true,
+      "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)",
+      "attitude_raw": {
+        "yaw_deg": -24.8,
+        "pitch_deg": 179.9,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": 0.0,
+        "pitch_rate_dps": 0.2,
+        "roll_rate_dps": 0.0
+      },
+      "attitude_calibrated": {
+        "yaw_deg": -24.8,
+        "pitch_deg": -0.09999999999999432
+      },
+      "zoom": 1.0,
+      "main_stream_encoding": {
+        "stream_type": "MAIN",
+        "enc_type": "H264",
+        "resolution_w": 1920,
+        "resolution_h": 1080,
+        "bitrate_kbps": 3670,
+        "frame_rate": 30
+      },
+      "latency_ms": 62.085099998512305
+    }
+  ],
+  "video": [
+    {
+      "device_id": "zr10_25",
+      "url": "rtsp://192.168.144.25:8554/main.264",
+      "ok": true,
+      "width": 1920,
+      "height": 1080,
+      "resolution_ok": true,
+      "mean_luma": 103.39437741126544,
+      "contrast": 56.47144690471697,
+      "laplacian_variance": 675.2172539643874,
+      "requested_frame_reads": 90,
+      "decoded_frames": 90,
+      "frame_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261018\\acceptance\\frames\\zr10_25.jpg",
+      "frame_sha256": "b58cdca79068334248db12517567560654160a3af679b39b346fa7b61e66d9e7",
+      "elapsed_ms": 6322.09050000165
+    },
+    {
+      "device_id": "zr10_26",
+      "url": "rtsp://192.168.144.26:8554/main.264",
+      "ok": true,
+      "width": 1920,
+      "height": 1080,
+      "resolution_ok": true,
+      "mean_luma": 104.22400945216049,
+      "contrast": 56.34022166181713,
+      "laplacian_variance": 1956.0548539744343,
+      "requested_frame_reads": 90,
+      "decoded_frames": 90,
+      "frame_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261018\\acceptance\\frames\\zr10_26.jpg",
+      "frame_sha256": "91550af44ae1f2768f591f7163b2c344d1814444acc842d85f752d3d467573fd",
+      "elapsed_ms": 5800.335899999482
+    },
+    {
+      "device_id": "zr10_27",
+      "url": "rtsp://192.168.144.27:8554/main.264",
+      "ok": true,
+      "width": 1920,
+      "height": 1080,
+      "resolution_ok": true,
+      "mean_luma": 106.00494068287037,
+      "contrast": 48.05114287294299,
+      "laplacian_variance": 455.03070938633056,
+      "requested_frame_reads": 90,
+      "decoded_frames": 90,
+      "frame_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261018\\acceptance\\frames\\zr10_27.jpg",
+      "frame_sha256": "5ead8bf21ff78b5c12eca86bb73ce1a25b0d704f53bf910d4ea54ea3c11ca56c",
+      "elapsed_ms": 5838.616300003196
+    },
+    {
+      "device_id": "zr10_28",
+      "url": "rtsp://192.168.144.28:8554/main.264",
+      "ok": true,
+      "width": 1920,
+      "height": 1080,
+      "resolution_ok": true,
+      "mean_luma": 103.73199074074074,
+      "contrast": 52.95241716425183,
+      "laplacian_variance": 333.9369585521296,
+      "requested_frame_reads": 90,
+      "decoded_frames": 90,
+      "frame_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261018\\acceptance\\frames\\zr10_28.jpg",
+      "frame_sha256": "4fe4d928b35a35f7dd7c74666c4b6b92197c4ebaa95e2085039d1e70b200fb5c",
+      "elapsed_ms": 5561.052199998812
+    }
+  ],
+  "pass": true
+}

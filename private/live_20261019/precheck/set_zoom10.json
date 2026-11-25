@@ -1,0 +1,360 @@
+{
+  "schema": "zr10-fixed-zoom-v1",
+  "created_utc_s": 1792405298.7145894,
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261018\\runtime_follow_local_zero_v2.yaml",
+  "apply": true,
+  "target_zoom": 10.0,
+  "gimbal_motion_commands_sent": false,
+  "camera_encoding_commands_sent": false,
+  "devices": [
+    {
+      "device_id": "zr10_25",
+      "ip": "192.168.144.25",
+      "apply": true,
+      "target_zoom": 10.0,
+      "gimbal_motion_commands_sent": false,
+      "camera_encoding_commands_sent": false,
+      "lens_zoom_commands_sent": 1,
+      "before": {
+        "zoom": 1.0,
+        "attitude_raw": {
+          "yaw_deg": -1.4,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "planned_change": true,
+      "command_ack": "timeout_pending_readback",
+      "command_ack_detail": "TimeoutError: Timeout waiting for response to command 0x0F after 0.8s",
+      "after": {
+        "zoom": 10.0,
+        "attitude_raw": {
+          "yaw_deg": -1.2,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": -0.1,
+          "roll_rate_dps": -0.1
+        }
+      },
+      "readback_samples": [
+        {
+          "t_monotonic_s": 107251.4257223,
+          "zoom": 1.4
+        },
+        {
+          "t_monotonic_s": 107252.0050716,
+          "zoom": 1.6
+        },
+        {
+          "t_monotonic_s": 107252.5707563,
+          "zoom": 1.9
+        },
+        {
+          "t_monotonic_s": 107253.1257109,
+          "zoom": 2.3
+        },
+        {
+          "t_monotonic_s": 107253.7050146,
+          "zoom": 2.6
+        },
+        {
+          "t_monotonic_s": 107254.2716736,
+          "zoom": 3.2
+        },
+        {
+          "t_monotonic_s": 107254.8257109,
+          "zoom": 3.8
+        },
+        {
+          "t_monotonic_s": 107255.4061341,
+          "zoom": 4.6
+        },
+        {
+          "t_monotonic_s": 107255.9723812,
+          "zoom": 5.6
+        },
+        {
+          "t_monotonic_s": 107256.5261142,
+          "zoom": 6.9
+        },
+        {
+          "t_monotonic_s": 107257.1068364,
+          "zoom": 8.5
+        },
+        {
+          "t_monotonic_s": 107257.6708069,
+          "zoom": 10.0
+        }
+      ],
+      "verified": true,
+      "ok": true,
+      "elapsed_ms": 7733.34839999734
+    },
+    {
+      "device_id": "zr10_26",
+      "ip": "192.168.144.26",
+      "apply": true,
+      "target_zoom": 10.0,
+      "gimbal_motion_commands_sent": false,
+      "camera_encoding_commands_sent": false,
+      "lens_zoom_commands_sent": 1,
+      "before": {
+        "zoom": 1.0,
+        "attitude_raw": {
+          "yaw_deg": -0.9,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.1,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "planned_change": true,
+      "command_ack": "timeout_pending_readback",
+      "command_ack_detail": "TimeoutError: Timeout waiting for response to command 0x0F after 0.8s",
+      "after": {
+        "zoom": 10.0,
+        "attitude_raw": {
+          "yaw_deg": -0.8,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "readback_samples": [
+        {
+          "t_monotonic_s": 107259.0944809,
+          "zoom": 1.6
+        },
+        {
+          "t_monotonic_s": 107259.6603438,
+          "zoom": 1.8
+        },
+        {
+          "t_monotonic_s": 107260.2111244,
+          "zoom": 2.1
+        },
+        {
+          "t_monotonic_s": 107260.7942443,
+          "zoom": 2.5
+        },
+        {
+          "t_monotonic_s": 107261.3605694,
+          "zoom": 2.8
+        },
+        {
+          "t_monotonic_s": 107261.9110682,
+          "zoom": 3.4
+        },
+        {
+          "t_monotonic_s": 107262.4912305,
+          "zoom": 4.0
+        },
+        {
+          "t_monotonic_s": 107263.0604238,
+          "zoom": 4.8
+        },
+        {
+          "t_monotonic_s": 107263.6111188,
+          "zoom": 5.9
+        },
+        {
+          "t_monotonic_s": 107264.1924,
+          "zoom": 7.2
+        },
+        {
+          "t_monotonic_s": 107264.7600815,
+          "zoom": 8.8
+        },
+        {
+          "t_monotonic_s": 107265.3113449,
+          "zoom": 10.0
+        }
+      ],
+      "verified": true,
+      "ok": true,
+      "elapsed_ms": 7640.503100003116
+    },
+    {
+      "device_id": "zr10_27",
+      "ip": "192.168.144.27",
+      "apply": true,
+      "target_zoom": 10.0,
+      "gimbal_motion_commands_sent": false,
+      "camera_encoding_commands_sent": false,
+      "lens_zoom_commands_sent": 1,
+      "before": {
+        "zoom": 1.0,
+        "attitude_raw": {
+          "yaw_deg": 0.9,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.1,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "planned_change": true,
+      "command_ack": "timeout_pending_readback",
+      "command_ack_detail": "TimeoutError: Timeout waiting for response to command 0x0F after 0.8s",
+      "after": {
+        "zoom": 10.0,
+        "attitude_raw": {
+          "yaw_deg": 1.0,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": -0.1,
+          "pitch_rate_dps": -0.1,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "readback_samples": [
+        {
+          "t_monotonic_s": 107266.7450345,
+          "zoom": 1.4
+        },
+        {
+          "t_monotonic_s": 107267.3262629,
+          "zoom": 1.6
+        },
+        {
+          "t_monotonic_s": 107267.8672954,
+          "zoom": 1.9
+        },
+        {
+          "t_monotonic_s": 107268.4285963,
+          "zoom": 2.2
+        },
+        {
+          "t_monotonic_s": 107268.9925708,
+          "zoom": 2.6
+        },
+        {
+          "t_monotonic_s": 107269.547398,
+          "zoom": 3.2
+        },
+        {
+          "t_monotonic_s": 107270.1262755,
+          "zoom": 3.8
+        },
+        {
+          "t_monotonic_s": 107270.6672237,
+          "zoom": 4.6
+        },
+        {
+          "t_monotonic_s": 107271.2268446,
+          "zoom": 5.6
+        },
+        {
+          "t_monotonic_s": 107271.7938249,
+          "zoom": 6.8
+        },
+        {
+          "t_monotonic_s": 107272.3672841,
+          "zoom": 8.3
+        },
+        {
+          "t_monotonic_s": 107272.9281082,
+          "zoom": 10.0
+        }
+      ],
+      "verified": true,
+      "ok": true,
+      "elapsed_ms": 7616.752000001725
+    },
+    {
+      "device_id": "zr10_28",
+      "ip": "192.168.144.28",
+      "apply": true,
+      "target_zoom": 10.0,
+      "gimbal_motion_commands_sent": false,
+      "camera_encoding_commands_sent": false,
+      "lens_zoom_commands_sent": 1,
+      "before": {
+        "zoom": 1.0,
+        "attitude_raw": {
+          "yaw_deg": -1.2,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.2,
+          "pitch_rate_dps": 0.3,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "planned_change": true,
+      "command_ack": "timeout_pending_readback",
+      "command_ack_detail": "TimeoutError: Timeout waiting for response to command 0x0F after 0.8s",
+      "after": {
+        "zoom": 10.0,
+        "attitude_raw": {
+          "yaw_deg": -1.1,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": -0.2,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "readback_samples": [
+        {
+          "t_monotonic_s": 107274.3696094,
+          "zoom": 1.4
+        },
+        {
+          "t_monotonic_s": 107274.9204911,
+          "zoom": 1.6
+        },
+        {
+          "t_monotonic_s": 107275.4710087,
+          "zoom": 1.8
+        },
+        {
+          "t_monotonic_s": 107276.0202009,
+          "zoom": 2.2
+        },
+        {
+          "t_monotonic_s": 107276.6003397,
+          "zoom": 2.6
+        },
+        {
+          "t_monotonic_s": 107277.1722881,
+          "zoom": 3.2
+        },
+        {
+          "t_monotonic_s": 107277.7205606,
+          "zoom": 3.7
+        },
+        {
+          "t_monotonic_s": 107278.3023689,
+          "zoom": 4.5
+        },
+        {
+          "t_monotonic_s": 107278.8740965,
+          "zoom": 5.6
+        },
+        {
+          "t_monotonic_s": 107279.4200532,
+          "zoom": 6.8
+        },
+        {
+          "t_monotonic_s": 107280.0030094,
+          "zoom": 8.3
+        },
+        {
+          "t_monotonic_s": 107280.5708422,
+          "zoom": 10.0
+        }
+      ],
+      "verified": true,
+      "ok": true,
+      "elapsed_ms": 7642.734599998221
+    }
+  ],
+  "pass": true
+}

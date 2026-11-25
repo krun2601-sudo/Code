@@ -1,0 +1,78 @@
+{
+  "schema": "ral-hil-confirmatory-workload-audit-v1",
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261019\\confirmatory_base.yaml",
+  "roi_override": null,
+  "generated_utc_s": 1792486514.6496303,
+  "deadline_rule": "ceil(max_method_device_upper_workload * safety_factor / round_to_s) * round_to_s",
+  "safety_factor": 1.5,
+  "round_to_s": 30.0,
+  "maximum_predicted_upper_makespan_s": 89.92669221090081,
+  "frozen_horizon_s": 150.0,
+  "methods": [
+    {
+      "method": "uac_robust_repair_v2",
+      "evaluation_cell_count": 384,
+      "reachable_count": 384,
+      "candidate_count": 820,
+      "planner_chunks": 1,
+      "offline_planning_ms": 200.16860001487657,
+      "task_count_by_device": {
+        "zr10_25": 3,
+        "zr10_26": 4,
+        "zr10_27": 2,
+        "zr10_28": 1
+      },
+      "upper_workload_s_by_device": {
+        "zr10_25": 67.42315259761276,
+        "zr10_26": 89.92669221090081,
+        "zr10_27": 45.235694247451775,
+        "zr10_28": 21.97645018296404
+      },
+      "predicted_upper_makespan_s": 89.92669221090081,
+      "plan_audit": {
+        "guarantee_reference": "mag",
+        "baseline_objective": {
+          "uncovered_count": 0,
+          "uac_h_s": 35.06289884519656,
+          "t95_s": 87.66032375775316,
+          "t100_s": 111.84327018338708,
+          "total_motion_deg": 21.865989451197457,
+          "load_cv": 0.5269433838933069
+        },
+        "final_objective": {
+          "uncovered_count": 0,
+          "uac_h_s": 31.19359913019599,
+          "t95_s": 67.15912964544992,
+          "t100_s": 89.92669221090081,
+          "total_motion_deg": 26.0281295366589,
+          "load_cv": 0.4501744912401784
+        },
+        "tail_cap_s": 111.84327018338708,
+        "uac_non_regression_verified": true,
+        "t100_non_regression_verified": true,
+        "accepted_moves": [
+          "redundant_delete",
+          "intra_route_relocate",
+          "intra_route_relocate",
+          "redundant_delete",
+          "intra_route_relocate",
+          "view_substitute_or_cross_device_relocate",
+          "view_substitute_or_cross_device_relocate",
+          "view_substitute_or_cross_device_relocate"
+        ],
+        "operation_counts": {
+          "measured_seed": 1,
+          "redundant_delete": 79,
+          "intra_route_relocate": 107,
+          "view_substitute_or_cross_device_relocate": 538
+        },
+        "rejection_counts": {
+          "incomplete_coverage": 76,
+          "uac_not_strictly_improved": 440,
+          "t100_cap_exceeded": 201
+        },
+        "evaluations": 724
+      }
+    }
+  ]
+}

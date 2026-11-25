@@ -1,0 +1,657 @@
+{
+  "schema_version": 1,
+  "audit": "v243_complete_hardware_revalidation",
+  "plan_id": "ralhil-v243-repair-revalidation-20-20261021",
+  "policy_version": "2.4.3",
+  "policy_sha256": "da8037d9d19d4121cc60cfe37db91c93db9bce472f6e0811ca9ee087f81cb5d5",
+  "accepted_runs": 20,
+  "analysis_manifest": {
+    "manifest": "f37f62d7896a3865d8cbb3a5e0573d66dcd1997c8f148429fa8348f6b250ba4a",
+    "run_metrics_wide.csv": "bbdc9be4fc175cf78d231b80f1c2051e98d346194f136c1c94d1429472220292",
+    "paired_repair_effects.csv": "335c5592c592a0f40a2e4c2946a8e83a4c735938bf5e129c7a0f42c8ddb5f1a8",
+    "rejection_report.csv": "94cde663881d3a6038f72dda6019e5e452e38a75c9f249f06078089361c7685a",
+    "repair_ablation_decision.json": "b37aa84cff3766a51d78e7c5eec1c58833223ff1aa769f058b40f080849794d0"
+  },
+  "decision_report_sha256": "5a53b94b2748094957e3d49977ec497a5ab3698e45d49cf91b1569bf46ca6aa5",
+  "planner_timing_ms": {
+    "initial_n": 20,
+    "initial_min": 21.518100023968145,
+    "initial_median": 30.754649997106753,
+    "initial_max": 48.79470000742003,
+    "initial_budget": 200.0,
+    "repair_n": 40,
+    "repair_min": 0.09980000322684646,
+    "repair_median": 2.5610000011511147,
+    "repair_max": 22.47579998220317,
+    "repair_budget": 40.0
+  },
+  "data_quality": {
+    "minimum_final_coverage": 1.0,
+    "total_ack_failures": 0.0,
+    "total_command_errors": 0.0,
+    "total_raw_unusable_frame_statuses": 1.0,
+    "unusable_frames_referenced_by_coverage_events": 0
+  },
+  "paired_inference": {
+    "uac_on_minus_off_s": {
+      "n": 10,
+      "median": -1.9790186920597164,
+      "bootstrap_95ci": [
+        -2.4956768937639366,
+        -1.8208067542999884
+      ],
+      "one_sided_exact_sign_p": 0.0107421875
+    },
+    "t100_on_over_off": {
+      "n": 10,
+      "median": 0.9980111962596895,
+      "bootstrap_95ci": [
+        0.9541716410981809,
+        1.0000639546672232
+      ],
+      "noninferiority_margin": 1.05
+    },
+    "gates": {
+      "complete_10_pairs": true,
+      "same_paused_device_within_every_pair": true,
+      "same_initial_plan_signature_within_every_pair": true,
+      "repair_on_uac_superior": true,
+      "repair_on_t100_noninferior_5pct": true,
+      "repair_mechanism_observed_in_every_pair": true
+    }
+  },
+  "aggregate_gates": {
+    "plan_is_v243_20_run_revalidation": true,
+    "frozen_software_hashes_match": true,
+    "batch_complete_without_error": true,
+    "final_home_passed": true,
+    "analysis_manifest_valid": true,
+    "decision_self_hash_valid": true,
+    "all_statistical_and_mechanism_gates_passed": true,
+    "all_20_run_evidence_and_budget_gates_passed": true
+  },
+  "runs": [
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R001",
+      "condition": "pause_repair_on",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T030029_371303Z",
+      "initial_planner_ms": 32.12869999697432,
+      "repair_planner_ms": [
+        9.755199978826568,
+        0.1686000032350421
+      ],
+      "replan_event_types": [
+        "replan_applied",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 7,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R002",
+      "condition": "pause_repair_off",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T030226_598349Z",
+      "initial_planner_ms": 43.146600015461445,
+      "repair_planner_ms": [
+        11.084099998697639,
+        0.17519999528303742
+      ],
+      "replan_event_types": [
+        "replan_noop",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 7,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R003",
+      "condition": "pause_repair_off",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T030700_420890Z",
+      "initial_planner_ms": 29.770699999062344,
+      "repair_planner_ms": [
+        9.287599998060614,
+        0.21779999951831996
+      ],
+      "replan_event_types": [
+        "replan_noop",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 6,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R004",
+      "condition": "pause_repair_on",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T030857_919273Z",
+      "initial_planner_ms": 34.70079999533482,
+      "repair_planner_ms": [
+        22.47579998220317,
+        0.1891000138130039
+      ],
+      "replan_event_types": [
+        "replan_applied",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 6,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R005",
+      "condition": "pause_repair_on",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T031058_959482Z",
+      "initial_planner_ms": 31.207899999571964,
+      "repair_planner_ms": [
+        15.868999995291233,
+        0.14709998504258692
+      ],
+      "replan_event_types": [
+        "replan_applied",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 7,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R006",
+      "condition": "pause_repair_off",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T031257_201788Z",
+      "initial_planner_ms": 29.198599979281425,
+      "repair_planner_ms": [
+        11.921800003619865,
+        0.17499999376013875
+      ],
+      "replan_event_types": [
+        "replan_noop",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 6,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R007",
+      "condition": "pause_repair_off",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T031454_623179Z",
+      "initial_planner_ms": 48.79470000742003,
+      "repair_planner_ms": [
+        9.276099997805431,
+        0.17389998538419604
+      ],
+      "replan_event_types": [
+        "replan_noop",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 6,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R008",
+      "condition": "pause_repair_on",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T031652_534150Z",
+      "initial_planner_ms": 37.69050000119023,
+      "repair_planner_ms": [
+        11.87950000166893,
+        0.1317000132985413
+      ],
+      "replan_event_types": [
+        "replan_applied",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 7,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R009",
+      "condition": "pause_repair_on",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T031850_794220Z",
+      "initial_planner_ms": 21.518100023968145,
+      "repair_planner_ms": [
+        5.866799998329952,
+        0.11589998030103743
+      ],
+      "replan_event_types": [
+        "replan_applied",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 7,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R010",
+      "condition": "pause_repair_off",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T032045_017685Z",
+      "initial_planner_ms": 25.29970000614412,
+      "repair_planner_ms": [
+        5.373199994210154,
+        0.10530001600272954
+      ],
+      "replan_event_types": [
+        "replan_noop",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 6,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R011",
+      "condition": "pause_repair_off",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T032238_856702Z",
+      "initial_planner_ms": 27.136599994264543,
+      "repair_planner_ms": [
+        4.958499979693443,
+        0.172699976246804
+      ],
+      "replan_event_types": [
+        "replan_noop",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 6,
+      "raw_unusable_frame_status_count": 1,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R012",
+      "condition": "pause_repair_on",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T032432_470089Z",
+      "initial_planner_ms": 32.91209999588318,
+      "repair_planner_ms": [
+        5.7379000063519925,
+        0.1033000007737428
+      ],
+      "replan_event_types": [
+        "replan_applied",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 7,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R013",
+      "condition": "pause_repair_on",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T032631_597160Z",
+      "initial_planner_ms": 32.94330000062473,
+      "repair_planner_ms": [
+        10.742699989350513,
+        0.2046999870799482
+      ],
+      "replan_event_types": [
+        "replan_applied",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 7,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R014",
+      "condition": "pause_repair_off",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T032826_392791Z",
+      "initial_planner_ms": 29.45420000469312,
+      "repair_planner_ms": [
+        4.943899984937161,
+        0.11719999019987881
+      ],
+      "replan_event_types": [
+        "replan_noop",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 6,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R015",
+      "condition": "pause_repair_off",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T033022_693784Z",
+      "initial_planner_ms": 29.669700015801936,
+      "repair_planner_ms": [
+        8.949699986260384,
+        0.18989999080076814
+      ],
+      "replan_event_types": [
+        "replan_noop",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 6,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R016",
+      "condition": "pause_repair_on",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T033217_334103Z",
+      "initial_planner_ms": 23.42740001040511,
+      "repair_planner_ms": [
+        5.3684000158682466,
+        0.09980000322684646
+      ],
+      "replan_event_types": [
+        "replan_applied",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 7,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R017",
+      "condition": "pause_repair_on",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T033414_537563Z",
+      "initial_planner_ms": 32.69210000871681,
+      "repair_planner_ms": [
+        13.866499997675419,
+        0.162799988174811
+      ],
+      "replan_event_types": [
+        "replan_applied",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 7,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R018",
+      "condition": "pause_repair_off",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T033609_758856Z",
+      "initial_planner_ms": 30.301399994641542,
+      "repair_planner_ms": [
+        5.201599997235462,
+        0.1272000081371516
+      ],
+      "replan_event_types": [
+        "replan_noop",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 6,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R019",
+      "condition": "pause_repair_off",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T033804_106866Z",
+      "initial_planner_ms": 31.21289997943677,
+      "repair_planner_ms": [
+        4.904200002783909,
+        0.14429999282583594
+      ],
+      "replan_event_types": [
+        "replan_noop",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 7,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    },
+    {
+      "plan_run_id": "ralhil-v243-repair-revalidation-20-20261021-R020",
+      "condition": "pause_repair_on",
+      "run_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\repair_revalidation_v243\\runs\\hardware_20261021T034001_315959Z",
+      "initial_planner_ms": 22.81840000068769,
+      "repair_planner_ms": [
+        5.083099997136742,
+        0.13070000568404794
+      ],
+      "replan_event_types": [
+        "replan_applied",
+        "replan_noop"
+      ],
+      "coverage_evidence_event_count": 7,
+      "raw_unusable_frame_status_count": 0,
+      "static_precomputed_edge_count": 4163,
+      "gates": {
+        "accepted_and_complete": true,
+        "full_384_cell_coverage": true,
+        "zero_ack_failures": true,
+        "zero_command_errors": true,
+        "all_coverage_evidence_frames_logged_usable": true,
+        "one_initial_plan_under_200ms": true,
+        "initial_plan_budget_audit_true": true,
+        "initial_static_prewarm_audited": true,
+        "all_pause_and_recovery_replans_under_40ms": true
+      },
+      "pass": true
+    }
+  ],
+  "pass": true,
+  "report_sha256": "c0cf1e451eb0b31d7a014dc2e7a7aa00b1cee5026aac8d523bf1258144b96ee5"
+}

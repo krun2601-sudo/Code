@@ -1,0 +1,66 @@
+[
+  {
+    "device_id": "zr10_25",
+    "ip": "192.168.144.25",
+    "port": 37260,
+    "ok": true,
+    "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)",
+    "attitude": {
+      "yaw_deg": -31.2,
+      "pitch_deg": -179.9,
+      "roll_deg": 0.0,
+      "yaw_rate_dps": 0.0,
+      "pitch_rate_dps": 0.0,
+      "roll_rate_dps": -0.2
+    },
+    "latency_ms": 63.277699999161996
+  },
+  {
+    "device_id": "zr10_26",
+    "ip": "192.168.144.26",
+    "port": 37260,
+    "ok": true,
+    "firmware": "FirmwareVersion(camera=1845494536, gimbal=1795163138, zoom=1828717059)",
+    "attitude": {
+      "yaw_deg": -14.6,
+      "pitch_deg": -179.9,
+      "roll_deg": 0.0,
+      "yaw_rate_dps": 0.0,
+      "pitch_rate_dps": 0.1,
+      "roll_rate_dps": 0.0
+    },
+    "latency_ms": 47.82129999875906
+  },
+  {
+    "device_id": "zr10_27",
+    "ip": "192.168.144.27",
+    "port": 37260,
+    "ok": true,
+    "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)",
+    "attitude": {
+      "yaw_deg": 2.8,
+      "pitch_deg": 179.9,
+      "roll_deg": 0.0,
+      "yaw_rate_dps": 0.0,
+      "pitch_rate_dps": 0.1,
+      "roll_rate_dps": -0.2
+    },
+    "latency_ms": 46.66770000039833
+  },
+  {
+    "device_id": "zr10_28",
+    "ip": "192.168.144.28",
+    "port": 37260,
+    "ok": true,
+    "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)",
+    "attitude": {
+      "yaw_deg": -24.9,
+      "pitch_deg": 179.9,
+      "roll_deg": 0.0,
+      "yaw_rate_dps": 0.0,
+      "pitch_rate_dps": 0.0,
+      "roll_rate_dps": 0.1
+    },
+    "latency_ms": 53.70019999827491
+  }
+]

@@ -1,0 +1,262 @@
+{
+  "schema": "zr10-camera-baseline-v1",
+  "created_utc_s": 1792299460.47758,
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\configs\\private_site_overlay.yaml",
+  "apply": false,
+  "gimbal_motion_commands_sent": false,
+  "devices": [
+    {
+      "device_id": "zr10_25",
+      "ip": "192.168.144.25",
+      "apply": false,
+      "gimbal_motion_commands_sent": false,
+      "camera_configuration_commands_sent": 0,
+      "lens_zoom_commands_sent": 0,
+      "before": {
+        "attitude_raw": {
+          "yaw_deg": -119.7,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.1,
+          "roll_rate_dps": 0.0
+        },
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H264",
+          "resolution_w": 1920,
+          "resolution_h": 1080,
+          "bitrate_kbps": 3584,
+          "frame_rate": 30
+        },
+        "zoom": 1.0
+      },
+      "target": {
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H264",
+          "resolution_w": 1920,
+          "resolution_h": 1080,
+          "bitrate_kbps": 3584
+        },
+        "zoom": 10.0
+      },
+      "planned_changes": {
+        "encoding": false,
+        "zoom": true
+      },
+      "after": {
+        "attitude_raw": {
+          "yaw_deg": -119.7,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.3,
+          "roll_rate_dps": 0.0
+        },
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H264",
+          "resolution_w": 1920,
+          "resolution_h": 1080,
+          "bitrate_kbps": 3584,
+          "frame_rate": 30
+        },
+        "zoom": 1.0
+      },
+      "verified": false,
+      "ok": true,
+      "elapsed_ms": 121.65209999989202
+    },
+    {
+      "device_id": "zr10_26",
+      "ip": "192.168.144.26",
+      "apply": false,
+      "gimbal_motion_commands_sent": false,
+      "camera_configuration_commands_sent": 0,
+      "lens_zoom_commands_sent": 0,
+      "before": {
+        "attitude_raw": {
+          "yaw_deg": -79.1,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.1
+        },
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H265",
+          "resolution_w": 1280,
+          "resolution_h": 720,
+          "bitrate_kbps": 1607,
+          "frame_rate": 30
+        },
+        "zoom": 1.0
+      },
+      "target": {
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H264",
+          "resolution_w": 1920,
+          "resolution_h": 1080,
+          "bitrate_kbps": 3584
+        },
+        "zoom": 10.0
+      },
+      "planned_changes": {
+        "encoding": true,
+        "zoom": true
+      },
+      "after": {
+        "attitude_raw": {
+          "yaw_deg": -79.1,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.0
+        },
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H265",
+          "resolution_w": 1280,
+          "resolution_h": 720,
+          "bitrate_kbps": 1607,
+          "frame_rate": 30
+        },
+        "zoom": 1.0
+      },
+      "verified": false,
+      "ok": true,
+      "elapsed_ms": 101.79360000006454
+    },
+    {
+      "device_id": "zr10_27",
+      "ip": "192.168.144.27",
+      "apply": false,
+      "gimbal_motion_commands_sent": false,
+      "camera_configuration_commands_sent": 0,
+      "lens_zoom_commands_sent": 0,
+      "before": {
+        "attitude_raw": {
+          "yaw_deg": -62.1,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.0
+        },
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H265",
+          "resolution_w": 1280,
+          "resolution_h": 720,
+          "bitrate_kbps": 1607,
+          "frame_rate": 30
+        },
+        "zoom": 1.0
+      },
+      "target": {
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H264",
+          "resolution_w": 1920,
+          "resolution_h": 1080,
+          "bitrate_kbps": 3584
+        },
+        "zoom": 10.0
+      },
+      "planned_changes": {
+        "encoding": true,
+        "zoom": true
+      },
+      "after": {
+        "attitude_raw": {
+          "yaw_deg": -61.9,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": -0.2,
+          "roll_rate_dps": 0.0
+        },
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H265",
+          "resolution_w": 1280,
+          "resolution_h": 720,
+          "bitrate_kbps": 1607,
+          "frame_rate": 30
+        },
+        "zoom": 1.0
+      },
+      "verified": false,
+      "ok": true,
+      "elapsed_ms": 112.43190000004688
+    },
+    {
+      "device_id": "zr10_28",
+      "ip": "192.168.144.28",
+      "apply": false,
+      "gimbal_motion_commands_sent": false,
+      "camera_configuration_commands_sent": 0,
+      "lens_zoom_commands_sent": 0,
+      "before": {
+        "attitude_raw": {
+          "yaw_deg": -106.9,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.2,
+          "roll_rate_dps": 0.2
+        },
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H265",
+          "resolution_w": 1280,
+          "resolution_h": 720,
+          "bitrate_kbps": 1607,
+          "frame_rate": 30
+        },
+        "zoom": 1.0
+      },
+      "target": {
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H264",
+          "resolution_w": 1920,
+          "resolution_h": 1080,
+          "bitrate_kbps": 3584
+        },
+        "zoom": 10.0
+      },
+      "planned_changes": {
+        "encoding": true,
+        "zoom": true
+      },
+      "after": {
+        "attitude_raw": {
+          "yaw_deg": -106.9,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.1
+        },
+        "main_stream_encoding": {
+          "stream_type": "MAIN",
+          "enc_type": "H265",
+          "resolution_w": 1280,
+          "resolution_h": 720,
+          "bitrate_kbps": 1607,
+          "frame_rate": 30
+        },
+        "zoom": 1.0
+      },
+      "verified": false,
+      "ok": true,
+      "elapsed_ms": 85.69149999993897
+    }
+  ],
+  "pass": false
+}

@@ -1,0 +1,68 @@
+\section{Experimental System and Methods}\label{sec:experiments}
+
+\subsection{Four-Camera Platform and Frozen Geometry}
+
+The platform comprises four ZR10 pan--tilt cameras connected to one control computer. The controller runs at 10~Hz in the \texttt{velocity\_p} mode and receives four RTSP streams. In the frozen local model, camera positions are $(-5,-5,1.5)$, $(-5,5,1.5)$, $(5,5,1.5)$, and $(5,-5,1.5)$~m. The evaluation volume is $[112,128]\times[-8,8]\times[52,68]$~m and is discretized into an $8\times12\times4$ grid, giving 384 equal-weight cells. All cameras use fixed 10$\times$ zoom and a configured resolution of $1920\times1080$. Candidate commands obey azimuth limits of $[-35^\circ,35^\circ]$ and elevation limits of $[-20^\circ,20^\circ]$.
+
+These coordinates constitute one internally consistent local geometry for planning and log reconstruction. They are not used to claim absolute world-coordinate pointing accuracy. The admissible map in Equation~\eqref{eq:safety-core} is shared by ECR-Cover, MAG, and the calibrated static baseline, so between-method effects cannot be attributed to different field-of-view contractions.
+
+\subsection{Execution-Confirmation Thresholds}
+
+A viewpoint reaches the stable-pose gate when measured azimuth and elevation are within $1^\circ$ of the command and angular speed is below $0.8^\circ$~s$^{-1}$ continuously for 0.35~s. The device then dwells for 0.8~s. Confirmation requires at least three new frames, a frame--pose time difference no greater than 0.2~s, and a fresh-frame wait no longer than 2~s. Frame records also pass availability, resolution, brightness, contrast, and sharpness checks before they can support coverage.
+
+The $1^\circ$ planning half-width was tied to the implemented completion gate and observed pose errors. On 48 independent calibration transfers, the median, 95th percentile, and maximum azimuth arrival errors were $0.667^\circ$, $0.941^\circ$, and $1.000^\circ$; the corresponding elevation values were $0.469^\circ$, $0.870^\circ$, and $0.893^\circ$. On the 48 independent test transfers, the maximum azimuth and elevation errors were $0.891^\circ$ and $0.889^\circ$. Accordingly, $e_i^\theta=e_i^\phi=1^\circ$ was used for all four devices. The value is a completion tolerance in the control and telemetry coordinates, not a confidence bound for all camera-model errors.
+
+The geometric effect of this choice was quantified offline on the frozen model without changing any hardware result. Table~\ref{tab:core-sensitivity} varies the half-width and recomputes candidate coverage and the initial ECR-Cover plan. At $1^\circ$, the median candidate covers 56 cells rather than 138 under the nominal map, and the planned route contains 16 rather than 5 tasks. This sensitivity check explains that the chosen map is consequential, but it is not a hardware comparison among tolerance settings.
+
+\subsection{Execution-Time Calibration}
+
+Each camera performed 60 stratified transfers, for 240 total. The transfer set covered the small, medium, and large angular groups and both signs of azimuth and elevation motion. For each device, 36 complete-run samples were used for model fitting, 12 disjoint complete-run samples for residual calibration, and 12 further complete-run samples only for testing. A run never contributed observations to more than one split. This run-level separation avoids allowing closely related records from the same execution to enter both fitting and calibration.
+
+Table~\ref{tab:time-model} reports the independent test results. The upper-bound coverage column is the fraction of test transfers whose complete command-to-fresh-frame duration did not exceed Equation~\eqref{eq:time-upper}. The experiment targeted a one-sided 90\% level. Prediction error remains material because the response includes settling and frame acquisition rather than only gimbal travel. The method therefore uses the calibrated bound for planning instead of treating a nominal angular speed as an execution clock.
+
+\begin{table*}[t]
+\caption{Independent test results for the end-to-end execution-time model.}\label{tab:time-model}
+\centering
+\begin{tabular}{cccccc}
+\toprule
+Device & Test transfers & MAE (s) & RMSE (s) & Upper-bound coverage (\%) & Mean upper margin (s)\\
+\midrule
+ZR10-1 & 12 & 3.262 & 3.719 & 100.0 & 5.917\\
+ZR10-2 & 12 & 3.977 & 4.655 & 91.7  & 5.917\\
+ZR10-3 & 12 & 4.458 & 5.367 & 83.3  & 6.098\\
+ZR10-4 & 12 & 5.229 & 7.469 & 83.3  & 6.823\\
+\midrule
+Aggregate/mean & 48 & 4.231 & 5.302 & 89.6 & 6.188\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\caption{Offline sensitivity of the planning feasible map in the frozen geometry. The analysis changes only the planning-map half-width; it does not add hardware trials.}\label{tab:core-sensitivity}
+\centering
+\begin{tabular}{cccccc}
+\toprule
+Half-width (deg) & Median cells/view & Median retained (\%) & Planned tasks & Planned UAC (s) & Planned T100 (s)\\
+\midrule
+0.0 & 138 & 100.0 & 5  & 4.816  & 17.886\\
+0.5 & 94  & 68.7  & 8  & 6.394  & 21.486\\
+1.0 & 56  & 40.3  & 16 & 9.970  & 40.348\\
+1.5 & 24  & 16.2  & 33 & 17.204 & 85.519\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Experimental Protocol and Research Questions}
+
+The evaluation horizon was fixed at $H=60$~s and each run recorded 85~s of system activity. Before a run, the controller checked all four poses, zoom values, video streams, and configuration hashes. After a run, all devices returned to their home poses. A complete physical run, not a control cycle, frame, event, or cell, is the statistical unit.
+
+Nominal evaluation used ten randomized blocks. Each block contained ECR-Cover, MAG, and a calibrated static method that used Equation~\eqref{eq:time-upper} to construct its initial route but never modified the queue during execution. These 30 runs addressed whether ECR-Cover improves run-level first-coverage latency without worsening the completion tail.
+
+Interruption trials logically paused an active device for 25~s when confirmed coverage first reached 50\%. The paused device was selected by a frozen rule: among active devices, choose the one owning the greatest number of uniquely covered remaining cells. One ten-block experiment compared ECR-Cover with the calibrated static method under this interruption. Because that comparison changes both initial route and repair behavior, it is reported as a system-level comparison rather than evidence isolating repair. A second ten-block experiment held the initial ECR-Cover route, pause rule, and evidence logic fixed and paired repair enabled with repair disabled. This repair-on/off ablation is the primary test of the repair mechanism. Across nominal, interrupted-baseline, and repair-ablation protocols, 70 hardware runs were completed.
+
+The experiments were organized around four questions. RQ1 asks how well the grouped end-to-end bounds describe independent transfers. RQ2 asks whether the baseline-preserving initial planner reduces nominal UAC while maintaining T100. RQ3 asks whether event repair, isolated by the switch ablation, changes UAC and remains noninferior in T100. RQ4 asks whether the events supporting coverage and reassignment are traceable to measured poses and fresh frames, and whether planning respects its wall-clock budgets.
+
+\subsection{Statistical Analysis}
+
+All reported summaries are calculated at the run level. For each method, continuous outcomes are presented as the median and interquartile range (IQR), with the ten original observations retained in the figures. Paired effects use within-block differences or ratios. The reported 95\% confidence intervals were produced by 100000 block-level bootstrap resamples under the frozen analysis. Directional primary hypotheses use the preregistered one-sided exact sign test. For nominal coverage, the principal comparison is ECR-Cover minus MAG UAC; the calibrated-static comparison characterizes the additional gain over a time-aware fixed route. For repair ablation, the principal effect is repair-on minus repair-off UAC. T100 is evaluated against the frozen 5\% noninferiority margin using the paired repair-on/off ratio. T95, total angular motion, load coefficient of variation, frame waiting, and planning time are secondary descriptive outcomes. Runs that failed to complete within $H$ would contribute censored first-coverage times at $H$ through Equation~\eqref{eq:uac}; no such run was discarded or replaced in the reported 70-run set. The plotting code displays the frozen intervals and does not recalculate them with an alternative statistical procedure.
+

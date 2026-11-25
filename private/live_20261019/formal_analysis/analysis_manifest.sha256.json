@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "plan_sha256": "5d05d7a0979442e0f92ea63ed988e9043e80b1037546f81b0d0504ddff5ab5b6",
+  "artifacts": {
+    "run_metrics_wide.csv": "29a72adb7550f3ff446af056846dfc7b8f053d2a3fcad80aa8d55d684d416472",
+    "long_table.csv": "292be7ac5acc6d6838524c438a0cf85ac891169a1e816c456bb73717b8ad39db",
+    "main_table.csv": "04a0168f458b0c532742b985b5899c28ef11e1f57af65fb91a79331befdf9a62",
+    "paired_bootstrap.csv": "ceea1d0eef88a266f0c8c76e6a71eee7e0f83c3fcf1795d51f71dfef2a9c25c7",
+    "hypothesis_tests.csv": "784a35b23fb2a723e68d4f0d62acb602e1d6ceca21d1e6bbfa7cfba25ae03e91",
+    "time_to_threshold.csv": "a19d075f77c0de4b98c57ae127ea1e6d6d2129fd82c70abe705cbed9a9861976",
+    "rejection_report.csv": "f5758d4d296637a85e1d8bf1bd0b2aa5f313585a1f56a7cd78adeb4ca76f3f5f",
+    "analysis_summary.json": "34fa0643b2e66f0be37220891e06f3ccf91bccc6989d31fdbdb458cf27872ce4"
+  }
+}

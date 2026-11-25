@@ -1,0 +1,155 @@
+{
+  "schema": "zr10-read-only-audit-v1",
+  "created_utc_s": 1792299618.7355196,
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\configs\\private_site_overlay.yaml",
+  "motion_commands_sent": false,
+  "telemetry": [
+    {
+      "device_id": "zr10_25",
+      "ip": "192.168.144.25",
+      "port": 37260,
+      "ok": true,
+      "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)",
+      "attitude_raw": {
+        "yaw_deg": -90.5,
+        "pitch_deg": -179.9,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": 0.0,
+        "pitch_rate_dps": 0.1,
+        "roll_rate_dps": 0.0
+      },
+      "attitude_calibrated": {
+        "yaw_deg": -90.5,
+        "pitch_deg": 0.09999999999999432
+      },
+      "zoom": 10.0,
+      "main_stream_encoding": {
+        "stream_type": "MAIN",
+        "enc_type": "H264",
+        "resolution_w": 1920,
+        "resolution_h": 1080,
+        "bitrate_kbps": 3584,
+        "frame_rate": 30
+      },
+      "latency_ms": 64.4300999999814
+    },
+    {
+      "device_id": "zr10_26",
+      "ip": "192.168.144.26",
+      "port": 37260,
+      "ok": true,
+      "firmware": "FirmwareVersion(camera=1845494536, gimbal=1795163138, zoom=1828717059)",
+      "attitude_raw": {
+        "yaw_deg": -91.5,
+        "pitch_deg": -179.9,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": 0.0,
+        "pitch_rate_dps": 0.0,
+        "roll_rate_dps": 0.0
+      },
+      "attitude_calibrated": {
+        "yaw_deg": -91.5,
+        "pitch_deg": 0.09999999999999432
+      },
+      "zoom": 10.0,
+      "main_stream_encoding": {
+        "stream_type": "MAIN",
+        "enc_type": "H265",
+        "resolution_w": 1920,
+        "resolution_h": 1080,
+        "bitrate_kbps": 3584,
+        "frame_rate": 30
+      },
+      "latency_ms": 67.1709999999166
+    },
+    {
+      "device_id": "zr10_27",
+      "ip": "192.168.144.27",
+      "port": 37260,
+      "ok": true,
+      "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)",
+      "attitude_raw": {
+        "yaw_deg": -84.5,
+        "pitch_deg": 179.9,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": 0.1,
+        "pitch_rate_dps": -0.3,
+        "roll_rate_dps": 0.0
+      },
+      "attitude_calibrated": {
+        "yaw_deg": -84.5,
+        "pitch_deg": -0.09999999999999432
+      },
+      "zoom": 10.0,
+      "main_stream_encoding": {
+        "stream_type": "MAIN",
+        "enc_type": "H265",
+        "resolution_w": 1920,
+        "resolution_h": 1080,
+        "bitrate_kbps": 3584,
+        "frame_rate": 30
+      },
+      "latency_ms": 77.47569999992265
+    },
+    {
+      "device_id": "zr10_28",
+      "ip": "192.168.144.28",
+      "port": 37260,
+      "ok": true,
+      "firmware": "FirmwareVersion(camera=1845494537, gimbal=1795163139, zoom=1828717059)",
+      "attitude_raw": {
+        "yaw_deg": -118.0,
+        "pitch_deg": 179.9,
+        "roll_deg": 0.0,
+        "yaw_rate_dps": 0.1,
+        "pitch_rate_dps": 0.2,
+        "roll_rate_dps": 0.2
+      },
+      "attitude_calibrated": {
+        "yaw_deg": -118.0,
+        "pitch_deg": -0.09999999999999432
+      },
+      "zoom": 10.0,
+      "main_stream_encoding": {
+        "stream_type": "MAIN",
+        "enc_type": "H265",
+        "resolution_w": 1920,
+        "resolution_h": 1080,
+        "bitrate_kbps": 3584,
+        "frame_rate": 30
+      },
+      "latency_ms": 77.05650000002606
+    }
+  ],
+  "video": [
+    {
+      "device_id": "zr10_25",
+      "url": "rtsp://192.168.144.25:8554/main.265",
+      "ok": false,
+      "error": "RuntimeError: RTSP stream could not be opened",
+      "elapsed_ms": 5.020199999989927
+    },
+    {
+      "device_id": "zr10_26",
+      "url": "rtsp://192.168.144.26:8554/main.265",
+      "ok": false,
+      "error": "RuntimeError: RTSP stream could not be opened",
+      "elapsed_ms": 6.820100000140883
+    },
+    {
+      "device_id": "zr10_27",
+      "url": "rtsp://192.168.144.27:8554/main.265",
+      "ok": false,
+      "error": "RuntimeError: RTSP stream could not be opened",
+      "elapsed_ms": 19.921299999850817
+    },
+    {
+      "device_id": "zr10_28",
+      "url": "rtsp://192.168.144.28:8554/main.265",
+      "ok": false,
+      "error": "RuntimeError: RTSP stream could not be opened",
+      "elapsed_ms": 6.769999999960419
+    }
+  ],
+  "pass": false
+}

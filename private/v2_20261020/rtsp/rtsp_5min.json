@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "gate": "v2_four_stream_rtsp_stability",
+  "generated_utc": "2026-10-20T09:31:50.079295+00:00",
+  "network_read_only": true,
+  "motion_or_sdk_command_performed": false,
+  "hardware_config_sha256": "0764cf034a191762d3c4f09ad8e6cd2593b5bd88c774691ecd011c9a234ecb92",
+  "duration_s": 300.0,
+  "max_gap_s": 2.0,
+  "startup_timeout_s": 20.0,
+  "devices": [
+    {
+      "device_id": "zr10_25",
+      "pass": true,
+      "requested_duration_s": 300.0,
+      "observed_wall_duration_s": 301.7065363000147,
+      "startup_to_first_frame_s": 1.6847890999924857,
+      "decoded_span_s": 300.02171630001976,
+      "decoded_frame_count": 9015,
+      "failed_read_count": 0,
+      "maximum_decoded_frame_gap_s": 0.07938640000065789,
+      "maximum_allowed_gap_s": 2.0,
+      "observed_resolutions": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "expected_resolution": [
+        1920,
+        1080
+      ],
+      "error": ""
+    },
+    {
+      "device_id": "zr10_26",
+      "pass": true,
+      "requested_duration_s": 300.0,
+      "observed_wall_duration_s": 304.64332229999127,
+      "startup_to_first_frame_s": 4.606063699990045,
+      "decoded_span_s": 300.03724400000647,
+      "decoded_frame_count": 9015,
+      "failed_read_count": 0,
+      "maximum_decoded_frame_gap_s": 0.0712096999923233,
+      "maximum_allowed_gap_s": 2.0,
+      "observed_resolutions": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "expected_resolution": [
+        1920,
+        1080
+      ],
+      "error": ""
+    },
+    {
+      "device_id": "zr10_27",
+      "pass": true,
+      "requested_duration_s": 300.0,
+      "observed_wall_duration_s": 303.4328424000123,
+      "startup_to_first_frame_s": 3.4286377000098582,
+      "decoded_span_s": 300.0041848999972,
+      "decoded_frame_count": 9015,
+      "failed_read_count": 0,
+      "maximum_decoded_frame_gap_s": 0.0787895999965258,
+      "maximum_allowed_gap_s": 2.0,
+      "observed_resolutions": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "expected_resolution": [
+        1920,
+        1080
+      ],
+      "error": ""
+    },
+    {
+      "device_id": "zr10_28",
+      "pass": true,
+      "requested_duration_s": 300.0,
+      "observed_wall_duration_s": 306.40830650000134,
+      "startup_to_first_frame_s": 6.373024200001964,
+      "decoded_span_s": 300.0352649000124,
+      "decoded_frame_count": 9016,
+      "failed_read_count": 0,
+      "maximum_decoded_frame_gap_s": 0.07928149998770095,
+      "maximum_allowed_gap_s": 2.0,
+      "observed_resolutions": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "expected_resolution": [
+        1920,
+        1080
+      ],
+      "error": ""
+    }
+  ],
+  "pass": true,
+  "report_sha256": "29f9b01c78b99ae1e1ebe4ace867519a34625771066a438e590f43fbf2e0b2f3"
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "primary_method": "uac_robust_repair_v2",
+  "primary_baseline": "mag",
+  "uac_paired_difference_s": {
+    "n": 1,
+    "median": 3.404020136183818,
+    "bootstrap_95ci": [
+      3.404020136183818,
+      3.404020136183818
+    ],
+    "one_sided_exact_sign_p": 1.0
+  },
+  "t100_ratio": {
+    "n": 1,
+    "median": 0.9077795386512764,
+    "bootstrap_95ci": [
+      0.9077795386512764,
+      0.9077795386512764
+    ],
+    "noninferiority_margin": 1.05
+  },
+  "pause_uac_difference_in_differences_s": {
+    "n": 1,
+    "median": -2.940917625481247,
+    "bootstrap_95ci": [
+      -2.940917625481247,
+      -2.940917625481247
+    ]
+  },
+  "reassigned_coverage_before_recovery_count": 1,
+  "gates": {
+    "complete_10_blocks": false,
+    "uac_superiority_vs_mag": false,
+    "t100_noninferior_5pct_vs_mag": false,
+    "pause_difference_in_differences_favorable": false,
+    "reassigned_coverage_before_recovery_observed": true
+  },
+  "paper_start_allowed": false
+}

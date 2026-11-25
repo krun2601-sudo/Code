@@ -1,0 +1,64 @@
+\documentclass[ASNA,twocolumn]{USG}
+
+\usepackage{anyfontsize}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{bm}
+\graphicspath{{./figures/}{./images/}}
+
+\articletype{RESEARCH ARTICLE}
+\received{--}
+\revised{--}
+\accepted{--}
+\journal{Advanced Intelligent Systems}
+\volume{0}
+\copyyear{2026}
+\startpage{1}
+\articledoi{pending}
+
+\begin{document}
+
+\title{Execution-Confirmed Cooperative Coverage with Baseline-Preserving Repair in Networked Directional Camera Systems}
+\author[1]{[ANONYMIZED FOR REVIEW]}
+\authormark{ANONYMOUS AUTHOR(S)}
+\titlemark{EXECUTION-CONFIRMED COOPERATIVE COVERAGE}
+\address[1]{\orgdiv{[DEPARTMENT TO BE COMPLETED], }\orgname{[INSTITUTION TO BE COMPLETED], }\orgaddress{\country{[COUNTRY TO BE COMPLETED]}}}
+\corres{[CORRESPONDING AUTHOR AND EMAIL TO BE COMPLETED]}
+
+\keywords{cooperative coverage | active vision | networked sensing robots | task allocation | execution confirmation}
+
+\abstract[ABSTRACT]{Networked directional cameras can enlarge their collective field of view by coordinated pointing, but a planned viewpoint does not establish that a physical observation has occurred. Actuation, settling, video refresh, pose--frame synchronization, and temporary device unavailability alter when each spatial cell is first observed. This article presents ECR-Cover, an execution-confirmed cooperative coverage method that closes this planning--execution gap. It minimizes the area under the uncovered-cell curve over a fixed horizon while constraining complete-coverage time. Initial planning retains a motion-aware greedy solution as an executable baseline and accepts local changes only when they reduce the robust objective without increasing its completion-time bound. During operation, coverage is recorded only after an acknowledged command, stable pose, dwell, fresh image frame, and measured-pose projection; event-triggered repair is likewise compared with continuing the original queues. Four-camera hardware experiments used 240 stratified transitions to calibrate execution-time bounds and 70 frozen-protocol runs for evaluation. Under nominal conditions, ECR-Cover reduced paired UAC relative to both baselines without degrading T100. In repair ablation, it improved nine of ten paired blocks, preserved the preregistered T100 noninferiority margin, and produced measured-pose, fresh-frame evidence of reassigned coverage before recovery in every repair-on run.}
+
+\maketitle
+
+\input{sections/01_introduction}
+\input{sections/02_related_work}
+\input{sections/03_problem_formulation}
+\input{sections/04_method}
+\input{sections/05_experimental_methods}
+\input{sections/06_results}
+\input{sections/07_discussion}
+\input{sections/08_conclusion}
+
+\bmsubsection*{Acknowledgments}
+[ACKNOWLEDGMENTS TO BE COMPLETED AFTER DE-ANONYMIZATION.]
+
+\bmsubsection*{Author Contributions}
+[AUTHOR CONTRIBUTIONS TO BE COMPLETED AFTER DE-ANONYMIZATION.]
+
+\bmsubsection*{Funding}
+[FUNDING SOURCES AND GRANT NUMBERS TO BE COMPLETED.]
+
+\bmsubsection*{Conflict of Interest}
+[CONFLICT-OF-INTEREST STATEMENT TO BE CONFIRMED BY ALL AUTHORS.]
+
+\bmsubsection*{Data Availability Statement}
+[REPOSITORY URL, ACCESS CONDITIONS, AND RELEASE TIMING TO BE COMPLETED. The intended public release comprises the coverage-planning code, frozen configurations, run-level data, analysis scripts, and reproducible figure scripts, subject to the authors' final repository audit.]
+
+\bmsubsection*{Generative AI Use Disclosure}
+[DISCLOSURE TO BE CONFIRMED BY THE AUTHORS. A compliant statement should identify any generative-AI tools used for language editing or manuscript preparation, describe human verification of all technical content and citations, and state that the authors retain full responsibility for the manuscript.]
+
+\bibliography{references}
+
+\end{document}
+

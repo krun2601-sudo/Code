@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-20T11:38:40.470336+00:00",
+  "motion_or_network_performed": false,
+  "operator_arm_authorization": true,
+  "operator_arm_authorization_basis": "explicit_user_request",
+  "plan_file_sha256": "9ae37296804b12109fd9d664bfd11d9b2e83451d68728c4712ca0c883df75852",
+  "preflight_file_sha256": "f5726833f91911cce034c9bd95eb1e4ac177a703f4976dfba99b3039bb54dd58",
+  "preflight_report_sha256": "7e9ef8b9762587fa887abc8d2b5877960025db6f723f013d1aac9ea211d4492c",
+  "preflight_summary": {
+    "ready_to_move": true,
+    "phase": "experiment",
+    "static_pass": true,
+    "live_pass": true,
+    "config_sha256": "6b262b9776ef18fdf9ea44265cdea0ece50fb64187d5c0aba8d33ff94fe50b5c",
+    "hardware_config_sha256": "3da2ddf086e862f331b3ff91576cab7d12f477b8061b68039eba620d613ebb4d",
+    "execution_model_sha256": "c468ba08a9d7d7a14b010fb7130f4588f0dc335731dac88bd1774037290b9974",
+    "coverage_task_observed": {
+      "evaluation_cell_count": 384,
+      "reachable_count": 384,
+      "reachable_ratio": 1.0,
+      "evaluation_grid": [
+        8,
+        12,
+        4
+      ],
+      "candidate_count": 820
+    },
+    "policy_source_sha256": "668d823ba6626c5f1e832b7128adae5d9b1b09cf8cd9b512c0f90d3d58f7d64e",
+    "policy_algorithm_version": "2.3.0"
+  },
+  "plan_row": {
+    "schema_version": 2,
+    "protocol_version": "ral-hil-2-development",
+    "design_id": "v2-development-six-run-gate",
+    "plan_id": "ralhil-v2-dev6-20261023",
+    "plan_run_id": "ralhil-v2-dev6-20261023-R004",
+    "run_index": 4,
+    "block": 1,
+    "pair_id": "B01-pause",
+    "within_pair_order": 1,
+    "method": "measured_static",
+    "condition": "pause",
+    "instance_seed": 0,
+    "injection_seed": 491820967,
+    "solver_seed": 0,
+    "horizon_s": 60.0,
+    "runtime_duration_s": 75.0,
+    "condition_parameters_json": "{\"device_selection\":\"max_unique_reserved_coverage\",\"duration_s\":20.0,\"enabled\":true,\"implementation\":\"policy_availability_mask\",\"kind\":\"logical_availability_pause\",\"last_command_expires_by_ttl\":true,\"no_sdk_fault_injection\":true,\"seed\":491820967,\"trigger\":\"coverage_fraction\",\"trigger_coverage_fraction\":0.5}",
+    "expected_config_sha256": "6b262b9776ef18fdf9ea44265cdea0ece50fb64187d5c0aba8d33ff94fe50b5c",
+    "expected_hardware_config_sha256": "3da2ddf086e862f331b3ff91576cab7d12f477b8061b68039eba620d613ebb4d",
+    "expected_pair_frozen_sha256": "e56c77cd9146e50ea1429a69934eacde8e826df4ddb7fb7e91d05cefc2fdca0d",
+    "expected_evaluation_cell_count": 384,
+    "expected_policy_sha256": "668d823ba6626c5f1e832b7128adae5d9b1b09cf8cd9b512c0f90d3d58f7d64e",
+    "expected_policy_version": "2.3.0",
+    "expected_execution_model_sha256": "c468ba08a9d7d7a14b010fb7130f4588f0dc335731dac88bd1774037290b9974",
+    "overlay_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\development_v23\\overlays\\004_measured_static_pause.yaml",
+    "cooldown_s": 10.0,
+    "status": "planned"
+  },
+  "context_sha256": "010c2ae1c66b96d580d9cca1b9cab608aea50d6868d7dd77ba2dad45264716c5"
+}

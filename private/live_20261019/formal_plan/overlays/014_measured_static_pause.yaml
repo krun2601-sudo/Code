@@ -1,0 +1,29 @@
+extends: ../../confirmatory_base.yaml
+system:
+  duration_s: 123.0
+policy:
+  method: measured_static
+  experiment:
+    protocol_version: ral-hil-1
+    design_id: confirmatory-30-nominal-plus-12-pause-v1
+    plan_id: ralhil42-20261019
+    plan_run_id: ralhil42-20261019-R014
+    run_index: 14
+    block: 2
+    pair_id: B02-pause
+    method: measured_static
+    condition: pause
+    instance_seed: 0
+    injection_seed: 554761767
+    solver_seed: 0
+    horizon_s: 120.0
+  fault_injection:
+    kind: logical_availability_pause
+    enabled: true
+    implementation: policy_availability_mask
+    device_slot: 1
+    start_after_mission_s: 15.0
+    duration_s: 8.0
+    last_command_expires_by_ttl: true
+    no_sdk_fault_injection: true
+    seed: 554761767

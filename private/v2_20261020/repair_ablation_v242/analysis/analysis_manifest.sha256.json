@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "plan_sha256": "8867f14caa209dfd2bb0189c501849af1697ab82c677cabb587e65e633c9b938",
+  "analysis_source_sha256": "3218ed84d2a791a7a25fdbb671ee7111624b4a6ade29f48025e30cd619804beb",
+  "artifacts": {
+    "run_metrics_wide.csv": "a0a5336e53f1aceb524537dc7f43ae9d22f5a1d47dbac9a101b9c8b97ded29c7",
+    "paired_repair_effects.csv": "b9dcfda69cc7ee519e4ff887d3e08b94ec1e395f821cfdfa9e79c4efa41de7e1",
+    "rejection_report.csv": "b57f71c1580b6a21916d9b9f253d8a59e1a14c355265f99347ce02cb5579ecf2",
+    "repair_ablation_decision.json": "57808bb93594783afd4548e16571d51f626468f52c71029cb472f8d4a0fe97b6"
+  }
+}

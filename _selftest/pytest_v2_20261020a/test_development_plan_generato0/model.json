@@ -1,0 +1,1 @@
+{"schema_version": 2, "split_rule": "preregistered transition_id and disjoint completed source runs", "pose_error_bounds_deg": {"yaw": 0.4, "pitch": 0.5}, "models": {}}

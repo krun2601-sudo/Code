@@ -1,0 +1,108 @@
+{
+  "schema": "zr10-gimbal-mode-v1",
+  "created_utc_s": 1792328843.577165,
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\configs\\private_site_overlay.yaml",
+  "apply": true,
+  "target_mode": "FOLLOW",
+  "nonzero_motion_commands_sent": false,
+  "position_commands_sent": false,
+  "devices": [
+    {
+      "device_id": "zr10_25",
+      "ip": "192.168.144.25",
+      "apply": true,
+      "target_mode": "FOLLOW",
+      "nonzero_motion_commands_sent": false,
+      "position_commands_sent": false,
+      "zero_velocity_commands_sent": 1,
+      "mode_commands_sent": 0,
+      "before": {
+        "mode": "LOCK",
+        "attitude_raw": {
+          "yaw_deg": -85.6,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "ok": false,
+      "verified": false,
+      "error": "RuntimeError: zero-velocity stop was rejected before mode change"
+    },
+    {
+      "device_id": "zr10_26",
+      "ip": "192.168.144.26",
+      "apply": true,
+      "target_mode": "FOLLOW",
+      "nonzero_motion_commands_sent": false,
+      "position_commands_sent": false,
+      "zero_velocity_commands_sent": 1,
+      "mode_commands_sent": 0,
+      "before": {
+        "mode": "LOCK",
+        "attitude_raw": {
+          "yaw_deg": -36.3,
+          "pitch_deg": -179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.1,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "ok": false,
+      "verified": false,
+      "error": "RuntimeError: zero-velocity stop was rejected before mode change"
+    },
+    {
+      "device_id": "zr10_27",
+      "ip": "192.168.144.27",
+      "apply": true,
+      "target_mode": "FOLLOW",
+      "nonzero_motion_commands_sent": false,
+      "position_commands_sent": false,
+      "zero_velocity_commands_sent": 1,
+      "mode_commands_sent": 0,
+      "before": {
+        "mode": "LOCK",
+        "attitude_raw": {
+          "yaw_deg": 11.8,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.1,
+          "roll_rate_dps": -0.1
+        }
+      },
+      "ok": false,
+      "verified": false,
+      "error": "RuntimeError: zero-velocity stop was rejected before mode change"
+    },
+    {
+      "device_id": "zr10_28",
+      "ip": "192.168.144.28",
+      "apply": true,
+      "target_mode": "FOLLOW",
+      "nonzero_motion_commands_sent": false,
+      "position_commands_sent": false,
+      "zero_velocity_commands_sent": 1,
+      "mode_commands_sent": 0,
+      "before": {
+        "mode": "LOCK",
+        "attitude_raw": {
+          "yaw_deg": -66.8,
+          "pitch_deg": 179.9,
+          "roll_deg": 0.0,
+          "yaw_rate_dps": -0.1,
+          "pitch_rate_dps": 0.1,
+          "roll_rate_dps": 0.0
+        }
+      },
+      "ok": false,
+      "verified": false,
+      "error": "RuntimeError: zero-velocity stop was rejected before mode change"
+    }
+  ],
+  "pass": false
+}

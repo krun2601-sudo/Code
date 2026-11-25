@@ -1,0 +1,24 @@
+extends: base_precalibration.yaml
+
+system:
+  # UAC remains frozen at H=60 s.  The 75 s capture window is long enough to
+  # observe the calibrated MAG upper T100 workload (66.88 s) instead of
+  # converting a predictable tail into avoidable censoring.
+  duration_s: 75.0
+
+policy:
+  execution_model:
+    status: calibrated
+    model_path: D:/Desktop/Tasks/航天会议/效能评估/work/ral_hil_stage1/private/v2_20261020/model/execution_model.json
+    sha256: c468ba08a9d7d7a14b010fb7130f4588f0dc335731dac88bd1774037290b9974
+    target_definition: command_issued_to_frame_confirm
+    includes_settle_dwell_and_frame_confirmation: true
+
+  robust_fov:
+    # Calibration maxima are yaw=1.000 deg and pitch=0.893 deg.  The
+    # preregistered 1-deg erosion is therefore retained for both axes.
+    pose_error_yaw_deg: 1.0
+    pose_error_pitch_deg: 1.0
+    planning_pixel_margin: 0.0
+    confirmation_pixel_margin: 0.0
+    enforce_for_all_methods: true

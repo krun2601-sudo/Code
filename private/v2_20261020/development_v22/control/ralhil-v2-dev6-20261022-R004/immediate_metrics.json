@@ -1,0 +1,22 @@
+{
+  "run_id": "hardware_20261020T111726_403853Z",
+  "plan_run_id": "ralhil-v2-dev6-20261022-R004",
+  "method": "uac_robust_repair_v2",
+  "condition": "pause",
+  "mission_duration_s": 72.31005500000902,
+  "t95_s": 20.511061800003517,
+  "t95_reached": true,
+  "t100_s": 42.50909999999567,
+  "t100_reached": true,
+  "uac_h_s": 6.759320834382073,
+  "coverage_final": 1.0,
+  "mission_success": true,
+  "command_count": 2640,
+  "ack_failure_count": 0,
+  "command_error_count": 0,
+  "unusable_frame_count": 0,
+  "deadline_miss_rate": 0.0013351134846461949,
+  "fault_count": 1,
+  "replan_count": 2,
+  "source_dir": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\development_v22\\runs\\hardware_20261020T111726_403853Z"
+}

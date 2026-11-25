@@ -1,0 +1,229 @@
+\begin{thebibliography}{26}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Acar and Choset(2002)]{acar2002sensor}
+Ercan~U. Acar and Howie Choset.
+\newblock Sensor-based coverage of unknown environments: Incremental
+  construction of morse decompositions.
+\newblock \emph{The International Journal of Robotics Research}, 21\penalty0
+  (4):\penalty0 345--366, 2002.
+\newblock \doi{10.1177/027836402320556380}.
+
+\bibitem[Angelopoulos and Bates(2023)]{angelopoulos2023conformal}
+Anastasios~N. Angelopoulos and Stephen Bates.
+\newblock Conformal prediction: A gentle introduction.
+\newblock \emph{Foundations and Trends in Machine Learning}, 16\penalty0
+  (4):\penalty0 494--591, 2023.
+\newblock \doi{10.1561/2200000101}.
+
+\bibitem[Bostr{\"o}m et~al.(2021)Bostr{\"o}m, Johansson, and
+  L{\"o}fstr{\"o}m]{bostrom2021mondrian}
+Henrik Bostr{\"o}m, Ulf Johansson, and Tuwe L{\"o}fstr{\"o}m.
+\newblock Mondrian conformal predictive distributions.
+\newblock In \emph{Proceedings of the 10th Symposium on Conformal and
+  Probabilistic Prediction and Applications}, volume 152 of \emph{Proceedings
+  of Machine Learning Research}, pages 24--38, 2021.
+
+\bibitem[Choudhury et~al.(2022)Choudhury, Gupta, Kochenderfer, Sadigh, and
+  Bohg]{choudhury2022dynamic}
+Shushman Choudhury, Jayesh~K. Gupta, Mykel~J. Kochenderfer, Dorsa Sadigh, and
+  Jeannette Bohg.
+\newblock Dynamic multi-robot task allocation under uncertainty and temporal
+  constraints.
+\newblock \emph{Autonomous Robots}, 46:\penalty0 231--247, 2022.
+\newblock \doi{10.1007/s10514-021-10022-9}.
+
+\bibitem[Cort{\'e}s et~al.(2004)Cort{\'e}s, Mart{\'i}nez, Karatas, and
+  Bullo]{cortes2004coverage}
+Jorge Cort{\'e}s, Sonia Mart{\'i}nez, Timur Karatas, and Francesco Bullo.
+\newblock Coverage control for mobile sensing networks.
+\newblock \emph{IEEE Transactions on Robotics and Automation}, 20\penalty0
+  (2):\penalty0 243--255, 2004.
+\newblock \doi{10.1109/TRA.2004.824698}.
+
+\bibitem[E et~al.(2024)E, Han, He, Xu, Li, Chai, and Liu]{e2024wisecam}
+Jinlong E, Fangshuo Han, Lin He, Wei Xu, Zhenhua Li, Yunpeng Chai, and Yunhao
+  Liu.
+\newblock {WiseCam}: A systematic approach to intelligent pan-tilt cameras for
+  moving object tracking.
+\newblock \emph{IEEE Transactions on Mobile Computing}, 23\penalty0
+  (12):\penalty0 12330--12344, 2024.
+\newblock \doi{10.1109/TMC.2024.3410645}.
+
+\bibitem[Galceran and Carreras(2013)]{galceran2013survey}
+Enric Galceran and Marc Carreras.
+\newblock A survey on coverage path planning for robotics.
+\newblock \emph{Robotics and Autonomous Systems}, 61\penalty0 (12):\penalty0
+  1258--1276, 2013.
+\newblock \doi{10.1016/j.robot.2013.09.004}.
+
+\bibitem[Ghimire and Kia(2024)]{ghimire2024stein}
+Donipolo Ghimire and Solmaz~S. Kia.
+\newblock Stein coverage: A variational inference approach to
+  distribution-matching multisensor deployment.
+\newblock \emph{IEEE Robotics and Automation Letters}, 9\penalty0 (6):\penalty0
+  5370--5376, 2024.
+\newblock \doi{10.1109/LRA.2024.3390541}.
+
+\bibitem[Hardouin et~al.(2023)Hardouin, Moras, Morbidi, Marzat, and
+  Mouaddib]{hardouin2023reconstruction}
+Guillaume Hardouin, Julien Moras, Fabio Morbidi, Julien Marzat, and El~Mustapha
+  Mouaddib.
+\newblock A multirobot system for 3-d surface reconstruction with centralized
+  and distributed architectures.
+\newblock \emph{IEEE Transactions on Robotics}, 39\penalty0 (4):\penalty0
+  2623--2638, 2023.
+\newblock \doi{10.1109/TRO.2023.3258641}.
+
+\bibitem[Jiang et~al.(2021)Jiang, Shimasaki, Hu, Senoo, and
+  Ishii]{jiang2021pan}
+Mingjun Jiang, Kohei Shimasaki, Shaopeng Hu, Taku Senoo, and Idaku Ishii.
+\newblock A 500-fps pan-tilt tracking system with deep-learning-based object
+  detection.
+\newblock \emph{IEEE Robotics and Automation Letters}, 6\penalty0 (2):\penalty0
+  691--698, 2021.
+\newblock \doi{10.1109/LRA.2020.3048653}.
+
+\bibitem[Jing et~al.(2020)Jing, Deng, Wu, and Shimada]{jing2020multiuav}
+Weiyu Jing, Dian Deng, Yue Wu, and Kenji Shimada.
+\newblock Multi-uav coverage path planning for the inspection of large and
+  complex structures.
+\newblock In \emph{2020 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}, pages 1480--1486, 2020.
+\newblock \doi{10.1109/IROS45743.2020.9341089}.
+
+\bibitem[Lee et~al.(2026)Lee, Kim, Li, and Park]{lee2026priority}
+Kanghoon Lee, Hyeonjun Kim, Jiachen Li, and Jinkyoo Park.
+\newblock Priority-aware multi-robot coverage path planning.
+\newblock \emph{IEEE Robotics and Automation Letters}, 11\penalty0
+  (3):\penalty0 3534--3541, 2026.
+\newblock \doi{10.1109/LRA.2026.3653321}.
+
+\bibitem[Li et~al.(2025)Li, Li, Sadeghi, Sun, Wang, and Wang]{li2025persistent}
+Zhuo Li, Guangzheng Li, Alireza Sadeghi, Jian Sun, Gang Wang, and Jialin Wang.
+\newblock Multi-vehicle cooperative persistent coverage for random target
+  search.
+\newblock \emph{IEEE Robotics and Automation Letters}, 10\penalty0
+  (7):\penalty0 6680--6687, 2025.
+\newblock \doi{10.1109/LRA.2025.3568563}.
+
+\bibitem[Mitra and Saha(2024)]{mitra2024ondemand}
+Ratijit Mitra and Indranil Saha.
+\newblock Online on-demand multi-robot coverage path planning.
+\newblock In \emph{2024 IEEE International Conference on Robotics and
+  Automation (ICRA)}, pages 14583--14589, 2024.
+\newblock \doi{10.1109/ICRA57147.2024.10611610}.
+
+\bibitem[Mitra and Saha(2025)]{mitra2025concurrent}
+Ratijit Mitra and Indranil Saha.
+\newblock Online concurrent multi-robot coverage path planning.
+\newblock In \emph{2025 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}, pages 8691--8698, 2025.
+\newblock \doi{10.1109/IROS60139.2025.11247261}.
+
+\bibitem[Nagami et~al.(2026)Nagami, Chen, Yu, Shorinwa, Adang, Dougherty,
+  Cristofalo, and Schwager]{nagami2026vista}
+Keiko Nagami, Timothy Chen, Javier Yu, Ola Shorinwa, Maximilian Adang, Carlyn
+  Dougherty, Eric Cristofalo, and Mac Schwager.
+\newblock {VISTA}: Open-vocabulary, task-relevant robot exploration with online
+  semantic gaussian splatting.
+\newblock \emph{IEEE Robotics and Automation Letters}, 11\penalty0
+  (3):\penalty0 3150--3157, 2026.
+\newblock \doi{10.1109/LRA.2026.3653276}.
+
+\bibitem[Notomista et~al.(2022)Notomista, Mayya, Emam, Kroninger, Bohannon,
+  Hutchinson, and Egerstedt]{notomista2022resilient}
+Gennaro Notomista, Siddharth Mayya, Yousef Emam, Christopher Kroninger, Addison
+  Bohannon, Seth Hutchinson, and Magnus Egerstedt.
+\newblock A resilient and energy-aware task allocation framework for
+  heterogeneous multirobot systems.
+\newblock \emph{IEEE Transactions on Robotics}, 38\penalty0 (1):\penalty0
+  159--179, 2022.
+\newblock \doi{10.1109/TRO.2021.3102379}.
+
+\bibitem[Ropke and Pisinger(2006)]{ropke2006alns}
+Stefan Ropke and David Pisinger.
+\newblock An adaptive large neighborhood search heuristic for the pickup and
+  delivery problem with time windows.
+\newblock \emph{Transportation Science}, 40\penalty0 (4):\penalty0 455--472,
+  2006.
+\newblock \doi{10.1287/trsc.1050.0135}.
+
+\bibitem[Tan et~al.(2021)Tan, Mohd-Mokhtar, and Arshad]{tan2021review}
+Choon~Sen Tan, Radzuan Mohd-Mokhtar, and Mohd~Rizal Arshad.
+\newblock A comprehensive review of coverage path planning in robotics using
+  classical and heuristic algorithms.
+\newblock \emph{IEEE Access}, 9:\penalty0 119310--119342, 2021.
+\newblock \doi{10.1109/ACCESS.2021.3108177}.
+
+\bibitem[Tang and Ma(2024)]{tang2024local}
+Jingyao Tang and Hang Ma.
+\newblock Large-scale multi-robot coverage path planning via local search.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~38, pages 17567--17574, 2024.
+
+\bibitem[Wang et~al.(2024)Wang, Zhao, Zhang, Yang, Wang, Tang, Zhang, and
+  Shi]{wang2024apfcpp}
+Zikai Wang, Xiaoqi Zhao, Jiekai Zhang, Nachuan Yang, Pengyu Wang, Jiawei Tang,
+  Jiuzhou Zhang, and Ling Shi.
+\newblock {APF-CPP}: An artificial potential field based multi-robot online
+  coverage path planning approach.
+\newblock \emph{IEEE Robotics and Automation Letters}, 9\penalty0
+  (11):\penalty0 9199--9206, 2024.
+\newblock \doi{10.1109/LRA.2024.3432351}.
+
+\bibitem[Wang et~al.(2025)Wang, Lyu, Zhang, Wang, Zhong, and
+  Shi]{wang2025macplanner}
+Zikai Wang, Xiaoxu Lyu, Jiekai Zhang, Pengyu Wang, Yuxing Zhong, and Ling Shi.
+\newblock {MAC-Planner}: A novel task allocation and path planning framework
+  for multi-robot online coverage processes.
+\newblock \emph{IEEE Robotics and Automation Letters}, 10\penalty0
+  (5):\penalty0 4404--4411, 2025.
+\newblock \doi{10.1109/LRA.2025.3551078}.
+
+\bibitem[Xanthidis et~al.(2024)Xanthidis, Skaldeb{\o}, Haugal{\o}kken, Evjemo,
+  Alexis, and Kelasidi]{xanthidis2024resivis}
+Marios Xanthidis, Martin~Breivik Skaldeb{\o}, Bent Oddvar~Arnesen
+  Haugal{\o}kken, Linn~Danielsen Evjemo, Konstantinos Alexis, and Eleni
+  Kelasidi.
+\newblock {ResiVis}: A holistic underwater motion planning approach for robust
+  active perception under uncertainties.
+\newblock \emph{IEEE Robotics and Automation Letters}, 9\penalty0
+  (11):\penalty0 9391--9398, 2024.
+\newblock \doi{10.1109/LRA.2024.3455893}.
+
+\bibitem[Zeng et~al.(2025)Zeng, Ye, Liu, Xu, Li, Xu, Li, and
+  Chen]{zeng2025multirobot}
+Jing Zeng, Qi~Ye, Tianle Liu, Yang Xu, Jin Li, Jinming Xu, Liang Li, and Jiming
+  Chen.
+\newblock Multi-robot autonomous 3d reconstruction using gaussian splatting
+  with semantic guidance.
+\newblock \emph{IEEE Robotics and Automation Letters}, 10\penalty0
+  (6):\penalty0 5617--5624, 2025.
+\newblock \doi{10.1109/LRA.2025.3558703}.
+
+\bibitem[Zhang et~al.(2026)Zhang, Zhang, Jiao, Tian, Zhao, Yang, and
+  Yin]{zhang2026capture}
+Yunlong Zhang, Minghao Zhang, Fangxu Jiao, Yi~Tian, Shan Zhao, Yang Yang, and
+  Zidu Yin.
+\newblock A real-time automation framework for multi-target capture in large
+  scenes with predictive scheduling and zoom control.
+\newblock \emph{IEEE Transactions on Automation Science and Engineering},
+  23:\penalty0 250--264, 2026.
+\newblock \doi{10.1109/TASE.2025.3636226}.
+
+\bibitem[Zuo et~al.(2026)Zuo, Liu, Zhao, Zhang, Xu, Li, Ding, Wang, Bai, Ma,
+  and Zhu]{zuo2026fom}
+Binbin Zuo, Xueyi Liu, Zijie Zhao, Yaocheng Zhang, Kaixuan Xu, Weifan Li,
+  Jishiyu Ding, Xun Wang, Zonglei Bai, Zhe Ma, and Yuanheng Zhu.
+\newblock {FoM}: Field-of-view-aware graph neural learning for min--max
+  multi-robot patrol path planning.
+\newblock \emph{IEEE Robotics and Automation Letters}, 11\penalty0
+  (10):\penalty0 12080--12087, 2026.
+\newblock \doi{10.1109/LRA.2026.3728375}.
+
+\end{thebibliography}

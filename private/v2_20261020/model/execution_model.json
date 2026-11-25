@@ -1,0 +1,664 @@
+{
+  "schema_version": 2,
+  "protocol_version": "ral-hil-1",
+  "generated_utc": "2026-10-20T10:23:28.006014+00:00",
+  "status": "fitted_pending_review",
+  "method": "device-specific monotone Huber-NNLS point model plus pooled angle-regime split-conformal upper calibration",
+  "target_definition": "first related command issued to execution-confirming FRAME_CONFIRM",
+  "target_includes": [
+    "motion",
+    "settle_hold",
+    "dwell",
+    "distinct_fresh_frame_confirmation"
+  ],
+  "routing_cost_rule": "use the calibrated upper prediction directly; do not add dwell again",
+  "feature_definition": {
+    "yaw_positive_deg": "max(to_yaw-from_yaw, 0)",
+    "yaw_negative_deg": "max(from_yaw-to_yaw, 0)",
+    "pitch_up_deg": "max(to_pitch-from_pitch, 0)",
+    "pitch_down_deg": "max(from_pitch-to_pitch, 0)",
+    "dual_axis_parallel": "1 when both yaw and pitch change, otherwise 0"
+  },
+  "coefficient_constraints": "intercept, direction-specific slopes, and dual-axis coordination term are non-negative",
+  "robust_fit": {
+    "loss": "Huber",
+    "delta": 1.345,
+    "solver": "scipy.optimize.nnls for each IRLS subproblem",
+    "max_iter": 100,
+    "tolerance": 1e-08,
+    "ridge_on_slopes_only": 1e-06
+  },
+  "split_rule": "preregistered transition_id and disjoint completed source runs; train fit, calibration conformal only, test final check only",
+  "angle_regime_thresholds_deg": [
+    3.0,
+    12.0
+  ],
+  "conformal_rule": "within each pooled small/medium/large angle regime: k=ceil((n_cal+1)*(1-alpha)); q=max(0,kth sorted(actual-point))",
+  "pose_error_bounds_deg": {
+    "yaw": 1.0,
+    "pitch": 0.8930000000000056,
+    "source": "maximum absolute arrival error over disjoint calibration runs",
+    "sample_count": 48
+  },
+  "plan_sha256": "3753457508b3cac4dd697ae46f9467ea71e34b1f28bb59fa64797abd4fd0da22",
+  "plan_metadata": {
+    "schema_version": 1,
+    "protocol_version": "ral-hil-1",
+    "commissioning_id": "commission-20261020-60pd",
+    "generated_utc": "2026-10-20T09:32:05.392857+00:00",
+    "seed": 20261020,
+    "per_device": 60,
+    "split_counts": {
+      "zr10_25": {
+        "train": 36,
+        "calibration": 12,
+        "test": 12
+      },
+      "zr10_26": {
+        "train": 36,
+        "calibration": 12,
+        "test": 12
+      },
+      "zr10_27": {
+        "train": 36,
+        "calibration": 12,
+        "test": 12
+      },
+      "zr10_28": {
+        "train": 36,
+        "calibration": 12,
+        "test": 12
+      }
+    },
+    "safety": "generation only; the overlay is inert until the operator explicitly runs the platform; targets are clipped to the configured safe/mechanical intersection",
+    "anti_leakage": "train/calibration/test are three separate hardware runs; the fitter rejects any source run containing multiple split labels",
+    "split_stratification": "seeded interleaving by signed yaw/pitch direction and within-device distance tertile",
+    "policy_overlays": {
+      "train": {
+        "method": "commissioning",
+        "fault_injection": {
+          "kind": "none",
+          "enabled": false
+        },
+        "commissioning": {
+          "plan_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\commissioning\\commissioning_plan.json",
+          "commissioning_id": "commission-20261020-60pd",
+          "run_group": "train",
+          "transition_ids": [
+            "commission-20261020-60pd:zr10_25:001",
+            "commission-20261020-60pd:zr10_25:003",
+            "commission-20261020-60pd:zr10_25:005",
+            "commission-20261020-60pd:zr10_25:006",
+            "commission-20261020-60pd:zr10_25:009",
+            "commission-20261020-60pd:zr10_25:010",
+            "commission-20261020-60pd:zr10_25:011",
+            "commission-20261020-60pd:zr10_25:012",
+            "commission-20261020-60pd:zr10_25:014",
+            "commission-20261020-60pd:zr10_25:016",
+            "commission-20261020-60pd:zr10_25:017",
+            "commission-20261020-60pd:zr10_25:018",
+            "commission-20261020-60pd:zr10_25:019",
+            "commission-20261020-60pd:zr10_25:020",
+            "commission-20261020-60pd:zr10_25:022",
+            "commission-20261020-60pd:zr10_25:023",
+            "commission-20261020-60pd:zr10_25:024",
+            "commission-20261020-60pd:zr10_25:026",
+            "commission-20261020-60pd:zr10_25:028",
+            "commission-20261020-60pd:zr10_25:029",
+            "commission-20261020-60pd:zr10_25:033",
+            "commission-20261020-60pd:zr10_25:034",
+            "commission-20261020-60pd:zr10_25:035",
+            "commission-20261020-60pd:zr10_25:040",
+            "commission-20261020-60pd:zr10_25:042",
+            "commission-20261020-60pd:zr10_25:043",
+            "commission-20261020-60pd:zr10_25:044",
+            "commission-20261020-60pd:zr10_25:045",
+            "commission-20261020-60pd:zr10_25:047",
+            "commission-20261020-60pd:zr10_25:049",
+            "commission-20261020-60pd:zr10_25:050",
+            "commission-20261020-60pd:zr10_25:051",
+            "commission-20261020-60pd:zr10_25:053",
+            "commission-20261020-60pd:zr10_25:054",
+            "commission-20261020-60pd:zr10_25:056",
+            "commission-20261020-60pd:zr10_25:058",
+            "commission-20261020-60pd:zr10_26:001",
+            "commission-20261020-60pd:zr10_26:003",
+            "commission-20261020-60pd:zr10_26:005",
+            "commission-20261020-60pd:zr10_26:006",
+            "commission-20261020-60pd:zr10_26:009",
+            "commission-20261020-60pd:zr10_26:010",
+            "commission-20261020-60pd:zr10_26:011",
+            "commission-20261020-60pd:zr10_26:012",
+            "commission-20261020-60pd:zr10_26:013",
+            "commission-20261020-60pd:zr10_26:014",
+            "commission-20261020-60pd:zr10_26:018",
+            "commission-20261020-60pd:zr10_26:020",
+            "commission-20261020-60pd:zr10_26:022",
+            "commission-20261020-60pd:zr10_26:023",
+            "commission-20261020-60pd:zr10_26:024",
+            "commission-20261020-60pd:zr10_26:025",
+            "commission-20261020-60pd:zr10_26:026",
+            "commission-20261020-60pd:zr10_26:027",
+            "commission-20261020-60pd:zr10_26:029",
+            "commission-20261020-60pd:zr10_26:030",
+            "commission-20261020-60pd:zr10_26:033",
+            "commission-20261020-60pd:zr10_26:034",
+            "commission-20261020-60pd:zr10_26:035",
+            "commission-20261020-60pd:zr10_26:037",
+            "commission-20261020-60pd:zr10_26:040",
+            "commission-20261020-60pd:zr10_26:043",
+            "commission-20261020-60pd:zr10_26:044",
+            "commission-20261020-60pd:zr10_26:046",
+            "commission-20261020-60pd:zr10_26:051",
+            "commission-20261020-60pd:zr10_26:052",
+            "commission-20261020-60pd:zr10_26:053",
+            "commission-20261020-60pd:zr10_26:054",
+            "commission-20261020-60pd:zr10_26:055",
+            "commission-20261020-60pd:zr10_26:058",
+            "commission-20261020-60pd:zr10_26:059",
+            "commission-20261020-60pd:zr10_26:060",
+            "commission-20261020-60pd:zr10_27:001",
+            "commission-20261020-60pd:zr10_27:002",
+            "commission-20261020-60pd:zr10_27:006",
+            "commission-20261020-60pd:zr10_27:008",
+            "commission-20261020-60pd:zr10_27:009",
+            "commission-20261020-60pd:zr10_27:010",
+            "commission-20261020-60pd:zr10_27:011",
+            "commission-20261020-60pd:zr10_27:012",
+            "commission-20261020-60pd:zr10_27:013",
+            "commission-20261020-60pd:zr10_27:014",
+            "commission-20261020-60pd:zr10_27:017",
+            "commission-20261020-60pd:zr10_27:018",
+            "commission-20261020-60pd:zr10_27:019",
+            "commission-20261020-60pd:zr10_27:021",
+            "commission-20261020-60pd:zr10_27:022",
+            "commission-20261020-60pd:zr10_27:025",
+            "commission-20261020-60pd:zr10_27:028",
+            "commission-20261020-60pd:zr10_27:032",
+            "commission-20261020-60pd:zr10_27:033",
+            "commission-20261020-60pd:zr10_27:034",
+            "commission-20261020-60pd:zr10_27:037",
+            "commission-20261020-60pd:zr10_27:039",
+            "commission-20261020-60pd:zr10_27:040",
+            "commission-20261020-60pd:zr10_27:041",
+            "commission-20261020-60pd:zr10_27:042",
+            "commission-20261020-60pd:zr10_27:043",
+            "commission-20261020-60pd:zr10_27:047",
+            "commission-20261020-60pd:zr10_27:049",
+            "commission-20261020-60pd:zr10_27:051",
+            "commission-20261020-60pd:zr10_27:052",
+            "commission-20261020-60pd:zr10_27:053",
+            "commission-20261020-60pd:zr10_27:055",
+            "commission-20261020-60pd:zr10_27:056",
+            "commission-20261020-60pd:zr10_27:057",
+            "commission-20261020-60pd:zr10_27:058",
+            "commission-20261020-60pd:zr10_27:060",
+            "commission-20261020-60pd:zr10_28:001",
+            "commission-20261020-60pd:zr10_28:002",
+            "commission-20261020-60pd:zr10_28:003",
+            "commission-20261020-60pd:zr10_28:005",
+            "commission-20261020-60pd:zr10_28:006",
+            "commission-20261020-60pd:zr10_28:008",
+            "commission-20261020-60pd:zr10_28:009",
+            "commission-20261020-60pd:zr10_28:011",
+            "commission-20261020-60pd:zr10_28:012",
+            "commission-20261020-60pd:zr10_28:015",
+            "commission-20261020-60pd:zr10_28:016",
+            "commission-20261020-60pd:zr10_28:017",
+            "commission-20261020-60pd:zr10_28:020",
+            "commission-20261020-60pd:zr10_28:021",
+            "commission-20261020-60pd:zr10_28:022",
+            "commission-20261020-60pd:zr10_28:024",
+            "commission-20261020-60pd:zr10_28:025",
+            "commission-20261020-60pd:zr10_28:026",
+            "commission-20261020-60pd:zr10_28:027",
+            "commission-20261020-60pd:zr10_28:029",
+            "commission-20261020-60pd:zr10_28:031",
+            "commission-20261020-60pd:zr10_28:034",
+            "commission-20261020-60pd:zr10_28:035",
+            "commission-20261020-60pd:zr10_28:039",
+            "commission-20261020-60pd:zr10_28:041",
+            "commission-20261020-60pd:zr10_28:042",
+            "commission-20261020-60pd:zr10_28:045",
+            "commission-20261020-60pd:zr10_28:046",
+            "commission-20261020-60pd:zr10_28:047",
+            "commission-20261020-60pd:zr10_28:048",
+            "commission-20261020-60pd:zr10_28:049",
+            "commission-20261020-60pd:zr10_28:051",
+            "commission-20261020-60pd:zr10_28:052",
+            "commission-20261020-60pd:zr10_28:053",
+            "commission-20261020-60pd:zr10_28:054",
+            "commission-20261020-60pd:zr10_28:058"
+          ]
+        }
+      },
+      "calibration": {
+        "method": "commissioning",
+        "fault_injection": {
+          "kind": "none",
+          "enabled": false
+        },
+        "commissioning": {
+          "plan_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\commissioning\\commissioning_plan.json",
+          "commissioning_id": "commission-20261020-60pd",
+          "run_group": "calibration",
+          "transition_ids": [
+            "commission-20261020-60pd:zr10_25:004",
+            "commission-20261020-60pd:zr10_25:013",
+            "commission-20261020-60pd:zr10_25:021",
+            "commission-20261020-60pd:zr10_25:025",
+            "commission-20261020-60pd:zr10_25:030",
+            "commission-20261020-60pd:zr10_25:031",
+            "commission-20261020-60pd:zr10_25:038",
+            "commission-20261020-60pd:zr10_25:041",
+            "commission-20261020-60pd:zr10_25:046",
+            "commission-20261020-60pd:zr10_25:055",
+            "commission-20261020-60pd:zr10_25:059",
+            "commission-20261020-60pd:zr10_25:060",
+            "commission-20261020-60pd:zr10_26:002",
+            "commission-20261020-60pd:zr10_26:004",
+            "commission-20261020-60pd:zr10_26:007",
+            "commission-20261020-60pd:zr10_26:016",
+            "commission-20261020-60pd:zr10_26:017",
+            "commission-20261020-60pd:zr10_26:019",
+            "commission-20261020-60pd:zr10_26:032",
+            "commission-20261020-60pd:zr10_26:041",
+            "commission-20261020-60pd:zr10_26:045",
+            "commission-20261020-60pd:zr10_26:047",
+            "commission-20261020-60pd:zr10_26:050",
+            "commission-20261020-60pd:zr10_26:057",
+            "commission-20261020-60pd:zr10_27:003",
+            "commission-20261020-60pd:zr10_27:004",
+            "commission-20261020-60pd:zr10_27:007",
+            "commission-20261020-60pd:zr10_27:020",
+            "commission-20261020-60pd:zr10_27:026",
+            "commission-20261020-60pd:zr10_27:029",
+            "commission-20261020-60pd:zr10_27:030",
+            "commission-20261020-60pd:zr10_27:036",
+            "commission-20261020-60pd:zr10_27:046",
+            "commission-20261020-60pd:zr10_27:050",
+            "commission-20261020-60pd:zr10_27:054",
+            "commission-20261020-60pd:zr10_27:059",
+            "commission-20261020-60pd:zr10_28:004",
+            "commission-20261020-60pd:zr10_28:010",
+            "commission-20261020-60pd:zr10_28:013",
+            "commission-20261020-60pd:zr10_28:018",
+            "commission-20261020-60pd:zr10_28:028",
+            "commission-20261020-60pd:zr10_28:030",
+            "commission-20261020-60pd:zr10_28:033",
+            "commission-20261020-60pd:zr10_28:036",
+            "commission-20261020-60pd:zr10_28:037",
+            "commission-20261020-60pd:zr10_28:038",
+            "commission-20261020-60pd:zr10_28:055",
+            "commission-20261020-60pd:zr10_28:060"
+          ]
+        }
+      },
+      "test": {
+        "method": "commissioning",
+        "fault_injection": {
+          "kind": "none",
+          "enabled": false
+        },
+        "commissioning": {
+          "plan_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\commissioning\\commissioning_plan.json",
+          "commissioning_id": "commission-20261020-60pd",
+          "run_group": "test",
+          "transition_ids": [
+            "commission-20261020-60pd:zr10_25:002",
+            "commission-20261020-60pd:zr10_25:007",
+            "commission-20261020-60pd:zr10_25:008",
+            "commission-20261020-60pd:zr10_25:015",
+            "commission-20261020-60pd:zr10_25:027",
+            "commission-20261020-60pd:zr10_25:032",
+            "commission-20261020-60pd:zr10_25:036",
+            "commission-20261020-60pd:zr10_25:037",
+            "commission-20261020-60pd:zr10_25:039",
+            "commission-20261020-60pd:zr10_25:048",
+            "commission-20261020-60pd:zr10_25:052",
+            "commission-20261020-60pd:zr10_25:057",
+            "commission-20261020-60pd:zr10_26:008",
+            "commission-20261020-60pd:zr10_26:015",
+            "commission-20261020-60pd:zr10_26:021",
+            "commission-20261020-60pd:zr10_26:028",
+            "commission-20261020-60pd:zr10_26:031",
+            "commission-20261020-60pd:zr10_26:036",
+            "commission-20261020-60pd:zr10_26:038",
+            "commission-20261020-60pd:zr10_26:039",
+            "commission-20261020-60pd:zr10_26:042",
+            "commission-20261020-60pd:zr10_26:048",
+            "commission-20261020-60pd:zr10_26:049",
+            "commission-20261020-60pd:zr10_26:056",
+            "commission-20261020-60pd:zr10_27:005",
+            "commission-20261020-60pd:zr10_27:015",
+            "commission-20261020-60pd:zr10_27:016",
+            "commission-20261020-60pd:zr10_27:023",
+            "commission-20261020-60pd:zr10_27:024",
+            "commission-20261020-60pd:zr10_27:027",
+            "commission-20261020-60pd:zr10_27:031",
+            "commission-20261020-60pd:zr10_27:035",
+            "commission-20261020-60pd:zr10_27:038",
+            "commission-20261020-60pd:zr10_27:044",
+            "commission-20261020-60pd:zr10_27:045",
+            "commission-20261020-60pd:zr10_27:048",
+            "commission-20261020-60pd:zr10_28:007",
+            "commission-20261020-60pd:zr10_28:014",
+            "commission-20261020-60pd:zr10_28:019",
+            "commission-20261020-60pd:zr10_28:023",
+            "commission-20261020-60pd:zr10_28:032",
+            "commission-20261020-60pd:zr10_28:040",
+            "commission-20261020-60pd:zr10_28:043",
+            "commission-20261020-60pd:zr10_28:044",
+            "commission-20261020-60pd:zr10_28:050",
+            "commission-20261020-60pd:zr10_28:056",
+            "commission-20261020-60pd:zr10_28:057",
+            "commission-20261020-60pd:zr10_28:059"
+          ]
+        }
+      }
+    },
+    "sequence_overlay_paths": {
+      "train": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\commissioning\\commissioning.overlay.train.yaml",
+      "calibration": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\commissioning\\commissioning.overlay.calibration.yaml",
+      "test": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\commissioning\\commissioning.overlay.test.yaml"
+    }
+  },
+  "models": {
+    "zr10_25": {
+      "feature_names": [
+        "intercept",
+        "yaw_positive_deg",
+        "yaw_negative_deg",
+        "pitch_up_deg",
+        "pitch_down_deg",
+        "dual_axis_parallel"
+      ],
+      "coefficients": {
+        "intercept": 8.274188467080425,
+        "yaw_positive_deg": 0.6028955669955265,
+        "yaw_negative_deg": 0.5066670493871482,
+        "pitch_up_deg": 1.3767869230853598,
+        "pitch_down_deg": 1.1135077563497884,
+        "dual_axis_parallel": 0.0
+      },
+      "ridge": 1e-06,
+      "fit_diagnostics": {
+        "iterations": 27,
+        "converged": true,
+        "robust_scale_s": 5.074566731873512,
+        "huber_delta": 1.345,
+        "minimum_irls_weight": 0.8812278876336611
+      },
+      "alpha": 0.1,
+      "calibration_n": 48,
+      "angle_regime_thresholds_deg": [
+        3.0,
+        12.0
+      ],
+      "regime_calibration_n": {
+        "small": 19,
+        "medium": 15,
+        "large": 14
+      },
+      "finite_sample_rank_by_regime": {
+        "small": 18,
+        "medium": 15,
+        "large": 14
+      },
+      "one_sided_padding_s_by_regime": {
+        "small": 1.913078960717229,
+        "medium": 8.701911764991639,
+        "large": 6.52624968102003
+      },
+      "one_sided_padding_s": 8.701911764991639,
+      "split_metrics": {
+        "train": {
+          "n": 36,
+          "mae_s": 3.278664855000903,
+          "rmse_s": 3.862351665431109,
+          "underprediction_rate": 0.5555555555555556,
+          "upper_empirical_coverage": 0.9166666666666666,
+          "mean_upper_padding_s": 5.962760549138689
+        },
+        "calibration": {
+          "n": 12,
+          "mae_s": 4.603983588709574,
+          "rmse_s": 5.035496285447496,
+          "underprediction_rate": 0.3333333333333333,
+          "upper_empirical_coverage": 1.0,
+          "mean_upper_padding_s": 4.763579841861532
+        },
+        "test": {
+          "n": 12,
+          "mae_s": 3.261530270961579,
+          "rmse_s": 3.719460115825408,
+          "underprediction_rate": 0.3333333333333333,
+          "upper_empirical_coverage": 1.0,
+          "mean_upper_padding_s": 5.916872521937232
+        }
+      }
+    },
+    "zr10_26": {
+      "feature_names": [
+        "intercept",
+        "yaw_positive_deg",
+        "yaw_negative_deg",
+        "pitch_up_deg",
+        "pitch_down_deg",
+        "dual_axis_parallel"
+      ],
+      "coefficients": {
+        "intercept": 7.425938554989775,
+        "yaw_positive_deg": 0.7505988123109096,
+        "yaw_negative_deg": 0.5227014098847,
+        "pitch_up_deg": 1.1126705164916182,
+        "pitch_down_deg": 0.6682224893390262,
+        "dual_axis_parallel": 1.8407144277109335
+      },
+      "ridge": 1e-06,
+      "fit_diagnostics": {
+        "iterations": 82,
+        "converged": true,
+        "robust_scale_s": 3.336662526776794,
+        "huber_delta": 1.345,
+        "minimum_irls_weight": 0.5686722115325512
+      },
+      "alpha": 0.1,
+      "calibration_n": 48,
+      "angle_regime_thresholds_deg": [
+        3.0,
+        12.0
+      ],
+      "regime_calibration_n": {
+        "small": 19,
+        "medium": 15,
+        "large": 14
+      },
+      "finite_sample_rank_by_regime": {
+        "small": 18,
+        "medium": 15,
+        "large": 14
+      },
+      "one_sided_padding_s_by_regime": {
+        "small": 1.913078960717229,
+        "medium": 8.701911764991639,
+        "large": 6.52624968102003
+      },
+      "one_sided_padding_s": 8.701911764991639,
+      "split_metrics": {
+        "train": {
+          "n": 36,
+          "mae_s": 2.897740985817399,
+          "rmse_s": 3.6780217361839718,
+          "underprediction_rate": 0.5277777777777778,
+          "upper_empirical_coverage": 0.9444444444444444,
+          "mean_upper_padding_s": 5.525168113235343
+        },
+        "calibration": {
+          "n": 12,
+          "mae_s": 3.5907195544805455,
+          "rmse_s": 4.249558484038511,
+          "underprediction_rate": 0.6666666666666666,
+          "upper_empirical_coverage": 0.9166666666666666,
+          "mean_upper_padding_s": 6.076357149571567
+        },
+        "test": {
+          "n": 12,
+          "mae_s": 3.97677785738796,
+          "rmse_s": 4.655045825206201,
+          "underprediction_rate": 0.6666666666666666,
+          "upper_empirical_coverage": 0.9166666666666666,
+          "mean_upper_padding_s": 5.916872521937232
+        }
+      }
+    },
+    "zr10_27": {
+      "feature_names": [
+        "intercept",
+        "yaw_positive_deg",
+        "yaw_negative_deg",
+        "pitch_up_deg",
+        "pitch_down_deg",
+        "dual_axis_parallel"
+      ],
+      "coefficients": {
+        "intercept": 8.047748199228195,
+        "yaw_positive_deg": 0.9997593240154055,
+        "yaw_negative_deg": 0.6629480044379475,
+        "pitch_up_deg": 0.918124993710308,
+        "pitch_down_deg": 1.4226730389563955,
+        "dual_axis_parallel": 0.0
+      },
+      "ridge": 1e-06,
+      "fit_diagnostics": {
+        "iterations": 23,
+        "converged": true,
+        "robust_scale_s": 2.7282168371194726,
+        "huber_delta": 1.345,
+        "minimum_irls_weight": 0.5066191279462824
+      },
+      "alpha": 0.1,
+      "calibration_n": 48,
+      "angle_regime_thresholds_deg": [
+        3.0,
+        12.0
+      ],
+      "regime_calibration_n": {
+        "small": 19,
+        "medium": 15,
+        "large": 14
+      },
+      "finite_sample_rank_by_regime": {
+        "small": 18,
+        "medium": 15,
+        "large": 14
+      },
+      "one_sided_padding_s_by_regime": {
+        "small": 1.913078960717229,
+        "medium": 8.701911764991639,
+        "large": 6.52624968102003
+      },
+      "one_sided_padding_s": 8.701911764991639,
+      "split_metrics": {
+        "train": {
+          "n": 36,
+          "mae_s": 2.6203318066746175,
+          "rmse_s": 3.354553606440748,
+          "underprediction_rate": 0.5277777777777778,
+          "upper_empirical_coverage": 0.8611111111111112,
+          "mean_upper_padding_s": 5.208445793108199
+        },
+        "calibration": {
+          "n": 12,
+          "mae_s": 3.2723665095061123,
+          "rmse_s": 3.884690073633104,
+          "underprediction_rate": 0.5833333333333334,
+          "upper_empirical_coverage": 1.0,
+          "mean_upper_padding_s": 6.279482869265833
+        },
+        "test": {
+          "n": 12,
+          "mae_s": 4.458326520863102,
+          "rmse_s": 5.366613872267939,
+          "underprediction_rate": 0.5,
+          "upper_empirical_coverage": 0.8333333333333334,
+          "mean_upper_padding_s": 6.0981776956015326
+        }
+      }
+    },
+    "zr10_28": {
+      "feature_names": [
+        "intercept",
+        "yaw_positive_deg",
+        "yaw_negative_deg",
+        "pitch_up_deg",
+        "pitch_down_deg",
+        "dual_axis_parallel"
+      ],
+      "coefficients": {
+        "intercept": 4.451264961685991,
+        "yaw_positive_deg": 0.31051346593808343,
+        "yaw_negative_deg": 0.3067632925384031,
+        "pitch_up_deg": 0.4410746285965629,
+        "pitch_down_deg": 0.5232238179351534,
+        "dual_axis_parallel": 9.489753703715907
+      },
+      "ridge": 1e-06,
+      "fit_diagnostics": {
+        "iterations": 16,
+        "converged": true,
+        "robust_scale_s": 2.3340266515115187,
+        "huber_delta": 1.345,
+        "minimum_irls_weight": 0.24209740365594487
+      },
+      "alpha": 0.1,
+      "calibration_n": 48,
+      "angle_regime_thresholds_deg": [
+        3.0,
+        12.0
+      ],
+      "regime_calibration_n": {
+        "small": 19,
+        "medium": 15,
+        "large": 14
+      },
+      "finite_sample_rank_by_regime": {
+        "small": 18,
+        "medium": 15,
+        "large": 14
+      },
+      "one_sided_padding_s_by_regime": {
+        "small": 1.913078960717229,
+        "medium": 8.701911764991639,
+        "large": 6.52624968102003
+      },
+      "one_sided_padding_s": 8.701911764991639,
+      "split_metrics": {
+        "train": {
+          "n": 36,
+          "mae_s": 2.4413012030110948,
+          "rmse_s": 3.6466433992030978,
+          "underprediction_rate": 0.5555555555555556,
+          "upper_empirical_coverage": 1.0,
+          "mean_upper_padding_s": 5.970034064482011
+        },
+        "calibration": {
+          "n": 12,
+          "mae_s": 3.027668241226723,
+          "rmse_s": 4.498994268645511,
+          "underprediction_rate": 0.4166666666666667,
+          "upper_empirical_coverage": 1.0,
+          "mean_upper_padding_s": 4.40096949453293
+        },
+        "test": {
+          "n": 12,
+          "mae_s": 5.228773494324655,
+          "rmse_s": 7.468608289135522,
+          "underprediction_rate": 0.75,
+          "upper_empirical_coverage": 0.8333333333333334,
+          "mean_upper_padding_s": 6.823398390258736
+        }
+      }
+    }
+  }
+}

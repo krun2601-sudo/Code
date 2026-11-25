@@ -1,0 +1,259 @@
+{
+  "schema": "zr10-local-datum-v1",
+  "created_utc_s": 1792329176.5097477,
+  "source_config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\configs\\private_site_overlay.yaml",
+  "motion_commands_sent": false,
+  "datum_definition": "current FOLLOW-mode line of sight is local yaw/pitch zero",
+  "world_station_pose_verified": false,
+  "devices": [
+    {
+      "device_id": "zr10_25",
+      "ok": true,
+      "verified": true,
+      "mode": "FOLLOW",
+      "zoom": 10.0,
+      "yaw_offset_deg": -88.4,
+      "pitch_offset_deg": 0.09999999999999432,
+      "yaw_range_deg": 0.4000000000000057,
+      "pitch_range_deg": 0.0,
+      "samples": [
+        {
+          "yaw_raw_deg": -88.5,
+          "pitch_raw_deg": -179.9,
+          "pitch_normalized_deg": 0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.2
+        },
+        {
+          "yaw_raw_deg": -88.5,
+          "pitch_raw_deg": -179.9,
+          "pitch_normalized_deg": 0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.2
+        },
+        {
+          "yaw_raw_deg": -88.4,
+          "pitch_raw_deg": -179.9,
+          "pitch_normalized_deg": 0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0
+        },
+        {
+          "yaw_raw_deg": -88.4,
+          "pitch_raw_deg": -179.9,
+          "pitch_normalized_deg": 0.09999999999999432,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": -0.1
+        },
+        {
+          "yaw_raw_deg": -88.1,
+          "pitch_raw_deg": -179.9,
+          "pitch_normalized_deg": 0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.1
+        },
+        {
+          "yaw_raw_deg": -88.3,
+          "pitch_raw_deg": -179.9,
+          "pitch_normalized_deg": 0.09999999999999432,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": 0.0
+        },
+        {
+          "yaw_raw_deg": -88.3,
+          "pitch_raw_deg": -179.9,
+          "pitch_normalized_deg": 0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0
+        }
+      ]
+    },
+    {
+      "device_id": "zr10_26",
+      "ok": true,
+      "verified": true,
+      "mode": "FOLLOW",
+      "zoom": 10.0,
+      "yaw_offset_deg": -37.9,
+      "pitch_offset_deg": 0.09999999999999432,
+      "yaw_range_deg": 0.10000000000000142,
+      "pitch_range_deg": 0.19999999999998863,
+      "samples": [
+        {
+          "yaw_raw_deg": -37.9,
+          "pitch_raw_deg": -179.9,
+          "pitch_normalized_deg": 0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.1
+        },
+        {
+          "yaw_raw_deg": -37.9,
+          "pitch_raw_deg": 179.9,
+          "pitch_normalized_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.1
+        },
+        {
+          "yaw_raw_deg": -37.8,
+          "pitch_raw_deg": -179.9,
+          "pitch_normalized_deg": 0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.1
+        },
+        {
+          "yaw_raw_deg": -37.9,
+          "pitch_raw_deg": -179.9,
+          "pitch_normalized_deg": 0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0
+        },
+        {
+          "yaw_raw_deg": -37.8,
+          "pitch_raw_deg": 179.9,
+          "pitch_normalized_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0
+        },
+        {
+          "yaw_raw_deg": -37.9,
+          "pitch_raw_deg": -179.9,
+          "pitch_normalized_deg": 0.09999999999999432,
+          "yaw_rate_dps": -0.1,
+          "pitch_rate_dps": 0.1
+        },
+        {
+          "yaw_raw_deg": -37.9,
+          "pitch_raw_deg": -179.9,
+          "pitch_normalized_deg": 0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0
+        }
+      ]
+    },
+    {
+      "device_id": "zr10_27",
+      "ok": true,
+      "verified": true,
+      "mode": "FOLLOW",
+      "zoom": 10.0,
+      "yaw_offset_deg": 10.6,
+      "pitch_offset_deg": -0.09999999999999432,
+      "yaw_range_deg": 0.09999999999999964,
+      "pitch_range_deg": 0.0,
+      "samples": [
+        {
+          "yaw_raw_deg": 10.6,
+          "pitch_raw_deg": 179.9,
+          "pitch_normalized_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0
+        },
+        {
+          "yaw_raw_deg": 10.5,
+          "pitch_raw_deg": 179.9,
+          "pitch_normalized_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": 0.5
+        },
+        {
+          "yaw_raw_deg": 10.6,
+          "pitch_raw_deg": 179.9,
+          "pitch_normalized_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": 0.0
+        },
+        {
+          "yaw_raw_deg": 10.6,
+          "pitch_raw_deg": 179.9,
+          "pitch_normalized_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": 0.0
+        },
+        {
+          "yaw_raw_deg": 10.5,
+          "pitch_raw_deg": 179.9,
+          "pitch_normalized_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.1
+        },
+        {
+          "yaw_raw_deg": 10.6,
+          "pitch_raw_deg": 179.9,
+          "pitch_normalized_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": -0.3
+        },
+        {
+          "yaw_raw_deg": 10.6,
+          "pitch_raw_deg": 179.9,
+          "pitch_normalized_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.1
+        }
+      ]
+    },
+    {
+      "device_id": "zr10_28",
+      "ok": true,
+      "verified": true,
+      "mode": "FOLLOW",
+      "zoom": 10.0,
+      "yaw_offset_deg": -69.7,
+      "pitch_offset_deg": -0.09999999999999432,
+      "yaw_range_deg": 0.20000000000000284,
+      "pitch_range_deg": 0.0,
+      "samples": [
+        {
+          "yaw_raw_deg": -69.6,
+          "pitch_raw_deg": 179.9,
+          "pitch_normalized_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0
+        },
+        {
+          "yaw_raw_deg": -69.6,
+          "pitch_raw_deg": 179.9,
+          "pitch_normalized_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.2
+        },
+        {
+          "yaw_raw_deg": -69.7,
+          "pitch_raw_deg": 179.9,
+          "pitch_normalized_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": 0.2
+        },
+        {
+          "yaw_raw_deg": -69.8,
+          "pitch_raw_deg": 179.9,
+          "pitch_normalized_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": 0.0
+        },
+        {
+          "yaw_raw_deg": -69.6,
+          "pitch_raw_deg": 179.9,
+          "pitch_normalized_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.1,
+          "pitch_rate_dps": 0.0
+        },
+        {
+          "yaw_raw_deg": -69.7,
+          "pitch_raw_deg": 179.9,
+          "pitch_normalized_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": -0.1
+        },
+        {
+          "yaw_raw_deg": -69.7,
+          "pitch_raw_deg": 179.9,
+          "pitch_normalized_deg": -0.09999999999999432,
+          "yaw_rate_dps": 0.0,
+          "pitch_rate_dps": 0.0
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

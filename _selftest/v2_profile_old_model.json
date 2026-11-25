@@ -1,0 +1,34 @@
+{
+  "schema": "ral-hil-confirmatory-workload-audit-v1",
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\live_20261019\\confirmatory_base.yaml",
+  "roi_override": null,
+  "generated_utc_s": 1792485020.46729,
+  "deadline_rule": "ceil(max_method_device_upper_workload * safety_factor / round_to_s) * round_to_s",
+  "safety_factor": 1.0,
+  "round_to_s": 1.0,
+  "maximum_predicted_upper_makespan_s": 89.92669221090081,
+  "frozen_horizon_s": 90.0,
+  "methods": [
+    {
+      "method": "uac_robust_repair_v2",
+      "evaluation_cell_count": 384,
+      "reachable_count": 384,
+      "candidate_count": 820,
+      "planner_chunks": 1,
+      "offline_planning_ms": 200.08409998263232,
+      "task_count_by_device": {
+        "zr10_25": 3,
+        "zr10_26": 4,
+        "zr10_27": 2,
+        "zr10_28": 1
+      },
+      "upper_workload_s_by_device": {
+        "zr10_25": 67.42315259761276,
+        "zr10_26": 89.92669221090081,
+        "zr10_27": 45.235694247451775,
+        "zr10_28": 21.97645018296404
+      },
+      "predicted_upper_makespan_s": 89.92669221090081
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "schema": "ral-hil-confirmatory-workload-audit-v1",
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\private\\v2_20261020\\base_calibrated_v23.yaml",
+  "roi_override": null,
+  "generated_utc_s": 1792495867.3821447,
+  "deadline_rule": "ceil(max_method_device_upper_workload * safety_factor / round_to_s) * round_to_s",
+  "safety_factor": 1.5,
+  "round_to_s": 30.0,
+  "maximum_predicted_upper_makespan_s": 63.70295967556893,
+  "frozen_horizon_s": 120.0,
+  "methods": [
+    {
+      "method": "mag",
+      "evaluation_cell_count": 384,
+      "reachable_count": 384,
+      "candidate_count": 820,
+      "planner_chunks": 1,
+      "offline_planning_ms": 65.86909998441115,
+      "task_count_by_device": {
+        "zr10_25": 6,
+        "zr10_26": 4,
+        "zr10_27": 2,
+        "zr10_28": 0
+      },
+      "upper_workload_s_by_device": {
+        "zr10_25": 63.70295967556893,
+        "zr10_26": 43.00658175422545,
+        "zr10_27": 14.260025151803987,
+        "zr10_28": 0.0
+      },
+      "predicted_upper_makespan_s": 63.70295967556893,
+      "plan_audit": {}
+    },
+    {
+      "method": "measured_static",
+      "evaluation_cell_count": 384,
+      "reachable_count": 384,
+      "candidate_count": 820,
+      "planner_chunks": 3,
+      "offline_planning_ms": 89.81249999487773,
+      "task_count_by_device": {
+        "zr10_25": 7,
+        "zr10_26": 2,
+        "zr10_27": 2,
+        "zr10_28": 2
+      },
+      "upper_workload_s_by_device": {
+        "zr10_25": 45.21287782973862,
+        "zr10_26": 3.6,
+        "zr10_27": 3.6,
+        "zr10_28": 3.6
+      },
+      "predicted_upper_makespan_s": 45.21287782973862,
+      "plan_audit": {}
+    },
+    {
+      "method": "uac_robust_repair_v2",
+      "evaluation_cell_count": 384,
+      "reachable_count": 384,
+      "candidate_count": 820,
+      "planner_chunks": 1,
+      "offline_planning_ms": 185.93799998052418,
+      "task_count_by_device": {
+        "zr10_25": 6,
+        "zr10_26": 4,
+        "zr10_27": 2,
+        "zr10_28": 0
+      },
+      "upper_workload_s_by_device": {
+        "zr10_25": 56.0187614723423,
+        "zr10_26": 30.087020394142726,
+        "zr10_27": 14.260025151803987,
+        "zr10_28": 0.0
+      },
+      "predicted_upper_makespan_s": 56.0187614723423,
+      "plan_audit": {
+        "guarantee_reference": "mag",
+        "baseline_objective": {
+          "uncovered_count": 0,
+          "uac_h_s": 23.025358017278524,
+          "t95_s": 51.43078648487618,
+          "t100_s": 65.68264216564981,
+          "total_motion_deg": 22.513328701633192,
+          "load_cv": 0.7947135301255326
+        },
+        "final_objective": {
+          "uncovered_count": 0,
+          "uac_h_s": 20.227464146857688,
+          "t95_s": 31.79182077725482,
+          "t100_s": 57.99844396242318,
+          "total_motion_deg": 21.088888654968958,
+          "load_cv": 0.8116504569178002
+        },
+        "tail_cap_s": 65.68264216564981,
+        "opportunistic_baseline_objective": {
+          "uncovered_count": 0,
+          "uac_h_s": 16.769932550255373,
+          "t95_s": 26.475417453909504,
+          "t100_s": 36.554331910139574,
+          "total_motion_deg": 22.513328701633192,
+          "load_cv": 0.7947135301255326
+        },
+        "opportunistic_final_objective": {
+          "uncovered_count": 0,
+          "uac_h_s": 16.122428812019884,
+          "t95_s": 28.19182077725482,
+          "t100_s": 29.99182077725482,
+          "total_motion_deg": 21.088888654968958,
+          "load_cv": 0.8116504569178002
+        },
+        "opportunistic_tail_cap_s": 36.554331910139574,
+        "opportunistic_tail_nonregression_verified": true,
+        "uac_non_regression_verified": true,
+        "t100_non_regression_verified": true,
+        "accepted_moves": [
+          "intra_route_relocate",
+          "intra_route_relocate",
+          "intra_route_relocate"
+        ],
+        "operation_counts": {
+          "measured_seed": 1,
+          "redundant_delete": 36,
+          "intra_route_relocate": 70
+        },
+        "rejection_counts": {
+          "incomplete_coverage": 28,
+          "uac_not_strictly_improved": 13,
+          "opportunistic_t100_cap_exceeded": 10,
+          "t100_cap_exceeded": 53
+        },
+        "evaluations": 106,
+        "evaluation_limit": 96,
+        "initial_pose_box_enabled": true,
+        "initial_pose_box_deg": {
+          "yaw": 1.0,
+          "pitch": 1.0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+extends: D:/Desktop/Tasks/航天会议/效能评估/work/ral_hil_stage1/private/v2_20261020/base_calibrated_v24.yaml
+system:
+  duration_s: 85.0
+policy:
+  method: uac_robust_repair_v2
+  execution_confirmation:
+    measured_pose_projection: true
+  robust_fov:
+    enforce_for_all_methods: true
+  robust_objective:
+    horizon_s: 60.0
+    complete_mag_reference: true
+    switch_min_gain_s: 60.000001
+  experiment:
+    protocol_version: ral-hil-2
+    design_id: confirmatory-v2-paired-repair-ablation
+    plan_id: ralhil-v2-repair-ablation-20-20261026
+    plan_run_id: ralhil-v2-repair-ablation-20-20261026-R006
+    run_index: 6
+    block: 3
+    pair_id: B03-pause_repair_off
+    method: uac_robust_repair_v2
+    condition: pause_repair_off
+    instance_seed: 0
+    injection_seed: 3132832377
+    solver_seed: 0
+    horizon_s: 60.0
+  fault_injection:
+    kind: logical_availability_pause
+    enabled: true
+    implementation: policy_availability_mask
+    trigger: coverage_fraction
+    trigger_coverage_fraction: 0.5
+    device_selection: max_unique_reserved_coverage
+    duration_s: 25.0
+    last_command_expires_by_ttl: true
+    no_sdk_fault_injection: true
+    seed: 3132832377

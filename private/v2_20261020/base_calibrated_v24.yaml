@@ -1,0 +1,19 @@
+extends: base_calibrated_v23.yaml
+
+policy:
+  # Keep a reserve for Python bookkeeping and event serialization so the
+  # observed planner call remains inside the externally declared budget.
+  planner_deadline_guard_ms: 5.0
+  # The measured static seed is now complete and deterministic.  Eight
+  # audited neighbourhood evaluations finish before the internal 195 ms
+  # deadline on the experiment computer and remove the V2.3 schedule-dependent
+  # route variation.
+  initial_local_search_max_evaluations: 8
+
+  robust_objective:
+    # A repair is effective only when a calibrated one-sided execution-time
+    # bound predicts at least one reassigned cell before the failed device's
+    # earliest recovery, while robust UAC strictly improves and T100 does not.
+    repair_witness_margin_s: 0.5
+    repair_candidate_pool_per_device: 12
+    repair_max_insertions: 3

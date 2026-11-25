@@ -1,0 +1,8 @@
+\section{Conclusion}\label{sec:conclusion}
+
+ECR-Cover addresses a specific weakness in cooperative sensing with networked directional cameras: a scheduled pointing direction is not evidence that an observation occurred. The method links a first-coverage objective to end-to-end execution-time bounds, retains executable baselines during initial search and event repair, and updates realized coverage only from a stable measured pose associated with a fresh usable frame.
+
+On four ZR10 cameras, the frozen hardware study connected each formal property to a separate observable consequence. Initial planning preserved its MAG model baseline and produced lower paired nominal UAC and T100 in hardware. The execution ledger accounted for all 461 coverage events. Repair-on/off pairs showed lower first-coverage latency, T100 noninferiority, and a confirmed reassigned observation before recovery in every repair-on run. The results support an execution-confirmed coverage loop for this deployment; they do not establish target-detection probability or performance beyond the tested geometry, duration, and network scale.
+
+The main design lesson is that planning, physical execution, and observation evidence should remain distinct until a validated event connects them. That separation allows route improvement to be bounded by an executable alternative and allows coverage performance to be reconstructed from what the sensors actually observed.
+

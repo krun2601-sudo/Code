@@ -1,0 +1,569 @@
+{
+  "schema_version": 1,
+  "protocol_version": "ral-hil-1",
+  "generated_utc": "2026-10-20T13:46:18.415288+00:00",
+  "mode": "read_only",
+  "network_or_motion_performed": false,
+  "phase": "experiment",
+  "config_sha256": "5f1997ca78c3734000c17af7e2bb59dc2fe51e8c495a6b77bba54e9abf8c7eb4",
+  "hardware_config_sha256": "9b1de09ac6ab9f752a6ae553a40a765f3d58dbe0b35a1bbec961572fd447b603",
+  "execution_model_sha256": "c468ba08a9d7d7a14b010fb7130f4588f0dc335731dac88bd1774037290b9974",
+  "top_level_yaml_sha256": "24dbb01d8f4c55af052c26a073e740a30ae6d69080680c186c1a4eab4bb973a3",
+  "kit_reference": {
+    "kit_root_present": true,
+    "platform_snapshot_sha256": "41522bcee1fbc5360b2674df31e96ca2fa5d46b970fffc0170f6cd29e9e84d64",
+    "platform_version": "4.0.0",
+    "source_file_count": 36,
+    "source_hash_mismatches": []
+  },
+  "coverage_task_configuration": {
+    "shape": [
+      8,
+      12,
+      4
+    ],
+    "computed_cell_count": 384,
+    "declared_cell_count": 384,
+    "shape_valid": true,
+    "declared_count_matches": true,
+    "role": "evaluation_cells",
+    "construction": "uniform_roi_cell_centers",
+    "frozen_within_run": true
+  },
+  "coverage_task_observed": {
+    "evaluation_cell_count": 384,
+    "reachable_count": 384,
+    "reachable_ratio": 1.0,
+    "evaluation_grid": [
+      8,
+      12,
+      4
+    ],
+    "candidate_count": 820
+  },
+  "policy_source_sha256": "7af5df1766dda38654e696703ff6e92226315fe5de28307b8e50a3ee279e92cb",
+  "policy_algorithm_version": "2.4.2",
+  "static_pass": true,
+  "live_evaluated": true,
+  "live_pass": true,
+  "ready_to_move": true,
+  "findings": [
+    {
+      "check": "four_enabled_devices",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "enabled=4; required=4"
+    },
+    {
+      "check": "unique_nonempty_device_ids",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "ids=['zr10_25', 'zr10_26', 'zr10_27', 'zr10_28']"
+    },
+    {
+      "check": "device_endpoint_configured",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "configured=True; value intentionally not echoed"
+    },
+    {
+      "check": "video_endpoint_configured",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "configured=True; value intentionally not echoed"
+    },
+    {
+      "check": "velocity_p",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "mode='velocity_p'"
+    },
+    {
+      "check": "ack_enabled",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "use_ack=True"
+    },
+    {
+      "check": "calibration_flag",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "flag only; it is not independent metrology evidence"
+    },
+    {
+      "check": "configured_image_size",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "image_size=[1920, 1080]"
+    },
+    {
+      "check": "fixed_zoom_in_limits",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "fixed_zoom=10.0; limits=[1, 10]"
+    },
+    {
+      "check": "device_endpoint_configured",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "configured=True; value intentionally not echoed"
+    },
+    {
+      "check": "video_endpoint_configured",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "configured=True; value intentionally not echoed"
+    },
+    {
+      "check": "velocity_p",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "mode='velocity_p'"
+    },
+    {
+      "check": "ack_enabled",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "use_ack=True"
+    },
+    {
+      "check": "calibration_flag",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "flag only; it is not independent metrology evidence"
+    },
+    {
+      "check": "configured_image_size",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "image_size=[1920, 1080]"
+    },
+    {
+      "check": "fixed_zoom_in_limits",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "fixed_zoom=10.0; limits=[1, 10]"
+    },
+    {
+      "check": "device_endpoint_configured",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "configured=True; value intentionally not echoed"
+    },
+    {
+      "check": "video_endpoint_configured",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "configured=True; value intentionally not echoed"
+    },
+    {
+      "check": "velocity_p",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "mode='velocity_p'"
+    },
+    {
+      "check": "ack_enabled",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "use_ack=True"
+    },
+    {
+      "check": "calibration_flag",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "flag only; it is not independent metrology evidence"
+    },
+    {
+      "check": "configured_image_size",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "image_size=[1920, 1080]"
+    },
+    {
+      "check": "fixed_zoom_in_limits",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "fixed_zoom=10.0; limits=[1, 10]"
+    },
+    {
+      "check": "device_endpoint_configured",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "configured=True; value intentionally not echoed"
+    },
+    {
+      "check": "video_endpoint_configured",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "configured=True; value intentionally not echoed"
+    },
+    {
+      "check": "velocity_p",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "mode='velocity_p'"
+    },
+    {
+      "check": "ack_enabled",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "use_ack=True"
+    },
+    {
+      "check": "calibration_flag",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "flag only; it is not independent metrology evidence"
+    },
+    {
+      "check": "configured_image_size",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "image_size=[1920, 1080]"
+    },
+    {
+      "check": "fixed_zoom_in_limits",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "fixed_zoom=10.0; limits=[1, 10]"
+    },
+    {
+      "check": "per_device_intrinsics_distinctness",
+      "status": "WARN",
+      "device_id": "",
+      "detail": "all four intrinsic tables are byte-identical; verify each device independently"
+    },
+    {
+      "check": "distortion_coefficients",
+      "status": "WARN",
+      "device_id": "",
+      "detail": "all configured distortion coefficients are zero; retain only if calibration supports this"
+    },
+    {
+      "check": "video_latency",
+      "status": "WARN",
+      "device_id": "",
+      "detail": "all configured video latencies are zero; capture_t is uncorrected host timing"
+    },
+    {
+      "check": "evaluation_grid_schema",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "shape=[8, 12, 4]; computed_M=384; declared_M=384; role='evaluation_cells'; frozen_within_run=True"
+    },
+    {
+      "check": "evaluation_grid_semantics",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "evaluation_grid is the frozen task-cell set; candidate viewpoints are policy-defined separately"
+    },
+    {
+      "check": "evaluation_cell_count",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "configured_M=384; preregistered_M=384"
+    },
+    {
+      "check": "deprecated_scan_grid_alias",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "scan_grid=[8, 12, 4]; evaluation_grid.shape=[8, 12, 4]; alias_only=true"
+    },
+    {
+      "check": "execution_confirmation.pose_tolerance_deg",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=1.0"
+    },
+    {
+      "check": "execution_confirmation.max_rate_dps",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=0.8"
+    },
+    {
+      "check": "execution_confirmation.settle_hold_s",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=0.35"
+    },
+    {
+      "check": "execution_confirmation.min_dwell_s",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=0.8"
+    },
+    {
+      "check": "execution_confirmation.distinct_frames",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=3"
+    },
+    {
+      "check": "execution_confirmation.frame_timeout_s",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=2.0"
+    },
+    {
+      "check": "execution_confirmation.transition_timeout_s",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=45.0"
+    },
+    {
+      "check": "execution_confirmation.require_ack",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=True"
+    },
+    {
+      "check": "execution_confirmation.require_frame",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=True"
+    },
+    {
+      "check": "pose_only_fallback_disabled",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "value=False"
+    },
+    {
+      "check": "fixed_zoom_action_mask",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "enabled=['yaw_deg', 'pitch_deg']"
+    },
+    {
+      "check": "detector_disabled",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "type='none'"
+    },
+    {
+      "check": "video_context_required",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "requires_video=True"
+    },
+    {
+      "check": "dated_calibration_evidence",
+      "status": "WARN",
+      "device_id": "",
+      "detail": "flags={'station_pose_verified': False, 'per_device_intrinsics_verified': False, 'fixed_zoom_verified': True, 'video_latency_measured': False}; evidence_id='local-angular-datum-and-zoom-2026-10-18'"
+    },
+    {
+      "check": "model_coverage_evidence_boundary",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "local angular datum and fixed-zoom evidence are required; absolute station/intrinsic/video-latency flags may remain false"
+    },
+    {
+      "check": "execution_model_calibrated",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "status='calibrated'; model_path_set=True"
+    },
+    {
+      "check": "execution_model_artifact",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "sha256=c468ba08a9d7d7a14b010fb7130f4588f0dc335731dac88bd1774037290b9974; device_models=4"
+    },
+    {
+      "check": "kit_reference_version",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "platform_version='4.0.0'; required='4.0.0'"
+    },
+    {
+      "check": "kit_reference_source_hashes",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "checked=36; mismatches=[]"
+    },
+    {
+      "check": "snapshot_hardware_hash",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "snapshot=9b1de09ac6ab9f752a6ae553a40a765f3d58dbe0b35a1bbec961572fd447b603; expected=9b1de09ac6ab9f752a6ae553a40a765f3d58dbe0b35a1bbec961572fd447b603"
+    },
+    {
+      "check": "platform_version",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "platform_version='4.0.0'; required='4.0.0'"
+    },
+    {
+      "check": "platform_patch",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "platform_patch_version='ral-hil-context-1.0.0'"
+    },
+    {
+      "check": "coverage_task_recorded",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "coverage_task={'evaluation_cell_count': 384, 'reachable_count': 384, 'reachable_ratio': 1.0, 'evaluation_grid': [8, 12, 4], 'candidate_count': 820}; experiment phase requires explicit M, reachable_count, and reachable_ratio"
+    },
+    {
+      "check": "live_evaluation_cell_count",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "live_M=384; configured_M=384; preregistered_M=384"
+    },
+    {
+      "check": "all_evaluation_cells_reachable",
+      "status": "PASS",
+      "device_id": "",
+      "detail": "reachable_count=384; M=384; reachable_ratio=1.0; required=384/384=1.0"
+    },
+    {
+      "check": "fresh_connected_telemetry",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "connected=True; age_s=0.0862788999802433; limit=0.5"
+    },
+    {
+      "check": "startup_pose_within_safe_envelope",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "yaw=0.5; pitch=0.5; yaw_limits=[-35.0, 35.0]; pitch_limits=[-20.0, 20.0]"
+    },
+    {
+      "check": "zoom_known_stable",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "zoom_known=True; zoom_stable=True"
+    },
+    {
+      "check": "fixed_zoom_reached",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "zoom=10.0; target=10.0; tolerance=0.15"
+    },
+    {
+      "check": "fresh_usable_frame",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "actual=(1920, 1080); expected=(1920, 1080); age_s=0.13332399999490008; max_age_s=0.6; usable=True"
+    },
+    {
+      "check": "latest_command_ack",
+      "status": "PASS",
+      "device_id": "zr10_25",
+      "detail": "status='acknowledged'; sent=True; ack=True; error=''; age_s=0.06301270000403747; max_age_s=2.0"
+    },
+    {
+      "check": "fresh_connected_telemetry",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "connected=True; age_s=0.04504959998303093; limit=0.5"
+    },
+    {
+      "check": "startup_pose_within_safe_envelope",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "yaw=-0.4000000000000057; pitch=-0.5; yaw_limits=[-35.0, 35.0]; pitch_limits=[-20.0, 20.0]"
+    },
+    {
+      "check": "zoom_known_stable",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "zoom_known=True; zoom_stable=True"
+    },
+    {
+      "check": "fixed_zoom_reached",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "zoom=10.0; target=10.0; tolerance=0.15"
+    },
+    {
+      "check": "fresh_usable_frame",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "actual=(1920, 1080); expected=(1920, 1080); age_s=0.1227651999797672; max_age_s=0.6; usable=True"
+    },
+    {
+      "check": "latest_command_ack",
+      "status": "PASS",
+      "device_id": "zr10_26",
+      "detail": "status='acknowledged'; sent=True; ack=True; error=''; age_s=0.06416569999419153; max_age_s=2.0"
+    },
+    {
+      "check": "fresh_connected_telemetry",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "connected=True; age_s=0.07290769999963231; limit=0.5"
+    },
+    {
+      "check": "startup_pose_within_safe_envelope",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "yaw=-0.5; pitch=-0.5; yaw_limits=[-35.0, 35.0]; pitch_limits=[-20.0, 20.0]"
+    },
+    {
+      "check": "zoom_known_stable",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "zoom_known=True; zoom_stable=True"
+    },
+    {
+      "check": "fixed_zoom_reached",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "zoom=10.0; target=10.0; tolerance=0.15"
+    },
+    {
+      "check": "fresh_usable_frame",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "actual=(1920, 1080); expected=(1920, 1080); age_s=0.12026910000713542; max_age_s=0.6; usable=True"
+    },
+    {
+      "check": "latest_command_ack",
+      "status": "PASS",
+      "device_id": "zr10_27",
+      "detail": "status='acknowledged'; sent=True; ack=True; error=''; age_s=0.06369670000276528; max_age_s=2.0"
+    },
+    {
+      "check": "fresh_connected_telemetry",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "connected=True; age_s=0.040874199999962; limit=0.5"
+    },
+    {
+      "check": "startup_pose_within_safe_envelope",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "yaw=0.3999999999999915; pitch=-0.5; yaw_limits=[-35.0, 35.0]; pitch_limits=[-20.0, 20.0]"
+    },
+    {
+      "check": "zoom_known_stable",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "zoom_known=True; zoom_stable=True"
+    },
+    {
+      "check": "fixed_zoom_reached",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "zoom=10.0; target=10.0; tolerance=0.15"
+    },
+    {
+      "check": "fresh_usable_frame",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "actual=(1920, 1080); expected=(1920, 1080); age_s=0.16873479998321272; max_age_s=0.6; usable=True"
+    },
+    {
+      "check": "latest_command_ack",
+      "status": "PASS",
+      "device_id": "zr10_28",
+      "detail": "status='acknowledged'; sent=True; ack=True; error=''; age_s=0.062371699983486906; max_age_s=2.0"
+    }
+  ],
+  "report_sha256": "4435f2f634efd439769588f01e7528ceea069e3bf2a68b3086be30a6444fe84b"
+}

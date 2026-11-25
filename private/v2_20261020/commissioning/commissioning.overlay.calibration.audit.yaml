@@ -1,0 +1,7 @@
+extends: commissioning.overlay.calibration.yaml
+policy:
+  commissioning:
+    plan_path: D:\Desktop\Tasks\航天会议\效能评估\work\ral_hil_stage1\private\v2_20261020\commissioning\commissioning_plan.json
+    commissioning_id: commission-20261020-60pd
+    run_group: calibration
+    transition_ids: []
