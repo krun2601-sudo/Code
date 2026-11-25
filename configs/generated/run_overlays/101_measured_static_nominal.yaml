@@ -1,0 +1,18 @@
+extends: ../../private_site_overlay.yaml
+policy:
+  method: measured_static
+  experiment:
+    protocol_version: ral-hil-1
+    plan_id: ralhil-2401-8b
+    plan_run_id: ralhil-2401-8b-R101
+    run_index: 101
+    block: 7
+    pair_id: B07-nominal
+    method: measured_static
+    condition: nominal
+    instance_seed: 1513854898
+    injection_seed: 2114826241
+    solver_seed: 337447354
+  fault_injection:
+    kind: none
+    enabled: false

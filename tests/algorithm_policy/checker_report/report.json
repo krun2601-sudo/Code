@@ -1,0 +1,1082 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "entry": "algorithms.user_policy:MyPolicy",
+  "checker_sha256": "3a84fffc0d5fe3f6cadaaa4bbe2da680c4a0e568329d451fa517328da5eb491c",
+  "cases": [
+    {
+      "case": "no_target",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "no_target",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "no_target_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "empty_telemetry",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "empty_telemetry",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "empty_telemetry_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "missing_telemetry",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "missing_telemetry",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "missing_telemetry_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "disconnected",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "disconnected",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "disconnected_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "stale_telemetry",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "stale_telemetry",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "stale_telemetry_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "future_telemetry",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "future_telemetry",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "future_telemetry_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "single_device",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "single_device",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "single_device_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "mask_all_frozen",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "mask_all_frozen",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "mask_all_frozen_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "mask_yaw_deg",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "mask_yaw_deg",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "mask_yaw_deg_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "mask_pitch_deg",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "mask_pitch_deg",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "mask_pitch_deg_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "confirmed_tracks",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "confirmed_tracks",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "confirmed_tracks_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "tracks_missing_telemetry",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "tracks_missing_telemetry",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "tracks_missing_telemetry_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "tracks_disconnected",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "tracks_disconnected",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "tracks_disconnected_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "tracks_stale",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "tracks_stale",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "tracks_stale_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "tracks_single_device",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "tracks_single_device",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "tracks_single_device_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "tracks_mask_all_frozen",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "tracks_mask_all_frozen",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "tracks_mask_all_frozen_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "tracks_mask_yaw_deg",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "tracks_mask_yaw_deg",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "tracks_mask_yaw_deg_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "tracks_mask_pitch_deg",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "tracks_mask_pitch_deg",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "tracks_mask_pitch_deg_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "coasting_tracks",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "coasting_tracks",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "coasting_tracks_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "expired_tracks",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "expired_tracks",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "expired_tracks_loader_result_shape",
+      "passed": true
+    },
+    {
+      "case": "detections_and_rays",
+      "loader": "build_policy",
+      "passed": true
+    },
+    {
+      "case": "detections_and_rays",
+      "loader": "create_mode_policy",
+      "passed": true
+    },
+    {
+      "case": "detections_and_rays_loader_result_shape",
+      "passed": true
+    }
+  ],
+  "simulations": [
+    {
+      "case": "standard",
+      "loader": "build_policy",
+      "passed": true,
+      "path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\tests\\algorithm_policy\\checker_report\\runs\\standard\\build_policy\\sim_20261017T085811_625600Z",
+      "rows": {
+        "telemetry": 320,
+        "detections": 611,
+        "rays": 611,
+        "localizations": 160,
+        "tracks": 160,
+        "actions": 320,
+        "commands": 0,
+        "events": 0,
+        "cycles": 80,
+        "truth": 160,
+        "telemetry_stream": 0
+      },
+      "checksums_verified": 11,
+      "work_ms_max": 45.42079999919224,
+      "deadline_misses": 0
+    },
+    {
+      "case": "standard",
+      "loader": "create_mode_policy",
+      "passed": true,
+      "path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\tests\\algorithm_policy\\checker_report\\runs\\standard\\create_mode_policy\\sim_20261017T085814_659085Z",
+      "rows": {
+        "telemetry": 320,
+        "detections": 611,
+        "rays": 611,
+        "localizations": 160,
+        "tracks": 160,
+        "actions": 320,
+        "commands": 0,
+        "events": 0,
+        "cycles": 80,
+        "truth": 160,
+        "telemetry_stream": 0
+      },
+      "checksums_verified": 11,
+      "work_ms_max": 86.75359999961074,
+      "deadline_misses": 0
+    },
+    {
+      "case": "no_target",
+      "loader": "build_policy",
+      "passed": true,
+      "path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\tests\\algorithm_policy\\checker_report\\runs\\no_target\\build_policy\\sim_20261017T085817_693076Z",
+      "rows": {
+        "telemetry": 320,
+        "detections": 0,
+        "rays": 0,
+        "localizations": 0,
+        "tracks": 0,
+        "actions": 320,
+        "commands": 0,
+        "events": 0,
+        "cycles": 80,
+        "truth": 0,
+        "telemetry_stream": 0
+      },
+      "checksums_verified": 11,
+      "work_ms_max": 6.367500000123982,
+      "deadline_misses": 0
+    },
+    {
+      "case": "no_target",
+      "loader": "create_mode_policy",
+      "passed": true,
+      "path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\tests\\algorithm_policy\\checker_report\\runs\\no_target\\create_mode_policy\\sim_20261017T085818_224051Z",
+      "rows": {
+        "telemetry": 320,
+        "detections": 0,
+        "rays": 0,
+        "localizations": 0,
+        "tracks": 0,
+        "actions": 320,
+        "commands": 0,
+        "events": 0,
+        "cycles": 80,
+        "truth": 0,
+        "telemetry_stream": 0
+      },
+      "checksums_verified": 11,
+      "work_ms_max": 6.691699999464618,
+      "deadline_misses": 0
+    },
+    {
+      "case": "outage",
+      "loader": "build_policy",
+      "passed": true,
+      "path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\tests\\algorithm_policy\\checker_report\\runs\\outage\\build_policy\\sim_20261017T085818_761087Z",
+      "rows": {
+        "telemetry": 320,
+        "detections": 601,
+        "rays": 601,
+        "localizations": 160,
+        "tracks": 160,
+        "actions": 315,
+        "commands": 0,
+        "events": 0,
+        "cycles": 80,
+        "truth": 160,
+        "telemetry_stream": 0
+      },
+      "checksums_verified": 11,
+      "work_ms_max": 44.54570000052627,
+      "deadline_misses": 0
+    },
+    {
+      "case": "outage",
+      "loader": "create_mode_policy",
+      "passed": true,
+      "path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\tests\\algorithm_policy\\checker_report\\runs\\outage\\create_mode_policy\\sim_20261017T085821_780744Z",
+      "rows": {
+        "telemetry": 320,
+        "detections": 601,
+        "rays": 601,
+        "localizations": 160,
+        "tracks": 160,
+        "actions": 315,
+        "commands": 0,
+        "events": 0,
+        "cycles": 80,
+        "truth": 160,
+        "telemetry_stream": 0
+      },
+      "checksums_verified": 11,
+      "work_ms_max": 50.80010000074253,
+      "deadline_misses": 0
+    },
+    {
+      "case": "all_frozen",
+      "loader": "build_policy",
+      "passed": true,
+      "path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\tests\\algorithm_policy\\checker_report\\runs\\all_frozen\\build_policy\\sim_20261017T085824_877406Z",
+      "rows": {
+        "telemetry": 320,
+        "detections": 611,
+        "rays": 611,
+        "localizations": 160,
+        "tracks": 160,
+        "actions": 320,
+        "commands": 0,
+        "events": 0,
+        "cycles": 80,
+        "truth": 160,
+        "telemetry_stream": 0
+      },
+      "checksums_verified": 11,
+      "work_ms_max": 48.09999999997672,
+      "deadline_misses": 0
+    },
+    {
+      "case": "all_frozen",
+      "loader": "create_mode_policy",
+      "passed": true,
+      "path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\tests\\algorithm_policy\\checker_report\\runs\\all_frozen\\create_mode_policy\\sim_20261017T085828_046955Z",
+      "rows": {
+        "telemetry": 320,
+        "detections": 611,
+        "rays": 611,
+        "localizations": 160,
+        "tracks": 160,
+        "actions": 320,
+        "commands": 0,
+        "events": 0,
+        "cycles": 80,
+        "truth": 160,
+        "telemetry_stream": 0
+      },
+      "checksums_verified": 11,
+      "work_ms_max": 46.76039999958448,
+      "deadline_misses": 0
+    }
+  ],
+  "limitations": [
+    "Offline compatibility checks are finite test coverage, not proof for every input.",
+    "Does not connect to hardware or verify calibration, physical safety or algorithm quality.",
+    "Subprocess timeout is not a sandbox for malicious Python or its child processes.",
+    "Timing is measured on this machine only and is not a realtime guarantee."
+  ],
+  "platform_root": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ZR10_Algorithm_Kit",
+  "plugin_root": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1",
+  "plugin_file": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\algorithms\\user_policy.py",
+  "plugin_sha256": "2793a90c8c2c8b384099d8fd192722a3e3029095117bede10226e7a68da815aa",
+  "config": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ZR10_Algorithm_Kit\\configs\\sim.yaml",
+  "config_sha256": "bba3d2b4f140e1543870692fe4f96b08602e3862d87724c60b3b7d286df13cad",
+  "python": "3.10.21 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:35:39) [MSC v.1942 64 bit (AMD64)]",
+  "effective_config": {
+    "devices": [
+      {
+        "id": "zr10_25",
+        "ip": "127.0.0.25",
+        "port": 37260,
+        "position_m": [
+          0,
+          -30,
+          2
+        ],
+        "mount_rpy_deg": [
+          0,
+          25,
+          0
+        ],
+        "enabled": true,
+        "yaw_limits_deg": [
+          -130,
+          130
+        ],
+        "pitch_limits_deg": [
+          -85,
+          25
+        ],
+        "zoom_limits": [
+          1,
+          10
+        ],
+        "initial_yaw_deg": 0,
+        "initial_pitch_deg": 0,
+        "initial_zoom": 1,
+        "max_slew_dps": 30,
+        "camera": {
+          "image_size": [
+            1920,
+            1080
+          ],
+          "angular_std_deg": 0.15,
+          "video_latency_s": 0.0,
+          "time_uncertainty_s": 0.15,
+          "intrinsics": [
+            {
+              "zoom": 1,
+              "fx": 1613.72,
+              "fy": 1613.72,
+              "cx": 960,
+              "cy": 540,
+              "dist": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "zoom": 10,
+              "fx": 15696.52,
+              "fy": 15696.52,
+              "cx": 960,
+              "cy": 540,
+              "dist": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "control": {
+          "mode": "velocity_p",
+          "yaw_sign": 1,
+          "pitch_sign": 1,
+          "yaw_offset_deg": 0,
+          "pitch_offset_deg": 0,
+          "yaw_velocity_sign": 1,
+          "pitch_velocity_sign": -1,
+          "normalize_pitch_feedback": true,
+          "yaw_kp": 2,
+          "pitch_kp": 2,
+          "deadband_deg": 0.5,
+          "yaw_speed_limit": 25,
+          "pitch_speed_limit": 25,
+          "command_timeout_s": 0.25,
+          "use_ack": true
+        },
+        "capabilities": {
+          "zoom": true,
+          "focus_direction": false,
+          "autofocus": false,
+          "gimbal_mode": false
+        },
+        "calibration_verified": false,
+        "rtsp_url": ""
+      },
+      {
+        "id": "zr10_26",
+        "ip": "127.0.0.26",
+        "port": 37260,
+        "position_m": [
+          0,
+          30,
+          2
+        ],
+        "mount_rpy_deg": [
+          0,
+          25,
+          0
+        ],
+        "enabled": true,
+        "yaw_limits_deg": [
+          -130,
+          130
+        ],
+        "pitch_limits_deg": [
+          -85,
+          25
+        ],
+        "zoom_limits": [
+          1,
+          10
+        ],
+        "initial_yaw_deg": 0,
+        "initial_pitch_deg": 0,
+        "initial_zoom": 1,
+        "max_slew_dps": 30,
+        "camera": {
+          "image_size": [
+            1920,
+            1080
+          ],
+          "angular_std_deg": 0.15,
+          "video_latency_s": 0.0,
+          "time_uncertainty_s": 0.15,
+          "intrinsics": [
+            {
+              "zoom": 1,
+              "fx": 1613.72,
+              "fy": 1613.72,
+              "cx": 960,
+              "cy": 540,
+              "dist": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "zoom": 10,
+              "fx": 15696.52,
+              "fy": 15696.52,
+              "cx": 960,
+              "cy": 540,
+              "dist": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "control": {
+          "mode": "velocity_p",
+          "yaw_sign": 1,
+          "pitch_sign": 1,
+          "yaw_offset_deg": 0,
+          "pitch_offset_deg": 0,
+          "yaw_velocity_sign": 1,
+          "pitch_velocity_sign": -1,
+          "normalize_pitch_feedback": true,
+          "yaw_kp": 2,
+          "pitch_kp": 2,
+          "deadband_deg": 0.5,
+          "yaw_speed_limit": 25,
+          "pitch_speed_limit": 25,
+          "command_timeout_s": 0.25,
+          "use_ack": true
+        },
+        "capabilities": {
+          "zoom": true,
+          "focus_direction": false,
+          "autofocus": false,
+          "gimbal_mode": false
+        },
+        "calibration_verified": false,
+        "rtsp_url": ""
+      },
+      {
+        "id": "zr10_27",
+        "ip": "127.0.0.27",
+        "port": 37260,
+        "position_m": [
+          30,
+          -30,
+          2
+        ],
+        "mount_rpy_deg": [
+          0,
+          25,
+          0
+        ],
+        "enabled": true,
+        "yaw_limits_deg": [
+          -130,
+          130
+        ],
+        "pitch_limits_deg": [
+          -85,
+          25
+        ],
+        "zoom_limits": [
+          1,
+          10
+        ],
+        "initial_yaw_deg": 0,
+        "initial_pitch_deg": 0,
+        "initial_zoom": 1,
+        "max_slew_dps": 30,
+        "camera": {
+          "image_size": [
+            1920,
+            1080
+          ],
+          "angular_std_deg": 0.15,
+          "video_latency_s": 0.0,
+          "time_uncertainty_s": 0.15,
+          "intrinsics": [
+            {
+              "zoom": 1,
+              "fx": 1613.72,
+              "fy": 1613.72,
+              "cx": 960,
+              "cy": 540,
+              "dist": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "zoom": 10,
+              "fx": 15696.52,
+              "fy": 15696.52,
+              "cx": 960,
+              "cy": 540,
+              "dist": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "control": {
+          "mode": "velocity_p",
+          "yaw_sign": 1,
+          "pitch_sign": 1,
+          "yaw_offset_deg": 0,
+          "pitch_offset_deg": 0,
+          "yaw_velocity_sign": 1,
+          "pitch_velocity_sign": -1,
+          "normalize_pitch_feedback": true,
+          "yaw_kp": 2,
+          "pitch_kp": 2,
+          "deadband_deg": 0.5,
+          "yaw_speed_limit": 25,
+          "pitch_speed_limit": 25,
+          "command_timeout_s": 0.25,
+          "use_ack": true
+        },
+        "capabilities": {
+          "zoom": true,
+          "focus_direction": false,
+          "autofocus": false,
+          "gimbal_mode": false
+        },
+        "calibration_verified": false,
+        "rtsp_url": ""
+      },
+      {
+        "id": "zr10_28",
+        "ip": "127.0.0.28",
+        "port": 37260,
+        "position_m": [
+          30,
+          30,
+          2
+        ],
+        "mount_rpy_deg": [
+          0,
+          25,
+          0
+        ],
+        "enabled": true,
+        "yaw_limits_deg": [
+          -130,
+          130
+        ],
+        "pitch_limits_deg": [
+          -85,
+          25
+        ],
+        "zoom_limits": [
+          1,
+          10
+        ],
+        "initial_yaw_deg": 0,
+        "initial_pitch_deg": 0,
+        "initial_zoom": 1,
+        "max_slew_dps": 30,
+        "camera": {
+          "image_size": [
+            1920,
+            1080
+          ],
+          "angular_std_deg": 0.15,
+          "video_latency_s": 0.0,
+          "time_uncertainty_s": 0.15,
+          "intrinsics": [
+            {
+              "zoom": 1,
+              "fx": 1613.72,
+              "fy": 1613.72,
+              "cx": 960,
+              "cy": 540,
+              "dist": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "zoom": 10,
+              "fx": 15696.52,
+              "fy": 15696.52,
+              "cx": 960,
+              "cy": 540,
+              "dist": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "control": {
+          "mode": "velocity_p",
+          "yaw_sign": 1,
+          "pitch_sign": 1,
+          "yaw_offset_deg": 0,
+          "pitch_offset_deg": 0,
+          "yaw_velocity_sign": 1,
+          "pitch_velocity_sign": -1,
+          "normalize_pitch_feedback": true,
+          "yaw_kp": 2,
+          "pitch_kp": 2,
+          "deadband_deg": 0.5,
+          "yaw_speed_limit": 25,
+          "pitch_speed_limit": 25,
+          "command_timeout_s": 0.25,
+          "use_ack": true
+        },
+        "capabilities": {
+          "zoom": true,
+          "focus_direction": false,
+          "autofocus": false,
+          "gimbal_mode": false
+        },
+        "calibration_verified": false,
+        "rtsp_url": ""
+      }
+    ],
+    "system": {
+      "rate_hz": 10,
+      "duration_s": 8,
+      "telemetry_stale_s": 0.5,
+      "max_frame_age_s": 0.6,
+      "pose_max_gap_s": 0.2,
+      "action_ttl_s": 0.5,
+      "require_all_devices": true,
+      "startup_timeout_s": 8
+    },
+    "policy": {
+      "name": "custom",
+      "mode": "multi",
+      "roi": {
+        "x": [
+          100,
+          160
+        ],
+        "y": [
+          -50,
+          50
+        ],
+        "z": [
+          35,
+          85
+        ]
+      },
+      "scan_points_m": null,
+      "scan_grid": [
+        3,
+        5,
+        2
+      ],
+      "scan_dwell_s": 2.0,
+      "scan_settle_tolerance_deg": 1.0,
+      "fov_margin": 0.08,
+      "minimum_dwell_s": 0.8,
+      "assignment_switch_penalty": 0.35,
+      "prediction_horizon_s": 0.2,
+      "ray_search_distance_m": 140,
+      "search_hypothesis_ttl_s": 1.5,
+      "custom": "algorithms.user_policy:MyPolicy",
+      "max_priority_tracks": 2
+    },
+    "fusion": {
+      "max_time_skew_s": 0.08,
+      "min_ray_angle_deg": 2.0,
+      "max_condition_number": 100000,
+      "max_residual_m": 2.0,
+      "max_range_m": 2000,
+      "measurement_floor_m": 0.05,
+      "process_accel_std_mps2": 3.0,
+      "track_gate_mahalanobis": 16.27,
+      "track_gate_distance_m": 15,
+      "track_timeout_s": 2.0,
+      "confirmation_hits": 3,
+      "max_hypotheses": 300,
+      "max_rays": 80,
+      "ambiguity_margin": 0.15
+    },
+    "simulation": {
+      "seed": 7,
+      "detection_probability": 0.96,
+      "pixel_noise_std": 0.7,
+      "zoom_rate_per_s": 3,
+      "targets": [
+        {
+          "id": "uav_1",
+          "position_m": [
+            110,
+            -15,
+            62
+          ],
+          "amplitude_m": [
+            8,
+            20,
+            5
+          ],
+          "period_s": 36,
+          "phase_rad": [
+            0,
+            1.5707963,
+            0.4
+          ]
+        },
+        {
+          "id": "uav_2",
+          "position_m": [
+            135,
+            22,
+            76
+          ],
+          "amplitude_m": [
+            5,
+            -20,
+            7
+          ],
+          "period_s": 45,
+          "phase_rad": [
+            0.6,
+            2.1707963,
+            0.2
+          ]
+        }
+      ],
+      "outages": []
+    },
+    "detector": {
+      "type": "none"
+    },
+    "action_space": {
+      "enabled": [
+        "yaw_deg",
+        "pitch_deg"
+      ]
+    },
+    "logging": {
+      "root": "runs",
+      "queue_size": 30000
+    },
+    "control_center": {
+      "enabled": true,
+      "open_browser": true,
+      "port": 0,
+      "video_enabled": false,
+      "heartbeat_timeout_s": 3,
+      "default_mode": "developer",
+      "duration_s": 8,
+      "modes": [
+        {
+          "id": "developer",
+          "label": "Candidate under test",
+          "policy": "algorithms.user_policy:MyPolicy",
+          "requires_detection": true,
+          "requires_calibration": true,
+          "settings": {}
+        }
+      ]
+    },
+    "source": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ZR10_Algorithm_Kit\\configs\\sim.yaml"
+  },
+  "platform_imports": {
+    "zr10lab": {
+      "file": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ZR10_Algorithm_Kit\\zr10lab\\__init__.py",
+      "sha256": "997a46101dfbad182476526a78e7aa1fdb9e40a949da50b3a016c45ac1d22b38"
+    },
+    "zr10lab.config": {
+      "file": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ZR10_Algorithm_Kit\\zr10lab\\config.py",
+      "sha256": "27452e32d712fc7bf40b4ebb329fce73cae70cfebcdcc26fd3bd292ae9cf0455"
+    },
+    "zr10lab.models": {
+      "file": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ZR10_Algorithm_Kit\\zr10lab\\models.py",
+      "sha256": "fffc90ec61721814698a558d0972f0a1d750c788cf02eaf7a09b3d30bcadc32a"
+    },
+    "zr10lab.geometry": {
+      "file": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ZR10_Algorithm_Kit\\zr10lab\\geometry.py",
+      "sha256": "d2e97c139aed5d1bec2896249fe9825415f5dd4415bc19eea1b93a0656fdd962"
+    },
+    "zr10lab.policies": {
+      "file": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ZR10_Algorithm_Kit\\zr10lab\\policies.py",
+      "sha256": "36018ba2836fe06562c8c1228748f287f2dd1ba1c57a1f3a5811e98266fb0964"
+    },
+    "zr10lab.control_modes": {
+      "file": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ZR10_Algorithm_Kit\\zr10lab\\control_modes.py",
+      "sha256": "0b4ae9342ae490fe30e2b4d0a584bce40d564245c0e901fa8fb30e6ee898b9a2"
+    },
+    "zr10lab.actions": {
+      "file": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ZR10_Algorithm_Kit\\zr10lab\\actions.py",
+      "sha256": "a13201ca8512b29ec90e0485f8bf7bc026a8536de5193250e5caa2c8d6a5492a"
+    },
+    "zr10lab.recording": {
+      "file": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ZR10_Algorithm_Kit\\zr10lab\\recording.py",
+      "sha256": "6fab599a92e7b01e3db4209381292bf4f5f71c4dc86ae51d5b882cab180d8156"
+    },
+    "zr10lab.fusion": {
+      "file": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ZR10_Algorithm_Kit\\zr10lab\\fusion.py",
+      "sha256": "6669e782ebb51f8e6a46f1240d56216a5b6b88a01c361347e85dc42118bc9fa2"
+    },
+    "zr10lab.metrics": {
+      "file": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ZR10_Algorithm_Kit\\zr10lab\\metrics.py",
+      "sha256": "ce168294f8abd538b0476396247208c4130324e64e10f5d6018b79d00cd38c54"
+    },
+    "zr10lab.simulation": {
+      "file": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ZR10_Algorithm_Kit\\zr10lab\\simulation.py",
+      "sha256": "8cc35363f6142d2a559aafbdba704790f0b667e126402b3bd41906a34c70cd4a"
+    },
+    "zr10lab.timing": {
+      "file": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ZR10_Algorithm_Kit\\zr10lab\\timing.py",
+      "sha256": "78405f0a46103eda37513e10fa207533db5dabe63bef1ab14095dba30cdfb1a1"
+    },
+    "zr10lab.runtime": {
+      "file": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ZR10_Algorithm_Kit\\zr10lab\\runtime.py",
+      "sha256": "9db1c6d52e5b5848946de0d625c2973bd706b46c488d84565b050c0c24edd0dc"
+    }
+  },
+  "elapsed_s": 21.92357179999999,
+  "timing": {
+    "decide_calls": 808,
+    "decide_ms_mean": 0.28475754951015536,
+    "decide_ms_max": 1.3659999995070393,
+    "configured_cycle_ms": 100.0
+  }
+}

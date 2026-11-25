@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "independent_unit": "one completed real-hardware run",
+  "run_metrics_wide_required_columns": [
+    "plan_run_id",
+    "pair_id",
+    "method",
+    "condition",
+    "evaluation_cell_count",
+    "reachable_count",
+    "reachable_ratio",
+    "t95_s",
+    "t95_reached",
+    "t95_censored",
+    "t100_s",
+    "t100_reached",
+    "t100_censored",
+    "mean_first_coverage_s",
+    "uac_h_s",
+    "auc_uncovered_s",
+    "total_motion_deg",
+    "load_cv",
+    "routing_prediction_mae_s",
+    "point_prediction_mae_s",
+    "upper_prediction_count",
+    "upper_prediction_mae_s",
+    "upper_prediction_miss_rate",
+    "recovery_latency_median_s",
+    "planner_p95_ms"
+  ],
+  "empty_value_policy": {
+    "t95_s": "empty when T95 is right-censored at the fixed horizon H",
+    "t100_s": "empty when censored",
+    "mean_first_coverage_s": "empty when T100 is censored",
+    "recovery_latency_median_s": "empty when no matched fault/recovery pair exists"
+  },
+  "paired_bootstrap_columns": [
+    "condition",
+    "metric",
+    "contrast",
+    "n_pairs",
+    "inference_scope",
+    "estimand",
+    "effect_estimate",
+    "bootstrap_95ci_low",
+    "bootstrap_95ci_high",
+    "bootstrap_samples"
+  ],
+  "effect_policy": {
+    "continuous": "median of paired full_eacml-minus-baseline differences",
+    "fixed_horizon_attainment": "mean paired 0/1 difference, interpreted as paired risk difference"
+  },
+  "prediction_policy": "routing_prediction_* evaluates the method's dwell-inclusive routing estimate; point_prediction_* evaluates the logged point estimate; upper_prediction_* uses conformal_upper events only; prediction_* columns are deprecated routing aliases",
+  "note": "This is a schema contract, not a result file."
+}

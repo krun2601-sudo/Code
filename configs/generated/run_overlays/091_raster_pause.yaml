@@ -1,0 +1,25 @@
+extends: ../../private_site_overlay.yaml
+policy:
+  method: raster
+  experiment:
+    protocol_version: ral-hil-1
+    plan_id: ralhil-2401-8b
+    plan_run_id: ralhil-2401-8b-R091
+    run_index: 91
+    block: 7
+    pair_id: B07-pause
+    method: raster
+    condition: pause
+    instance_seed: 2346132712
+    injection_seed: 2617030256
+    solver_seed: 4113307747
+  fault_injection:
+    kind: logical_availability_pause
+    enabled: true
+    implementation: policy_availability_mask
+    device_slot: 2
+    start_after_mission_s: 15.0
+    duration_s: 8.0
+    last_command_expires_by_ttl: true
+    no_sdk_fault_injection: true
+    seed: 2617030256

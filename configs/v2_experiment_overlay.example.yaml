@@ -1,0 +1,64 @@
+# Copy to a private location, point extends at the real four-ZR10 site file,
+# then replace only fields backed by the new run-disjoint commissioning data.
+# This example is intentionally non-runnable while execution_model is unset.
+extends: private_site_overlay.yaml
+
+system:
+  duration_s: 63.0
+  require_all_devices: true
+
+policy:
+  method: uac_robust_repair_v2
+  requires_detection: false
+  requires_video: true
+  initial_planner_budget_ms: 200.0
+  repair_planner_budget_ms: 40.0
+  planner_max_evaluations: 50000
+
+  execution_confirmation:
+    require_ack: true
+    require_frame: true
+    measured_pose_projection: true
+    frame_pose_max_gap_s: 0.2
+    frame_timeout_s: 2.0
+
+  robust_fov:
+    # Must be no smaller than execution_model.pose_error_bounds_deg.
+    pose_error_yaw_deg: 1.0
+    pose_error_pitch_deg: 1.0
+    planning_pixel_margin: 0.0
+    confirmation_pixel_margin: 0.0
+    enforce_for_all_methods: true
+
+  robust_objective:
+    horizon_s: 60.0
+    epsilon_s: 1.0e-6
+    switch_min_gain_s: 0.05
+    fault_recovery_bound_s: 8.0
+    complete_mag_reference: true
+
+  strict_measured_model: true
+  execution_model:
+    status: uncalibrated
+    model_path: ""
+    sha256: ""
+    target_definition: command_issued_to_frame_confirm
+    includes_settle_dwell_and_frame_confirmation: true
+
+  experiment:
+    protocol_version: ral-hil-2-development
+    horizon_s: 60.0
+    plan_id: UNSET
+    plan_run_id: UNSET
+    block: -1
+    pair_id: UNSET
+    method: uac_robust_repair_v2
+    condition: nominal
+    instance_seed: 0
+    injection_seed: 0
+    solver_seed: 0
+
+  fault_injection: {kind: none, enabled: false}
+
+detector: {type: none, weights: "", model_path: ""}
+action_space: {enabled: [yaw_deg, pitch_deg]}

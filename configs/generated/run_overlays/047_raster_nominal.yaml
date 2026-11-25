@@ -1,0 +1,18 @@
+extends: ../../private_site_overlay.yaml
+policy:
+  method: raster
+  experiment:
+    protocol_version: ral-hil-1
+    plan_id: ralhil-2401-8b
+    plan_run_id: ralhil-2401-8b-R047
+    run_index: 47
+    block: 4
+    pair_id: B04-nominal
+    method: raster
+    condition: nominal
+    instance_seed: 9023367
+    injection_seed: 1234592452
+    solver_seed: 3731330131
+  fault_injection:
+    kind: none
+    enabled: false

@@ -1,0 +1,87 @@
+# Merge this policy section into a private site configuration.  Endpoints,
+# RTSP URLs and calibration evidence intentionally do not belong in this file.
+policy:
+  name: custom
+  custom: algorithms.user_policy:MyPolicy
+  method: uac_robust_repair_v2 # raster | mag | open_loop_cml | measured_static | full_eacml | uac_robust_repair_v2
+  requires_detection: false
+  requires_video: true
+
+  roi: {x: [100.0, 160.0], y: [-50.0, 50.0], z: [35.0, 85.0]}
+  evaluation_grid:
+    shape: [8, 12, 4]
+    cell_count: 384
+    role: evaluation_cells
+    construction: uniform_roi_cell_centers
+    frozen_within_run: true
+  scan_grid: [8, 12, 4]      # deprecated alias; must equal evaluation_grid.shape
+
+  fixed_zoom: 10.0
+  fixed_zoom_tolerance: 0.08
+  require_zoom_verified: true
+  safe_envelope_deg: {yaw: [-35.0, 35.0], pitch: [-20.0, 20.0]}
+  fov_margin: 0.08
+  candidate_quantization_deg: [0.5, 0.5]
+  max_evaluation_cells: 2000
+  max_candidates_per_device: 512
+
+  execution_confirmation:
+    pose_tolerance_deg: 1.0
+    max_rate_dps: 0.8
+    settle_hold_s: 0.35
+    min_dwell_s: 0.8
+    distinct_frames: 3
+    frame_timeout_s: 2.0
+    frame_pose_max_gap_s: 0.2
+    transition_timeout_s: 12.0
+    require_ack: true
+    require_frame: true
+    measured_pose_projection: true
+    allow_pose_only_fallback: false
+
+  execution_model:
+    model_path: artifacts/execution_model.json
+    sha256: REPLACE_WITH_FROZEN_MODEL_SHA256
+    target_definition: command_issued_to_frame_confirm
+    includes_settle_dwell_and_frame_confirmation: true
+  strict_measured_model: true
+  uncalibrated_penalty_s: 1.0
+
+  # Deterministic heuristic proxy parameters.
+  lambda_balance: 0.15
+  lambda_uncertainty: 0.25
+  score_epsilon: 1.0e-6
+  uncertainty_health_weights: [0.35, 0.35, 0.30]
+  planner_budget_ms: 40.0
+  initial_planner_budget_ms: 200.0
+  repair_planner_budget_ms: 40.0
+  planner_max_evaluations: 50000
+  local_search_passes: 2
+
+  robust_fov:
+    # Replace these bounds with values no smaller than the frozen maximum
+    # arrival errors from the run-disjoint commissioning calibration runs.
+    pose_error_yaw_deg: 1.0
+    pose_error_pitch_deg: 1.0
+    planning_pixel_margin: 0.0
+    confirmation_pixel_margin: 0.0
+    enforce_for_all_methods: true
+  robust_objective:
+    horizon_s: 60.0
+    epsilon_s: 1.0e-6
+    switch_min_gain_s: 0.05
+    fault_recovery_bound_s: 8.0
+    complete_mag_reference: true
+
+  # Nominal comparator only; measured costs already contain dwell/frame time.
+  nominal_slew_dps: 30.0
+  nominal_command_overhead_s: 0.20
+  nominal_frame_wait_s: 0.20
+  nominal_uncertainty_s: 0.0
+
+  replan_min_interval_s: 0.50
+  prediction_overrun_grace_s: 0.35
+  fault_recovery_hold_s: 0.50
+
+  fault_injection: {kind: none, enabled: false}
+

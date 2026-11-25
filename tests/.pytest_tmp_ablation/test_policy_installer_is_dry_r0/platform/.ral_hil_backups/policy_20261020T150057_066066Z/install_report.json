@@ -1,0 +1,24 @@
+{
+  "operation": "install_policy",
+  "platform_root": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\tests\\.pytest_tmp_ablation\\test_policy_installer_is_dry_r0\\platform",
+  "dry_run": false,
+  "files": [
+    {
+      "relative_path": "algorithms/__init__.py",
+      "source_sha256": "1567817b91c2955ca966eb1b7b0696dc4d236fb1b3ca0e531f45609f8a13f90a",
+      "previous_sha256": null,
+      "action": "create",
+      "backup_path": null,
+      "installed_sha256": "1567817b91c2955ca966eb1b7b0696dc4d236fb1b3ca0e531f45609f8a13f90a"
+    },
+    {
+      "relative_path": "algorithms/user_policy.py",
+      "source_sha256": "7af5df1766dda38654e696703ff6e92226315fe5de28307b8e50a3ee279e92cb",
+      "previous_sha256": null,
+      "action": "create",
+      "backup_path": null,
+      "installed_sha256": "7af5df1766dda38654e696703ff6e92226315fe5de28307b8e50a3ee279e92cb"
+    }
+  ],
+  "report_path": "D:\\Desktop\\Tasks\\航天会议\\效能评估\\work\\ral_hil_stage1\\tests\\.pytest_tmp_ablation\\test_policy_installer_is_dry_r0\\platform\\.ral_hil_backups\\policy_20261020T150057_066066Z\\install_report.json"
+}

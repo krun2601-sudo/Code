@@ -1,0 +1,37 @@
+extends: D:\Desktop\Tasks\航天会议\效能评估\work\ral_hil_stage1\tests\.pytest_tmp_v241_all\test_development_plan_generato0\base.yaml
+system:
+  duration_s: 63.0
+policy:
+  method: measured_static
+  execution_confirmation:
+    measured_pose_projection: true
+  robust_fov:
+    enforce_for_all_methods: true
+  robust_objective:
+    horizon_s: 60.0
+    complete_mag_reference: true
+  experiment:
+    protocol_version: ral-hil-2-development
+    design_id: v2-development-six-run-gate
+    plan_id: ralhil-v2-dev6-20261020
+    plan_run_id: ralhil-v2-dev6-20261020-R005
+    run_index: 5
+    block: 1
+    pair_id: B01-pause
+    method: measured_static
+    condition: pause
+    instance_seed: 0
+    injection_seed: 213388175
+    solver_seed: 0
+    horizon_s: 60.0
+  fault_injection:
+    kind: logical_availability_pause
+    enabled: true
+    implementation: policy_availability_mask
+    trigger: coverage_fraction
+    trigger_coverage_fraction: 0.5
+    device_selection: max_unique_reserved_coverage
+    duration_s: 8.0
+    last_command_expires_by_ttl: true
+    no_sdk_fault_injection: true
+    seed: 213388175

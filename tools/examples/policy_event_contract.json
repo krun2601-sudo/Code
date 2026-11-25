@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "events": [
+    {
+      "type": "mission_started",
+      "mission_elapsed_s": 0.0,
+      "plan_run_id": "ralhil-20261017-8b-R001"
+    },
+    {
+      "type": "coverage_confirmed",
+      "mission_elapsed_s": 5.4,
+      "device_id": "camera_01",
+      "cell_ids": ["c001", "c002"]
+    },
+    {
+      "type": "transition_completed",
+      "mission_elapsed_s": 5.4,
+      "transition_id": "commission-20261018-60pd:camera_01:001",
+      "device_id": "camera_01",
+      "from_yaw_deg": 0.0,
+      "from_pitch_deg": 0.0,
+      "to_yaw_deg": -20.0,
+      "to_pitch_deg": 8.0,
+      "command_issued_t": 1004.0,
+      "frame_confirm_t": 1005.6,
+      "predicted_s": 1.4,
+      "prediction_kind": "conformal_upper",
+      "point_prediction_s": 1.2,
+      "conformal_padding_s": 0.2,
+      "actual_s": 1.6,
+      "time_definition": "command_issued_to_frame_confirm"
+    },
+    {
+      "type": "fault_started",
+      "mission_elapsed_s": 15.0,
+      "fault_id": "pause-camera_01",
+      "device_id": "camera_01"
+    },
+    {
+      "type": "fault_recovered",
+      "mission_elapsed_s": 23.0,
+      "fault_id": "pause-camera_01",
+      "device_id": "camera_01"
+    },
+    {
+      "type": "mission_completed",
+      "mission_elapsed_s": 42.8,
+      "evaluation_cell_count": 384,
+      "confirmed_count": 384,
+      "reachable_count": 384,
+      "reachable_ratio": 1.0
+    }
+  ],
+  "note": "Examples define field semantics only; values are not experimental results."
+}
+

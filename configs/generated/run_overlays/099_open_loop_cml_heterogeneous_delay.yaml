@@ -1,0 +1,26 @@
+extends: ../../private_site_overlay.yaml
+policy:
+  method: open_loop_cml
+  experiment:
+    protocol_version: ral-hil-1
+    plan_id: ralhil-2401-8b
+    plan_run_id: ralhil-2401-8b-R099
+    run_index: 99
+    block: 7
+    pair_id: B07-heterogeneous_delay
+    method: open_loop_cml
+    condition: heterogeneous_delay
+    instance_seed: 2566047756
+    injection_seed: 323669116
+    solver_seed: 1562288715
+  fault_injection:
+    kind: confirmation_delay
+    enabled: true
+    implementation: policy_event_clock_only
+    delay_s_by_device_slot:
+    - 0.45
+    - 0.75
+    - 0.0
+    - 0.2
+    never_block_watchdog: true
+    seed: 323669116

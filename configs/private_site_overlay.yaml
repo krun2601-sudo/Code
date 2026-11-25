@@ -1,0 +1,104 @@
+# PRIVATE LOCAL OVERLAY.  It contains no copied endpoint, RTSP URL, detector
+# weight, or credential; those remain only in the existing site file below.
+# If the site file moves, update only this extends path.
+extends: D:/1Xingrunqiang/pycharmpro/M_zr10_V1/ZR10_EXP_Plant/zr10_cooperative_lab/configs/control_center_saved.yaml
+
+system:
+  duration_s: 90
+  require_all_devices: true
+
+policy:
+  name: custom
+  custom: algorithms.user_policy:MyPolicy
+  method: full_eacml
+  requires_detection: false
+  requires_video: true
+  fixed_zoom: 10.0
+  evaluation_grid:
+    # Confirmatory evaluation cells (M=384), independent of policy-generated
+    # candidate viewpoints.
+    shape: [8, 12, 4]
+    cell_count: 384
+    role: evaluation_cells
+    construction: uniform_roi_cell_centers
+    frozen_within_run: true
+  # Deprecated compatibility alias only; keep equal to evaluation_grid.shape.
+  scan_grid: [8, 12, 4]
+  scan_dwell_s: 0.8
+  fov_margin: 0.08
+  safe_envelope_deg:
+    yaw: [-35.0, 35.0]
+    pitch: [-20.0, 20.0]
+  execution_confirmation:
+    pose_tolerance_deg: 1.0
+    max_rate_dps: 0.8
+    settle_hold_s: 0.35
+    min_dwell_s: 0.8
+    distinct_frames: 3
+    frame_timeout_s: 2.0
+    transition_timeout_s: 12.0
+    require_ack: true
+    require_frame: true
+    allow_pose_only_fallback: false
+  frame_quality:
+    min_mean_luma: 8.0
+    max_mean_luma: 247.0
+    min_contrast: 4.0
+    min_sharpness: 0.5
+  calibration_evidence:
+    # The inherited calibration_verified flag is a software gate, not evidence.
+    # Change these only after saving dated per-device calibration records.
+    station_pose_verified: false
+    per_device_intrinsics_verified: false
+    fixed_zoom_verified: false
+    video_latency_measured: false
+    evidence_id: UNSET
+  experiment:
+    protocol_version: ral-hil-1
+    horizon_s: 90.0
+    plan_id: UNSET
+    plan_run_id: UNSET
+    block: -1
+    method: full_eacml
+    condition: nominal
+    # instance/injection are shared within one paired block-condition group;
+    # solver_seed is deliberately method-specific.
+    instance_seed: 0
+    injection_seed: 0
+    solver_seed: 0
+    optional_diagnostics:
+      included_in_confirmatory_plan: false
+      design: one_factor_at_a_time
+      max_selected_profiles: 3
+      device_counts: [2, 3, 4]
+      roi_scale_factors: [0.75, 1.0, 1.25]
+      overlap_targets: [0.10, 0.25, 0.40]
+      task_grid_shapes: [[6, 10, 4], [8, 12, 4], [10, 15, 5]]
+  fault_injection: {kind: none, enabled: false}
+  commissioning: {plan_path: "", commissioning_id: "", transition_ids: []}
+  # Formal measured-model methods must never silently fall back to nominal
+  # timing. Commissioning is exempt because it is a separate method.
+  strict_measured_model: true
+  execution_model:
+    status: uncalibrated
+    model_path: ""
+    target_definition: command_issued_to_frame_confirm
+    includes_settle_dwell_and_frame_confirmation: true
+
+# Scanning needs decoded frames but does not need a detector.  Empty strings
+# deliberately shadow inherited private model paths without copying them.
+detector: {type: none, weights: "", model_path: ""}
+action_space: {enabled: [yaw_deg, pitch_deg]}
+logging: {root: ral_hil_runs, queue_size: 30000}
+control_center:
+  enabled: true
+  video_enabled: false
+  default_mode: full_eacml
+  duration_s: 0
+  modes:
+    - {id: raster, label: Raster, policy: algorithms.user_policy:MyPolicy, requires_detection: false, requires_calibration: true, requires_video: true, settings: {method: raster}}
+    - {id: mag, label: Motion-aware greedy, policy: algorithms.user_policy:MyPolicy, requires_detection: false, requires_calibration: true, requires_video: true, settings: {method: mag}}
+    - {id: open_loop_cml, label: Nominal-CML-H, policy: algorithms.user_policy:MyPolicy, requires_detection: false, requires_calibration: true, requires_video: true, settings: {method: open_loop_cml}}
+    - {id: measured_static, label: Measured-CML-H, policy: algorithms.user_policy:MyPolicy, requires_detection: false, requires_calibration: true, requires_video: true, settings: {method: measured_static}}
+    - {id: full_eacml, label: Full EA-CML-H, policy: algorithms.user_policy:MyPolicy, requires_detection: false, requires_calibration: true, requires_video: true, settings: {method: full_eacml}}
+

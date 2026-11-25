@@ -1,0 +1,18 @@
+extends: ../../private_site_overlay.yaml
+policy:
+  method: open_loop_cml
+  experiment:
+    protocol_version: ral-hil-1
+    plan_id: ralhil-2401-8b
+    plan_run_id: ralhil-2401-8b-R002
+    run_index: 2
+    block: 1
+    pair_id: B01-nominal
+    method: open_loop_cml
+    condition: nominal
+    instance_seed: 2673174421
+    injection_seed: 3216992976
+    solver_seed: 469024873
+  fault_injection:
+    kind: none
+    enabled: false

@@ -1,0 +1,25 @@
+extends: ../../private_site_overlay.yaml
+policy:
+  method: mag
+  experiment:
+    protocol_version: ral-hil-1
+    plan_id: ralhil-2401-8b
+    plan_run_id: ralhil-2401-8b-R006
+    run_index: 6
+    block: 1
+    pair_id: B01-pause
+    method: mag
+    condition: pause
+    instance_seed: 123634795
+    injection_seed: 2791311623
+    solver_seed: 2573473757
+  fault_injection:
+    kind: logical_availability_pause
+    enabled: true
+    implementation: policy_availability_mask
+    device_slot: 0
+    start_after_mission_s: 15.0
+    duration_s: 8.0
+    last_command_expires_by_ttl: true
+    no_sdk_fault_injection: true
+    seed: 2791311623

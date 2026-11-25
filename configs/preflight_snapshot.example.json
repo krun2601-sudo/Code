@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "captured_monotonic_s": 1000.0,
+  "hardware_config_sha256": "REPLACE_WITH_PREFLIGHT_TOOL_VALUE",
+  "platform_version": "4.0.0",
+  "platform_patch_version": "ral-hil-context-1.0.0",
+  "coverage_task": {
+    "evaluation_cell_count": 384,
+    "reachable_count": 384,
+    "reachable_ratio": 1.0,
+    "task_set_hash": "REPLACE_WITH_FROZEN_TASK_SET_SHA256"
+  },
+  "devices": {
+    "camera_01": {
+      "telemetry": {"connected": true, "sample_t": 999.9, "age_s": 0.1, "zoom": 10.0, "raw": {"zoom_known": true, "zoom_stable": true}},
+      "frame": {"frame_id": 101, "capture_t": 999.8, "age_s": 0.2, "width": 1920, "height": 1080, "usable": true, "resolution_ok": true},
+      "command_result": {"status": "acknowledged", "sent": true, "ack": true, "error": "", "age_s": 0.2}
+    },
+    "camera_02": {
+      "telemetry": {"connected": true, "sample_t": 999.9, "age_s": 0.1, "zoom": 10.0, "raw": {"zoom_known": true, "zoom_stable": true}},
+      "frame": {"frame_id": 102, "capture_t": 999.8, "age_s": 0.2, "width": 1920, "height": 1080, "usable": true, "resolution_ok": true},
+      "command_result": {"status": "acknowledged", "sent": true, "ack": true, "error": "", "age_s": 0.2}
+    },
+    "camera_03": {
+      "telemetry": {"connected": true, "sample_t": 999.9, "age_s": 0.1, "zoom": 10.0, "raw": {"zoom_known": true, "zoom_stable": true}},
+      "frame": {"frame_id": 103, "capture_t": 999.8, "age_s": 0.2, "width": 1920, "height": 1080, "usable": true, "resolution_ok": true},
+      "command_result": {"status": "acknowledged", "sent": true, "ack": true, "error": "", "age_s": 0.2}
+    },
+    "camera_04": {
+      "telemetry": {"connected": true, "sample_t": 999.9, "age_s": 0.1, "zoom": 10.0, "raw": {"zoom_known": true, "zoom_stable": true}},
+      "frame": {"frame_id": 104, "capture_t": 999.8, "age_s": 0.2, "width": 1920, "height": 1080, "usable": true, "resolution_ok": true},
+      "command_result": {"status": "acknowledged", "sent": true, "ack": true, "error": "", "age_s": 0.2}
+    }
+  },
+  "note": "Schema example only; replace hashes and measurements with the read-only runtime snapshot. Values are not experimental results."
+}

@@ -1,0 +1,2 @@
+transition_id,device_id,from_yaw_deg,from_pitch_deg,to_yaw_deg,to_pitch_deg,command_issued_t,frame_confirm_t,actual_s,time_definition,success
+

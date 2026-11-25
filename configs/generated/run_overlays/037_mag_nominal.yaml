@@ -1,0 +1,18 @@
+extends: ../../private_site_overlay.yaml
+policy:
+  method: mag
+  experiment:
+    protocol_version: ral-hil-1
+    plan_id: ralhil-2401-8b
+    plan_run_id: ralhil-2401-8b-R037
+    run_index: 37
+    block: 3
+    pair_id: B03-nominal
+    method: mag
+    condition: nominal
+    instance_seed: 827084458
+    injection_seed: 853782635
+    solver_seed: 996173185
+  fault_injection:
+    kind: none
+    enabled: false
